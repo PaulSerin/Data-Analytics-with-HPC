@@ -5,11 +5,11 @@ def compare_column_lists(list1, list2):
     only_in_list1 = sorted(list(set1 - set2))
     only_in_list2 = sorted(list(set2 - set1))
 
-    print("✅ Éléments uniquement dans la première liste :")
+    print("Éléments uniquement dans la première liste :")
     for col in only_in_list1:
         print(f" - {col}")
 
-    print("\n✅ Éléments uniquement dans la deuxième liste :")
+    print("\nÉléments uniquement dans la deuxième liste :")
     for col in only_in_list2:
         print(f" - {col}")
 
