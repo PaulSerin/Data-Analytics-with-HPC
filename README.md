@@ -2,7 +2,7 @@
 
 ## Description
 
-This project aims to predict the outcome of professional tennis matches by leveraging historical ATP data enriched through advanced preprocessing and feature engineering. It is developed as part of a Master's thesis (TFM) in the context of a double degree in Data & HPC (High-Performance Computing).
+This project aims to predict the outcome of professional tennis matches by leveraging historical ATP data enriched through advanced preprocessing and feature engineering.
 
 ## Objectives
 
@@ -46,6 +46,22 @@ After loading, all files are concatenated into a single file `atp_full.csv`, cle
 ├── README.md
 ├── requirements.txt
 └── requirements_pip.txt
+```
+
+## Installation
+
+Install all dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Using conda :
+
+```bash
+conda create -n tennis_env python=3.10
+conda activate tennis_env
+pip install -r requirements_pip.txt
 ```
 
 ## Data Sources
@@ -204,19 +220,3 @@ Future HPC directions:
 - **Multi-node GridSearchCV** on Finisterrae III supercomputer
 - **GPU acceleration** for model fitting
 - **Profiling & monitoring** with NVIDIA Nsight, nvidia-smi, or PyTorch Profiler
-
-## Installation
-
-Install all dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Using conda :
-
-```bash
-conda create -n tennis_env python=3.10
-conda activate tennis_env
-pip install -r requirements_pip.txt
-```
