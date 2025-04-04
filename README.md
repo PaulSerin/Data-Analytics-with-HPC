@@ -126,12 +126,72 @@ Implemented in `predictions.ipynb`.
 
 ### Results
 
-Best performance with Random Forest / XGBoost:
+### Context
 
-- Accuracy: ~0.98
-- Most important features:
-  - `AGE_DIFF`, `winner_age`, `loser_age`
-  - `ELO_DIFF`, `ELO_SURFACE_DIFF`
+Initially, the models achieved very high performance (accuracy over 0.93) using classifiers like XGBoost or Random Forest. However, upon inspection, it became clear that the dataset included **post-match statistics** such as the number of aces, double faults, break points saved, match duration, and final score.
+
+These are variables that are only known **after** the match is played, making the model's task unrealistic. This kind of data leakage leads to overfitted models that do not generalize to real-world scenarios where only pre-match data is available.
+
+### The Mistake: Using Post-Match Statistics
+
+The mistake was including columns like:
+
+- `PLAYER1_ACE`, `PLAYER2_BPFACED`, `PLAYER1_1STWON`
+- `SCORE`, `MINUTES`, `BP_EFFICIENCY_*`
+
+These columns reflect what happened **during** or **after** the match, and therefore should not be used for prediction. Including them allows the model to "cheat" by learning from the result itself, which invalidates any performance evaluation.
+
+### Corrected Pipeline
+
+The dataset was cleaned to only keep features that are known **before** the match. These include:
+
+- Player characteristics: `AGE`, `HEIGHT`, `RANK`, `RANK_POINTS`
+- Historical statistics: `ELO_RATING`, `WINRATE`, `H2H_HISTORY`
+- Match context: `SURFACE`, `ROUND`, `TOURNEY_LEVEL`
+
+After retraining the model on this corrected dataset, we obtained the following results.
+
+### Results After Fix
+
+| Metric   | Value |
+| -------- | ----- |
+| Accuracy | 0.879 |
+| F1 Score | 0.880 |
+| Log Loss | 0.279 |
+
+#### Classification Report
+
+```
+               precision    recall  f1-score   support
+
+           0       0.88      0.87      0.88     13143
+           1       0.88      0.88      0.88     13143
+
+    accuracy                           0.88     26286
+   macro avg       0.88      0.88      0.88     26286
+weighted avg       0.88      0.88      0.88     26286
+```
+
+![ConfusionMatrix](./Images/ConfusionMatrixXGBoost.png)
+
+### Top 20 Most Important Features (XGBoost)
+
+![XGBoost Feature Importances](./Images/TOP20FeaturesXGBOOST.png)
+
+Among the top predictors, we find:
+
+- `ELO_DIFF`: Difference in global Elo ratings
+- `SERVE_DOMINANCE`: Difference in number of aces
+- `ATP_POINT_DIFF`: Difference in ATP ranking points
+- `ELO_SURFACE_DIFF`: Difference in Elo ratings on surface
+- `RANK_RATIO`: Ratio of player1 and player2 ATP ranks
+- `PLAYER1_SURFACE_MATCHES` and `PLAYER2_SURFACE_MATCHES`: Experience on surface
+
+### Conclusion
+
+The performance metrics are now much more realistic. The model no longer relies on leaked outcome-based statistics. Despite this correction, the XGBoost classifier achieves a strong accuracy (~88%), demonstrating that **pre-match data alone can be sufficient to predict match outcomes** with high confidence.
+
+---
 
 ## Toward HPC Integration
 
