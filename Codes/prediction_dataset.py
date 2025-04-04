@@ -186,7 +186,7 @@ for i, row in tqdm(df.iterrows(), total=len(df)):
 # À ce stade, df contient les colonnes "winner_...", "loser_...", + les '..._DIFF', etc.
 
 # On va d'abord sauvegarder une version "classique"
-df.to_csv('final_tennis_dataset.csv', index=False)
+df.to_csv('../Datasets/final_tennis_dataset.csv', index=False)
 print("Dataset final (winner/loser) sauvegardé dans 'final_tennis_dataset.csv'")
 
 #############################
