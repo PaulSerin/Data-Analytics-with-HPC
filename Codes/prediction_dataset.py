@@ -215,9 +215,11 @@ def safe_rename_forward(col):
     col = col.replace('WINNER', 'PLAYER1').replace('LOSER', 'PLAYER2')
     return col.upper()
 
+df_forward = df.copy()
+df_forward['target'] = 1
 df_forward.columns = [safe_rename_forward(col) for col in df_forward.columns]
 
-# Backward: winner -> player2, loser -> player1
+# Backward
 def safe_rename_backward(col):
     # 1. On remplace uniquement les préfixes w_ → PLAYER2_ et l_ → PLAYER1_
     col = re.sub(r'^w_', 'PLAYER2_', col)
@@ -227,6 +229,8 @@ def safe_rename_backward(col):
     col = col.replace('WINNER', 'PLAYER2').replace('LOSER', 'PLAYER1')
     return col.upper()
 
+df_backward = df.copy()
+df_backward['target'] = 0 
 df_backward.columns = [safe_rename_backward(col) for col in df_backward.columns]
 
 
