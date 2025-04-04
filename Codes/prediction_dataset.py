@@ -2,17 +2,20 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm
 from collections import defaultdict, deque
+import re
 
 #############################
-# 1. Chargement et Concatenation
+# 1. Load and concatenate all CSVs
 #############################
 full_data = pd.concat([
     pd.read_csv(f"./data/atp_matches_{year}.csv") for year in range(1968, 2025)
 ], ignore_index=True)
 
+# Extract year and filter from 2000 onwards
 full_data['year'] = full_data['tourney_date'].astype(str).str[:4].astype(int)
 filtered_data = full_data[full_data['year'] >= 2000].copy()
 
+# Keep only relevant columns (non-null)
 subset_cols = [
     'winner_id', 'loser_id', 'winner_ht', 'loser_ht', 'winner_age', 'loser_age',
     "w_ace", "w_df", "w_svpt", "w_1stIn", "w_1stWon", "w_2ndWon", "w_SvGms", "w_bpSaved", "w_bpFaced",
@@ -22,7 +25,7 @@ subset_cols = [
 df = filtered_data.dropna(subset=subset_cols).copy()
 
 #############################
-# 2. Feature Engineering Basique
+# 2. Basic Feature Engineering
 #############################
 df['ATP_POINT_DIFF'] = df['winner_rank_points'] - df['loser_rank_points']
 df['ATP_RANK_DIFF'] = df['loser_rank'] - df['winner_rank']
@@ -31,17 +34,20 @@ df['HEIGHT_DIFF'] = df['winner_ht'] - df['loser_ht']
 df['RANK_RATIO'] = df['winner_rank'] / df['loser_rank']
 df['SERVE_DOMINANCE'] = df['w_ace'] - df['l_ace']
 
-# Cette colonne n'existait que pour le winner, on va en créer aussi pour le loser
+# Compute breakpoint efficiency for both players
 df['BP_EFFICIENCY_WINNER'] = df['w_bpSaved'] / df['w_bpFaced'].replace(0, 1)
 df['BP_EFFICIENCY_LOSER'] = df['l_bpSaved'] / df['l_bpFaced'].replace(0, 1)
 
+# One-hot encode the surface
 df['surface_raw'] = df['surface']
 df = pd.get_dummies(df, columns=['surface'], prefix='SURFACE')
+
+# Sort chronologically
 df.sort_values(by='tourney_date', inplace=True)
 df.reset_index(drop=True, inplace=True)
 
 #############################
-# 3. H2H Features
+# 3. Head-to-Head Features
 #############################
 h2h_total = {}
 h2h_surface = {}
@@ -51,10 +57,8 @@ for i, row in tqdm(df.iterrows(), total=len(df)):
     pair = tuple(sorted([winner, loser]))
     pair_surface = (pair, surface)
 
-    if pair not in h2h_total:
-        h2h_total[pair] = {'winner_wins': 0, 'loser_wins': 0}
-    if pair_surface not in h2h_surface:
-        h2h_surface[pair_surface] = {'winner_wins': 0, 'loser_wins': 0}
+    h2h_total.setdefault(pair, {'winner_wins': 0, 'loser_wins': 0})
+    h2h_surface.setdefault(pair_surface, {'winner_wins': 0, 'loser_wins': 0})
 
     total_score = h2h_total[pair]
     surface_score = h2h_surface[pair_surface]
@@ -62,20 +66,21 @@ for i, row in tqdm(df.iterrows(), total=len(df)):
     if winner < loser:
         df.at[i, 'H2H_TOTAL_DIFF'] = total_score['winner_wins'] - total_score['loser_wins']
         df.at[i, 'H2H_SURFACE_DIFF'] = surface_score['winner_wins'] - surface_score['loser_wins']
-        h2h_total[pair]['winner_wins'] += 1
-        h2h_surface[pair_surface]['winner_wins'] += 1
+        total_score['winner_wins'] += 1
+        surface_score['winner_wins'] += 1
     else:
         df.at[i, 'H2H_TOTAL_DIFF'] = total_score['loser_wins'] - total_score['winner_wins']
         df.at[i, 'H2H_SURFACE_DIFF'] = surface_score['loser_wins'] - surface_score['winner_wins']
-        h2h_total[pair]['loser_wins'] += 1
-        h2h_surface[pair_surface]['loser_wins'] += 1
+        total_score['loser_wins'] += 1
+        surface_score['loser_wins'] += 1
 
 #############################
-# 4. Nombre de matchs joués (total + surface)
+# 4. Number of matches played (total + surface)
 #############################
 df['WINNER_TOTAL_MATCHES'], df['LOSER_TOTAL_MATCHES'] = 0, 0
 df['WINNER_SURFACE_MATCHES'], df['LOSER_SURFACE_MATCHES'] = 0, 0
 total_matches, surface_matches = {}, {}
+
 for i, row in tqdm(df.iterrows(), total=len(df)):
     w, l, s = row['winner_id'], row['loser_id'], row['surface_raw']
     df.at[i, 'WINNER_TOTAL_MATCHES'] = total_matches.get(w, 0)
@@ -88,48 +93,46 @@ for i, row in tqdm(df.iterrows(), total=len(df)):
     surface_matches[(l, s)] = surface_matches.get((l, s), 0) + 1
 
 #############################
-# 5. Winrate Sliding Windows
+# 5. Winrate in sliding windows (form)
 #############################
 windows = [3, 5, 10, 25, 50, 100]
 for w in windows:
-    df[f'WINNER_LAST_{w}_WINRATE'], df[f'LOSER_LAST_{w}_WINRATE'] = 0.0, 0.0
+    df[f'WINNER_LAST_{w}_WINRATE'] = 0.0
+    df[f'LOSER_LAST_{w}_WINRATE'] = 0.0
 
 player_results = {}
+
 for i, row in tqdm(df.iterrows(), total=len(df)):
     w_id, l_id = row['winner_id'], row['loser_id']
     player_results.setdefault(w_id, deque(maxlen=100))
     player_results.setdefault(l_id, deque(maxlen=100))
-    for window_size in windows:
-        last_wins_w = list(player_results[w_id])[-window_size:]
-        last_wins_l = list(player_results[l_id])[-window_size:]
-        df.at[i, f'WINNER_LAST_{window_size}_WINRATE'] = sum(last_wins_w) / (len(last_wins_w) or 1)
-        df.at[i, f'LOSER_LAST_{window_size}_WINRATE'] = sum(last_wins_l) / (len(last_wins_l) or 1)
+    for w in windows:
+        w_winrate = list(player_results[w_id])[-w:]
+        l_winrate = list(player_results[l_id])[-w:]
+        df.at[i, f'WINNER_LAST_{w}_WINRATE'] = sum(w_winrate) / (len(w_winrate) or 1)
+        df.at[i, f'LOSER_LAST_{w}_WINRATE'] = sum(l_winrate) / (len(l_winrate) or 1)
     player_results[w_id].append(1)
     player_results[l_id].append(0)
 
 #############################
-# 6. Stats cumulées (Ace, DF, etc.)
+# 6. Aggregated service stats (%, over k past matches)
 #############################
 def mean(arr):
     return sum(arr) / len(arr) if arr else 0.5
 
 for k in [3, 5, 10, 20, 50, 100, 200, 300, 2000]:
     last_k = defaultdict(lambda: defaultdict(lambda: deque(maxlen=k)))
-    data_dict = {
-        f"P_ACE_WINNER_LAST_{k}": [], f"P_ACE_LOSER_LAST_{k}": [],
-        f"P_DF_WINNER_LAST_{k}": [], f"P_DF_LOSER_LAST_{k}": [],
-        f"P_1STIN_WINNER_LAST_{k}": [], f"P_1STIN_LOSER_LAST_{k}": [],
-        f"P_1STWON_WINNER_LAST_{k}": [], f"P_1STWON_LOSER_LAST_{k}": [],
-        f"P_2NDWON_WINNER_LAST_{k}": [], f"P_2NDWON_LOSER_LAST_{k}": [],
-        f"P_BPSAVED_WINNER_LAST_{k}": [], f"P_BPSAVED_LOSER_LAST_{k}": []
-    }
+    data_dict = {f"{stat}_{side}_LAST_{k}": [] for stat in [
+        "P_ACE", "P_DF", "P_1STIN", "P_1STWON", "P_2NDWON", "P_BPSAVED"
+    ] for side in ['WINNER', 'LOSER']}
+
     for row in tqdm(df.itertuples(index=False), total=len(df)):
         w_id, l_id = row.winner_id, row.loser_id
         for stat in ["p_ace", "p_df", "p_1stIn", "p_1stWon", "p_2ndWon", "p_bpSaved"]:
             data_dict[f"{stat.upper()}_WINNER_LAST_{k}"].append(mean(last_k[w_id][stat]))
             data_dict[f"{stat.upper()}_LOSER_LAST_{k}"].append(mean(last_k[l_id][stat]))
 
-        # Mise à jour de l'historique après ce match
+        # Update stats history after the match
         if row.w_svpt:
             last_k[w_id]["p_ace"].append(100 * row.w_ace / row.w_svpt)
             last_k[w_id]["p_df"].append(100 * row.w_df / row.w_svpt)
@@ -154,12 +157,18 @@ for k in [3, 5, 10, 20, 50, 100, 200, 300, 2000]:
     df = pd.concat([df, pd.DataFrame(data_dict)], axis=1)
 
 #############################
-# 7. Tennis ELO + Surface ELO
+# 7. Tennis ELO rating (global and surface-based)
 #############################
 elo_global = defaultdict(lambda: 1500)
 elo_surface = defaultdict(lambda: 1500)
-df['WINNER_ELO_BEFORE'], df['LOSER_ELO_BEFORE'], df['ELO_DIFF'] = 0.0, 0.0, 0.0
-df['WINNER_ELO_SURFACE_BEFORE'], df['LOSER_ELO_SURFACE_BEFORE'], df['ELO_SURFACE_DIFF'] = 0.0, 0.0, 0.0
+
+df['WINNER_ELO_BEFORE'] = 0.0
+df['LOSER_ELO_BEFORE'] = 0.0
+df['ELO_DIFF'] = 0.0
+df['WINNER_ELO_SURFACE_BEFORE'] = 0.0
+df['LOSER_ELO_SURFACE_BEFORE'] = 0.0
+df['ELO_SURFACE_DIFF'] = 0.0
+
 for i, row in tqdm(df.iterrows(), total=len(df)):
     w_id, l_id, surf = row['winner_id'], row['loser_id'], row['surface_raw']
     E_w = 1 / (1 + 10 ** ((elo_global[l_id] - elo_global[w_id]) / 400))
@@ -173,7 +182,7 @@ for i, row in tqdm(df.iterrows(), total=len(df)):
     df.at[i, 'LOSER_ELO_SURFACE_BEFORE'] = elo_surface[(l_id, surf)]
     df.at[i, 'ELO_SURFACE_DIFF'] = elo_surface[(w_id, surf)] - elo_surface[(l_id, surf)]
 
-    # Mise à jour ELO
+    # Update ELOs
     K = 32
     elo_global[w_id] += K * (1 - E_w)
     elo_global[l_id] += K * (0 - (1 - E_w))
@@ -181,74 +190,59 @@ for i, row in tqdm(df.iterrows(), total=len(df)):
     elo_surface[(l_id, surf)] += K * (0 - (1 - E_w_surf))
 
 #############################
-# 8. Export (avant duplication)
+# 8. Save dataset before player1/player2 transformation
 #############################
-# À ce stade, df contient les colonnes "winner_...", "loser_...", + les '..._DIFF', etc.
-
-# On va d'abord sauvegarder une version "classique"
 df.to_csv('./Datasets/final_tennis_dataset.csv', index=False)
-print("Dataset final (winner/loser) sauvegardé dans 'final_tennis_dataset.csv'")
+print("Classic winner/loser dataset saved to 'final_tennis_dataset.csv'")
 
 #############################
-# 9. Création du dataset symétrique (player1/player2)
+# 9. Create symmetric player1/player2 dataset
 #############################
 
-# 9.1 - Définir les colonnes "diff" à inverser dans la version backward
+# Define features whose sign must be inverted for the backward version
 diff_cols_to_invert = [
     'ATP_POINT_DIFF', 'ATP_RANK_DIFF', 'AGE_DIFF', 'HEIGHT_DIFF',
     'SERVE_DOMINANCE', 'H2H_TOTAL_DIFF', 'H2H_SURFACE_DIFF',
     'ELO_DIFF', 'ELO_SURFACE_DIFF'
-    # RANK_RATIO peut être inversé en 1 / ratio si tu veux
 ]
 
-# 9.2 - Créer deux copies : forward (target=1) et backward (target=0)
-
-# Forward: winner -> player1, loser -> player2
-import re
-
+# Safe renaming functions for forward and backward versions
 def safe_rename_forward(col):
-    # 1. On remplace uniquement si c’est un préfixe
     col = re.sub(r'^w_', 'PLAYER1_', col)
     col = re.sub(r'^l_', 'PLAYER2_', col)
-    # 2. On remplace les mots entiers
     col = col.replace('winner', 'PLAYER1').replace('loser', 'PLAYER2')
     col = col.replace('WINNER', 'PLAYER1').replace('LOSER', 'PLAYER2')
     return col.upper()
 
-df_forward = df.copy()
-df_forward['target'] = 1
-df_forward.columns = [safe_rename_forward(col) for col in df_forward.columns]
-
-# Backward
 def safe_rename_backward(col):
-    # 1. On remplace uniquement les préfixes w_ → PLAYER2_ et l_ → PLAYER1_
     col = re.sub(r'^w_', 'PLAYER2_', col)
     col = re.sub(r'^l_', 'PLAYER1_', col)
-    # 2. On remplace les noms entiers winner → PLAYER2 et loser → PLAYER1
     col = col.replace('winner', 'PLAYER2').replace('loser', 'PLAYER1')
     col = col.replace('WINNER', 'PLAYER2').replace('LOSER', 'PLAYER1')
     return col.upper()
 
+# Forward version: winner becomes player1
+df_forward = df.copy()
+df_forward['target'] = 1
+df_forward.columns = [safe_rename_forward(col) for col in df_forward.columns]
+
+# Backward version: winner becomes player2
 df_backward = df.copy()
-df_backward['target'] = 0 
+df_backward['target'] = 0
 df_backward.columns = [safe_rename_backward(col) for col in df_backward.columns]
 
+# Invert the sign of "diff" features in backward
+for col in diff_cols_to_invert:
+    if col in df_backward.columns:
+        df_backward[col] = -df_backward[col]
 
-# 9.3 - Inverser les colonnes "diff" dans df_backward
-for c in diff_cols_to_invert:
-    # Après le rename, la colonne ELO_DIFF est toujours ELO_DIFF
-    # Mais le sens est inversé pour winner->player2
-    df_backward[c] = - df_backward[c]
-
-# EXEMPLE pour RANK_RATIO :
-#   forward = winner_rank/loser_rank
-#   backward devrait être loser_rank/winner_rank = 1 / ratio
+# Invert the ratio
 if 'RANK_RATIO' in df_backward.columns:
     df_backward['RANK_RATIO'] = 1 / df_backward['RANK_RATIO']
 
-# 9.4 - Concaténer
+# Concatenate both versions
 df_final = pd.concat([df_forward, df_backward], ignore_index=True)
 
-# 9.5 - Sauvegarder
+# Final save
 df_final.to_csv('./Datasets/final_tennis_dataset_symmetric.csv', index=False)
-print("Dataset symétrique (player1/player2) sauvegardé dans 'final_tennis_dataset_symmetric.csv'")
+print("Symmetric player1/player2 dataset saved to 'final_tennis_dataset_symmetric.csv'")
