@@ -7,7 +7,7 @@ from collections import defaultdict, deque
 # 1. Chargement et Concatenation
 #############################
 full_data = pd.concat([
-    pd.read_csv(f"./dataa/atp_matches_{year}.csv") for year in range(1968, 2025)
+    pd.read_csv(f"./data/atp_matches_{year}.csv") for year in range(1968, 2025)
 ], ignore_index=True)
 
 full_data['year'] = full_data['tourney_date'].astype(str).str[:4].astype(int)
@@ -207,22 +207,29 @@ diff_cols_to_invert = [
 df_forward = df.copy()
 df_forward['target'] = 1
 df_forward.columns = [
-    col.replace('winner', 'player1')
-        .replace('loser', 'player2')
-        .replace('WINNER', 'PLAYER1')
-        .replace('LOSER', 'PLAYER2')
-       for col in df_forward.columns
+    col.replace('winner', 'PLAYER1')
+       .replace('loser', 'PLAYER2')
+       .replace('WINNER', 'PLAYER1')
+       .replace('LOSER', 'PLAYER2')
+       .replace('w_', 'PLAYER1_')
+       .replace('l_', 'PLAYER2_')
+       .upper()
+    for col in df_forward.columns
 ]
+
 
 # Backward: winner -> player2, loser -> player1
 df_backward = df.copy()
 df_backward['target'] = 0
 df_backward.columns = [
-    col.replace('winner', 'player2')
-        .replace('loser', 'player1')
-        .replace('WINNER', 'PLAYER2')
-        .replace('LOSER', 'PLAYER1')
-       for col in df_backward.columns
+    col.replace('winner', 'PLAYER2')
+       .replace('loser', 'PLAYER1')
+       .replace('WINNER', 'PLAYER2')
+       .replace('LOSER', 'PLAYER1')
+       .replace('w_', 'PLAYER2_')
+       .replace('l_', 'PLAYER1_')
+       .upper()
+    for col in df_backward.columns
 ]
 
 # 9.3 - Inverser les colonnes "diff" dans df_backward
