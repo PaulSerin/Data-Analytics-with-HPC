@@ -248,5 +248,5 @@ if 'RANK_RATIO' in df_backward.columns:
 df_final = pd.concat([df_forward, df_backward], ignore_index=True)
 
 # 9.5 - Sauvegarder
-df_final.to_csv('final_tennis_dataset_symmetric.csv', index=False)
+df_final.to_csv('../Datasets/final_tennis_dataset_symmetric.csv', index=False)
 print("Dataset symétrique (player1/player2) sauvegardé dans 'final_tennis_dataset_symmetric.csv'")
