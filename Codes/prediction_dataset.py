@@ -204,33 +204,31 @@ diff_cols_to_invert = [
 # 9.2 - Créer deux copies : forward (target=1) et backward (target=0)
 
 # Forward: winner -> player1, loser -> player2
-df_forward = df.copy()
-df_forward['target'] = 1
-df_forward.columns = [
-    col.replace('winner', 'PLAYER1')
-       .replace('loser', 'PLAYER2')
-       .replace('WINNER', 'PLAYER1')
-       .replace('LOSER', 'PLAYER2')
-       .replace('w_', 'PLAYER1_')
-       .replace('l_', 'PLAYER2_')
-       .upper()
-    for col in df_forward.columns
-]
+import re
 
+def safe_rename_forward(col):
+    # 1. On remplace uniquement si c’est un préfixe
+    col = re.sub(r'^w_', 'PLAYER1_', col)
+    col = re.sub(r'^l_', 'PLAYER2_', col)
+    # 2. On remplace les mots entiers
+    col = col.replace('winner', 'PLAYER1').replace('loser', 'PLAYER2')
+    col = col.replace('WINNER', 'PLAYER1').replace('LOSER', 'PLAYER2')
+    return col.upper()
+
+df_forward.columns = [safe_rename_forward(col) for col in df_forward.columns]
 
 # Backward: winner -> player2, loser -> player1
-df_backward = df.copy()
-df_backward['target'] = 0
-df_backward.columns = [
-    col.replace('winner', 'PLAYER2')
-       .replace('loser', 'PLAYER1')
-       .replace('WINNER', 'PLAYER2')
-       .replace('LOSER', 'PLAYER1')
-       .replace('w_', 'PLAYER2_')
-       .replace('l_', 'PLAYER1_')
-       .upper()
-    for col in df_backward.columns
-]
+def safe_rename_backward(col):
+    # 1. On remplace uniquement les préfixes w_ → PLAYER2_ et l_ → PLAYER1_
+    col = re.sub(r'^w_', 'PLAYER2_', col)
+    col = re.sub(r'^l_', 'PLAYER1_', col)
+    # 2. On remplace les noms entiers winner → PLAYER2 et loser → PLAYER1
+    col = col.replace('winner', 'PLAYER2').replace('loser', 'PLAYER1')
+    col = col.replace('WINNER', 'PLAYER2').replace('LOSER', 'PLAYER1')
+    return col.upper()
+
+df_backward.columns = [safe_rename_backward(col) for col in df_backward.columns]
+
 
 # 9.3 - Inverser les colonnes "diff" dans df_backward
 for c in diff_cols_to_invert:
