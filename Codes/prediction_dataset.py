@@ -186,7 +186,7 @@ for i, row in tqdm(df.iterrows(), total=len(df)):
 # À ce stade, df contient les colonnes "winner_...", "loser_...", + les '..._DIFF', etc.
 
 # On va d'abord sauvegarder une version "classique"
-df.to_csv('../Datasets/final_tennis_dataset.csv', index=False)
+df.to_csv('./Datasets/final_tennis_dataset.csv', index=False)
 print("Dataset final (winner/loser) sauvegardé dans 'final_tennis_dataset.csv'")
 
 #############################
@@ -248,5 +248,5 @@ if 'RANK_RATIO' in df_backward.columns:
 df_final = pd.concat([df_forward, df_backward], ignore_index=True)
 
 # 9.5 - Sauvegarder
-df_final.to_csv('../Datasets/final_tennis_dataset_symmetric.csv', index=False)
+df_final.to_csv('./Datasets/final_tennis_dataset_symmetric.csv', index=False)
 print("Dataset symétrique (player1/player2) sauvegardé dans 'final_tennis_dataset_symmetric.csv'")
