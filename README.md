@@ -171,21 +171,27 @@ After retraining the model on this corrected dataset, we obtained the following 
 
 | Metric   | Value |
 | -------- | ----- |
-| Accuracy | 0.879 |
-| F1 Score | 0.880 |
-| Log Loss | 0.279 |
+| Accuracy | 0.72  |
+| F1 Score | 0.72  |
+| Log Loss | 0.55  |
 
 #### Classification Report
 
 ```
+Test set evaluation:
+Accuracy : 0.7174541581069771
+F1 Score : 0.717550865183495
+Log Loss : 0.5496470869014731
+
+Classification Report:
                precision    recall  f1-score   support
 
-           0       0.88      0.87      0.88     13143
-           1       0.88      0.88      0.88     13143
+           0       0.72      0.72      0.72     13143
+           1       0.72      0.72      0.72     13143
 
-    accuracy                           0.88     26286
-   macro avg       0.88      0.88      0.88     26286
-weighted avg       0.88      0.88      0.88     26286
+    accuracy                           0.72     26286
+   macro avg       0.72      0.72      0.72     26286
+weighted avg       0.72      0.72      0.72     26286
 ```
 
 ![ConfusionMatrix](./Images/ConfusionMatrixXGBoost.png)
@@ -205,7 +211,7 @@ Among the top predictors, we find:
 
 ### Conclusion
 
-The performance metrics are now much more realistic. The model no longer relies on leaked outcome-based statistics. Despite this correction, the XGBoost classifier achieves a strong accuracy (~88%), demonstrating that **pre-match data alone can be sufficient to predict match outcomes** with high confidence.
+The performance metrics are now much more realistic. The model no longer relies on leaked outcome-based statistics. Despite this correction, the XGBoost classifier achieves a strong accuracy (~72%), demonstrating that **pre-match data alone can be sufficient to predict match outcomes** with high confidence.
 
 ---
 
