@@ -3,6 +3,8 @@ import numpy as np
 from tqdm import tqdm
 from collections import defaultdict, deque
 import re
+from pathlib import Path
+import pyarrow as pa
 
 #############################
 # 1. Load and concatenate all CSVs
@@ -244,5 +246,18 @@ if 'RANK_RATIO' in df_backward.columns:
 df_final = pd.concat([df_forward, df_backward], ignore_index=True)
 
 # Final save
-df_final.to_csv('./Datasets/final_tennis_dataset_symmetric.csv', index=False)
-print("Symmetric player1/player2 dataset saved to 'final_tennis_dataset_symmetric.csv'")
+
+# CSV
+csv_path = Path('./Datasets/final_tennis_dataset_symmetric.csv')
+df_final.to_csv(csv_path, index=False)
+print(f"CSV saved to {csv_path.name} ({csv_path.stat().st_size / 1e6:.1f} MB)")
+
+# Parquet with SNAPPY compression
+parquet_path = Path('./Datasets/final_tennis_dataset_symmetric.parquet')
+df_final.to_parquet(
+    parquet_path,
+    engine='pyarrow',
+    compression='snappy',
+    index=False
+)
+print(f"Parquet saved to {parquet_path.name} ({parquet_path.stat().st_size / 1e6:.1f} MB)")
