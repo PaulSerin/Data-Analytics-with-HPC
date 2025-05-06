@@ -5,3 +5,4 @@ Datasets/final_tennis_dataset_symmetric.csv
 Datasets/final_tennis_dataset.csv
 Datasets/final_tennis_dataset_symmetric.csv
 Datasets/final_tennis_dataset_symmetric.parquet
+Datasets/*.parquet
