@@ -208,20 +208,7 @@ diff_cols_to_invert = [
     'ELO_DIFF', 'ELO_SURFACE_DIFF'
 ]
 
-# Safe renaming functions for forward and backward versions
-# def safe_rename_forward(col):
-#     col = re.sub(r'^w_', 'PLAYER1_', col)
-#     col = re.sub(r'^l_', 'PLAYER2_', col)
-#     col = col.replace('winner', 'PLAYER1').replace('loser', 'PLAYER2')
-#     col = col.replace('WINNER', 'PLAYER1').replace('LOSER', 'PLAYER2')
-#     return col.upper()
-
-# def safe_rename_backward(col):
-#     col = re.sub(r'^w_', 'PLAYER2_', col)
-#     col = re.sub(r'^l_', 'PLAYER1_', col)
-#     col = col.replace('winner', 'PLAYER2').replace('loser', 'PLAYER1')
-#     col = col.replace('WINNER', 'PLAYER2').replace('LOSER', 'PLAYER1')
-#     return col.upper()
+# Renaming functions for forward and backward versions
 
 def safe_rename_forward(col: str) -> str:
     col = re.sub(r'^w_', 'PLAYER1_', col)
