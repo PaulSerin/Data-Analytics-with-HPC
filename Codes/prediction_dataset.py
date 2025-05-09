@@ -209,18 +209,49 @@ diff_cols_to_invert = [
 ]
 
 # Safe renaming functions for forward and backward versions
-def safe_rename_forward(col):
+# def safe_rename_forward(col):
+#     col = re.sub(r'^w_', 'PLAYER1_', col)
+#     col = re.sub(r'^l_', 'PLAYER2_', col)
+#     col = col.replace('winner', 'PLAYER1').replace('loser', 'PLAYER2')
+#     col = col.replace('WINNER', 'PLAYER1').replace('LOSER', 'PLAYER2')
+#     return col.upper()
+
+# def safe_rename_backward(col):
+#     col = re.sub(r'^w_', 'PLAYER2_', col)
+#     col = re.sub(r'^l_', 'PLAYER1_', col)
+#     col = col.replace('winner', 'PLAYER2').replace('loser', 'PLAYER1')
+#     col = col.replace('WINNER', 'PLAYER2').replace('LOSER', 'PLAYER1')
+#     return col.upper()
+
+def safe_rename_forward(col: str) -> str:
     col = re.sub(r'^w_', 'PLAYER1_', col)
     col = re.sub(r'^l_', 'PLAYER2_', col)
     col = col.replace('winner', 'PLAYER1').replace('loser', 'PLAYER2')
     col = col.replace('WINNER', 'PLAYER1').replace('LOSER', 'PLAYER2')
+    # Pour les features comme P_ACE_WINNER_LAST_3 → PLAYER2_P_ACE_LAST_3
+    col = re.sub(r'^P_(\w+)_PLAYER1_', r'PLAYER1_P_\1_', col)
+    col = re.sub(r'^P_(\w+)_PLAYER2_', r'PLAYER2_P_\1_', col)
+    col = re.sub(r'^P_(\w+)_WINNER_', r'PLAYER1_P_\1_', col)
+    col = re.sub(r'^P_(\w+)_LOSER_', r'PLAYER2_P_\1_', col)
+    # BP_EFFICIENCY
+    col = col.replace("BP_EFFICIENCY_PLAYER1", "PLAYER1_BP_EFFICIENCY")
+    col = col.replace("BP_EFFICIENCY_PLAYER2", "PLAYER2_BP_EFFICIENCY")
+
     return col.upper()
 
-def safe_rename_backward(col):
+def safe_rename_backward(col: str) -> str:
     col = re.sub(r'^w_', 'PLAYER2_', col)
     col = re.sub(r'^l_', 'PLAYER1_', col)
     col = col.replace('winner', 'PLAYER2').replace('loser', 'PLAYER1')
     col = col.replace('WINNER', 'PLAYER2').replace('LOSER', 'PLAYER1')
+    col = re.sub(r'^P_(\w+)_PLAYER1_', r'PLAYER2_P_\1_', col)
+    col = re.sub(r'^P_(\w+)_PLAYER2_', r'PLAYER1_P_\1_', col)
+    col = re.sub(r'^P_(\w+)_WINNER_', r'PLAYER2_P_\1_', col)
+    col = re.sub(r'^P_(\w+)_LOSER_', r'PLAYER1_P_\1_', col)
+    # BP_EFFICIENCY
+    col = col.replace("BP_EFFICIENCY_PLAYER1", "PLAYER2_BP_EFFICIENCY")
+    col = col.replace("BP_EFFICIENCY_PLAYER2", "PLAYER1_BP_EFFICIENCY")
+
     return col.upper()
 
 # Forward version: winner becomes player1
