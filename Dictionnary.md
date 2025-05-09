@@ -123,7 +123,7 @@ L'erreur provient dans la construction de mon dataset, toutes ces varaibale là 
 
 _(retained only for feature‑engineering history – **never** used for modelling)_
 
-- `SERVE_DOMINANCE`, `BP_EFFICIENCY_*`,
+- `SERVE_DOMINANCE`, `{P}_BP_EFFICIENCY_*`,
 - `{P}_ACE`, `{P}_DF`, `{P}_SVPT`, `{P}_1STIN`, `{P}_1STWON`, `{P}_2NDWON`, `{P}_SVGMS`, `{P}_BPSAVED`, `{P}_BPFACED`
 - `SCORE`, `MINUTES`
 
@@ -132,7 +132,8 @@ _(retained only for feature‑engineering history – **never** used for modelli
 ### Legend
 
 - All rolling and experience statistics are **calculated prior** to the current match to prevent data leakage.
-- Variables named `*_DIFF` are _Player 1 minus Player 2_ unless explicitly stated otherwise.
-- Surfaces follow ATP codes: `Clay`, `Grass`, `Hard`, `Carpet`.
+- All player-specific variables are **prefixed** by either `PLAYER1_` or `PLAYER2_` to indicate the role (Player 1 or Player 2) in the match.
+- Variables named `*_DIFF` represent **Player 1 minus Player 2** unless explicitly stated otherwise.
+- Surfaces follow ATP codes: `CLAY`, `GRASS`, `HARD`, `CARPET`.
 
 _Last updated : May 2025_
