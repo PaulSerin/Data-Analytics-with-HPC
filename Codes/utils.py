@@ -142,3 +142,22 @@ def run_monte_carlo(p1: int, p2: int, model,
         for _ in range(n)
     )
     return wins / n
+
+COLS_TO_EXCLUDE = [
+    'TARGET', 'PLAYER1_ID', 'PLAYER2_ID', 'SCORE', 'TOURNEY_DATE', 'MINUTES',
+
+    # Match-day raw stats – excluded to avoid leakage
+    'PLAYER1_ACE', 'PLAYER2_ACE',
+    'PLAYER1_DF', 'PLAYER2_DF',
+    'PLAYER1_SVPT', 'PLAYER2_SVPT',
+    'PLAYER1_1STIN', 'PLAYER2_1STIN',
+    'PLAYER1_1STWON', 'PLAYER2_1STWON',
+    'PLAYER1_2NDWON', 'PLAYER2_2NDWON',
+    'PLAYER1_SVGMS', 'PLAYER2_SVGMS',
+    'PLAYER1_BPSAVED', 'PLAYER2_BPSAVED',
+    'PLAYER1_BPFACED', 'PLAYER2_BPFACED',
+
+    # Engineered leakage features to drop
+    'PLAYER1_BP_EFFICIENCY', 'PLAYER2_BP_EFFICIENCY',
+    'SERVE_DOMINANCE'    
+]
