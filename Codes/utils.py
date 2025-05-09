@@ -1,116 +1,144 @@
-# utils.py  ────────────────────────────────────────────────────────────
-from __future__ import annotations
-import re, random
-from pathlib import Path
-from typing import Tuple
 import pandas as pd
 import numpy as np
 import xgboost as xgb
+from pathlib import Path
+import random
+import re
 
-# ------------------------------------------------------------------ #
-# 0.  Helpers
-# ------------------------------------------------------------------ #
-def _dbg(msg: str, on: bool = True):
-    if on:
-        print(f"[utils] {msg}")
+SURFACES = ["CLAY", "GRASS", "HARD", "CARPET"]
 
-DEBUG = True                       # ← passe à False pour couper les prints
-
-# ------------------------------------------------------------------ #
-# 1.  Model I/O
-# ------------------------------------------------------------------ #
-def load_xgb_from_json(json_path: str | Path,
-                       debug: bool = DEBUG) -> xgb.XGBClassifier:
+def get_latest_features_by_player(parquet_path: Path, cutoff: str) -> pd.DataFrame:
     """
-    Reload an XGBClassifier previously saved with `save_model(<path>.json)`.
-    Re‑hydrates missing wrapper attributes so that predict_proba works.
+    Return the most recent match row per player (any surface), before the cutoff date.
+    Result is indexed by PLAYER1_ID.
     """
-    _dbg(f"Loading XGB model from {json_path}", debug)
-    model = xgb.XGBClassifier()
-    model.load_model(json_path)
-
-    # --- re‑hydrate scikit‑wrapper bits (classes, encoder) ------------
-    from xgboost.compat import XGBoostLabelEncoder
-    model._le = XGBoostLabelEncoder().fit(model.classes_)
-    _dbg(f"Model loaded – {model.get_booster().best_ntree_limit or model.n_estimators} trees", debug)
-    return model
+    df = pd.read_parquet(parquet_path)
+    df["DATE"] = pd.to_datetime(df["TOURNEY_DATE"].astype(str))
+    df = df[df["DATE"] < cutoff]
+    idx = df.groupby("PLAYER1_ID")["DATE"].idxmax()
+    latest_df = df.loc[idx].set_index("PLAYER1_ID")
+    return latest_df
 
 
-# ------------------------------------------------------------------ #
-# 2.  Feature bank
-# ------------------------------------------------------------------ #
-def load_feature_bank(parquet_path: str | Path,
-                      cutoff: str = "2025-05-20",
-                      debug: bool = DEBUG) -> pd.DataFrame:
+def get_latest_features_by_surface(parquet_path: Path, cutoff: str):
     """
-    Return latest row per player **before** `cutoff`.
+    Return two dictionaries:
+    - `global_df` : latest match row per player (any surface)
+    - `surface_dfs` : latest match row per player on each surface
     """
-    _dbg(f"Reading Parquet {parquet_path}", debug)
     df = pd.read_parquet(parquet_path)
     df["DATE"] = pd.to_datetime(df["TOURNEY_DATE"].astype(str))
     df = df[df["DATE"] < cutoff]
 
+    # Global features
     idx = df.groupby("PLAYER1_ID")["DATE"].idxmax()
-    bank = df.loc[idx].set_index("PLAYER1_ID")
-    _dbg(f"Feature bank built – {len(bank)} players, {bank.shape[1]} features", debug)
-    return bank
+    global_df = df.loc[idx].set_index("PLAYER1_ID")
+
+    # Per-surface features
+    surface_dfs = {}
+    for surf in ["CLAY", "GRASS", "HARD", "CARPET"]:
+        sub = df[df[f"SURFACE_{surf}"] == 1]
+        if not sub.empty:
+            idx = sub.groupby("PLAYER1_ID")["DATE"].idxmax()
+            surface_dfs[surf] = sub.loc[idx].set_index("PLAYER1_ID")
+
+    return global_df, surface_dfs
 
 
-# ------------------------------------------------------------------ #
-# 3.  Name ↔︎ ID helper
-# ------------------------------------------------------------------ #
-def player_name_to_id(first: str, last: str,
-                      players_csv: str | Path = "data/atp_players.csv",
-                      debug: bool = DEBUG) -> int:
-    players = pd.read_csv(players_csv, names=["id", "first", "last", "hand",
-                                              "dob", "ioc", "height", "wikidataid"])
-    hit = players[
-        (players["first"].str.lower() == first.lower())
-        & (players["last"].str.lower() == last.lower())
-    ]
-    if len(hit) != 1:
-        raise ValueError(f"Unable to map {first} {last}")
-    pid = int(hit.iloc[0]["id"])
-    _dbg(f"Mapped {first} {last} → {pid}", debug)
-    return pid
+def player_name_to_id(first: str, last: str, csv_path: Path) -> int:
+    """
+    Convert a player's first and last name to their unique ATP ID,
+    based on the atp_players.csv master file.
+    """
+    players = pd.read_csv(csv_path, names=[
+        "id", "first", "last", "hand", "dob", "ioc", "height", "wikidata"
+    ])
+    mask = (
+        players["first"].str.lower().str.strip() == first.lower().strip()
+    ) & (
+        players["last"].str.lower().str.strip() == last.lower().strip()
+    )
+    matches = players[mask]
+    if len(matches) == 0:
+        raise ValueError(f"{first} {last} not found in the dataset.")
+    if len(matches) > 1:
+        print(matches[["id", "first", "last"]])
+        raise ValueError(f"{first} {last} is ambiguous in the dataset.")
+    return int(matches.iloc[0]["id"])
 
 
-# ------------------------------------------------------------------ #
-# 4.  Build one feature row
-# ------------------------------------------------------------------ #
-_SURFACES = ["CLAY", "GRASS", "HARD", "CARPET"]
+def get_player_stats(player_id: int,
+                              prefix: str,
+                              surface: str,
+                              global_df: pd.DataFrame,
+                              surface_dfs: dict) -> pd.Series:
+    """
+    Return the latest feature row for a player, prefixed accordingly (PLAYER1_ or PLAYER2_).
+    Tries surface-specific stats first, then global.
+    """
+    surf_df = surface_dfs.get(surface.upper())
+    if surf_df is not None and player_id in surf_df.index:
+        row = surf_df.loc[player_id]
+    elif player_id in global_df.index:
+        row = global_df.loc[player_id]
+    else:
+        raise KeyError(f"Player {player_id} not found for surface {surface}")
+    return row.filter(regex="^PLAYER1_").rename(lambda c: c.replace("PLAYER1_", prefix))
 
-def _rename_cols(row: pd.Series, tgt_prefix: str) -> pd.Series:
-    other_prefix = "PLAYER1_" if tgt_prefix == "PLAYER2_" else "PLAYER2_"
-    return row.rename(lambda c: re.sub(rf"^{other_prefix}", tgt_prefix, c))
 
-def build_feature_row(p1: int, p2: int, bank: pd.DataFrame,
-                      surface: str = "CLAY",
-                      debug: bool = DEBUG) -> pd.DataFrame:
-    row1 = _rename_cols(bank.loc[p1], "PLAYER1_")
-    row2 = _rename_cols(bank.loc[p2], "PLAYER2_")
-    feat = pd.concat([row1, row2])
+def build_match_row(p1: int, p2: int, surface: str,
+                            global_df: pd.DataFrame, surface_dfs: dict) -> pd.DataFrame:
+    """
+    Construct the full feature row for a match between two players.
+    Includes both players' stats and engineered difference metrics.
+    """
+    r1 = get_player_stats(p1, "PLAYER1_", surface, global_df, surface_dfs)
+    r2 = get_player_stats(p2, "PLAYER2_", surface, global_df, surface_dfs)
+    feat = pd.concat([r1, r2])
 
+    # Engineered features
     feat["ATP_POINT_DIFF"] = feat["PLAYER1_RANK_POINTS"] - feat["PLAYER2_RANK_POINTS"]
-    feat["ATP_RANK_DIFF"]  = feat["PLAYER2_RANK"] - feat["PLAYER1_RANK"]
-    feat["AGE_DIFF"]       = feat["PLAYER1_AGE"] - feat["PLAYER2_AGE"]
-    feat["HEIGHT_DIFF"]    = feat["PLAYER1_HT"] - feat["PLAYER2_HT"]
-    feat["RANK_RATIO"]     = feat["PLAYER1_RANK"] / feat["PLAYER2_RANK"]
+    feat["ATP_RANK_DIFF"] = feat["PLAYER2_RANK"] - feat["PLAYER1_RANK"]
+    feat["AGE_DIFF"] = feat["PLAYER1_AGE"] - feat["PLAYER2_AGE"]
+    feat["HEIGHT_DIFF"] = feat["PLAYER1_HT"] - feat["PLAYER2_HT"]
+    feat["RANK_RATIO"] = feat["PLAYER1_RANK"] / feat["PLAYER2_RANK"]
+    feat["ELO_SURFACE_DIFF"] = feat["PLAYER1_ELO_SURFACE_BEFORE"] - feat["PLAYER2_ELO_SURFACE_BEFORE"]
 
-    for s in _SURFACES:
-        feat[f"SURFACE_{s}"] = 1 if s == surface.upper() else 0
+    for s in ["CLAY", "GRASS", "HARD", "CARPET"]:
+        feat[f"SURFACE_{s}"] = int(surface.upper() == s)
 
-    _dbg(f"Feature row built for ({p1} vs {p2}) – shape {feat.shape}", debug)
     return feat.to_frame().T
 
 
-# ------------------------------------------------------------------ #
-# 5.  Predict a single match
-# ------------------------------------------------------------------ #
-def predict_match(model: xgb.XGBClassifier, p1: int, p2: int,
-                  bank: pd.DataFrame, surface: str = "CLAY",
-                  debug: bool = DEBUG) -> Tuple[float, float]:
-    X = build_feature_row(p1, p2, bank, surface, debug)
-    p1_win = float(model.predict_proba(X)[0, 1])
-    _dbg(f"P(Player1={p1} beats Player2={p2}) = {p1_win:.4f}", debug)
-    return p1_win, 1.0 - p1_win
+def load_trained_model(path: Path):
+    """
+    Load a trained XGBoost model from the specified path.
+    """
+    model = xgb.XGBClassifier()
+    model.load_model(path)
+    return model
+
+
+def predict_match(p1: int, p2: int, surface: str,
+                          model, global_df, surface_dfs) -> float:
+    """
+    Predict the probability that Player 1 beats Player 2 on the given surface.
+    """
+    X = build_match_row(p1, p2, surface, global_df, surface_dfs)
+    X = X.reindex(columns=model.get_booster().feature_names, fill_value=0.0)
+    X = X.astype(np.float32)
+    return float(model.predict_proba(X)[0, 1])
+
+
+def run_monte_carlo(p1: int, p2: int, model,
+                    global_df, surface_dfs,
+                    n: int = 1000, surface: str = "CLAY", seed: int = 0) -> float:
+    """
+    Simulate `n` matches between Player 1 and Player 2 and return win percentage.
+    """
+    rng = random.Random(seed)
+    wins = sum(
+        rng.random() < predict_match(p1, p2, surface, model, global_df, surface_dfs)
+        for _ in range(n)
+    )
+    return wins / n
