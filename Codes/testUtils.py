@@ -1,56 +1,40 @@
-# test_utils.py
+from pathlib import Path
 from utils import (
-    load_xgb_from_json,
-    load_feature_bank,
-    build_feature_row,
-    predict_match
+    get_latest_features_by_player,
+    get_latest_features_by_surface,
+    player_name_to_id,
+    get_player_stats,
+    build_match_row,
+    load_trained_model,
+    predict_match,
+    run_monte_carlo
 )
-import pandas as pd
 
-MODEL_PATH   = "./models/xgb_model.json"
-PARQUET_PATH = "./Datasets/final_tennis_dataset_symmetric.parquet"
+PARQUET_PATH = Path("./Datasets/final_tennis_dataset_symmetric.parquet")
+PLAYERS_CSV = Path("./data/atp_players.csv")
+MODEL_PATH = Path("./models/xgb_model.json")
+CUTOFF_DATE = "2024-05-20"
 
-# ---------------------------------------------------
-# Test 1 : Load model
-# ---------------------------------------------------
-print("\nTest 1 – Loading XGBoost model")
-model = load_xgb_from_json(MODEL_PATH)
+# Load latest features
+global_df, surface_dfs = get_latest_features_by_surface(PARQUET_PATH, CUTOFF_DATE)
 
-# ---------------------------------------------------
-# Test 2 : Load feature bank (cutoff < Roland Garros 2025)
-# ---------------------------------------------------
-print("\nTest 2 – Loading feature bank")
-bank = load_feature_bank(PARQUET_PATH, cutoff="2025-05-20")
-print(bank.head(2))
+# Load model
+model = load_trained_model(MODEL_PATH)
 
-# ---------------------------------------------------
-# Test 3 : Get player IDs by name (from feature bank)
-# ---------------------------------------------------
-print("\nTest 3 – Mapping player names to IDs")
-def get_id_by_name(bank: pd.DataFrame, name: str) -> int:
-    hits = bank[bank['PLAYER1_NAME'].str.contains(name, case=False, na=False)]
-    if len(hits) == 0:
-        raise ValueError(f"Aucun joueur trouvé pour le nom: {name}")
-    if len(hits['PLAYER1_ID'].unique()) > 1:
-        print(hits[['PLAYER1_ID', 'PLAYER1_NAME']].drop_duplicates())
-        raise ValueError(f"Plusieurs IDs trouvés pour {name}")
-    return hits['PLAYER1_ID'].iloc[0]
+# Convert names to IDs
+alcaraz_id = player_name_to_id("Carlos", "Alcaraz", PLAYERS_CSV)
+sinner_id = player_name_to_id("Jannik", "Sinner", PLAYERS_CSV)
 
-p1 = get_id_by_name(bank, "Alcaraz")
-p2 = get_id_by_name(bank, "Sinner")
-print(f"Alcaraz ID: {p1}, Sinner ID: {p2}")
+# Evaluate on different surfaces
+for surface in ["CLAY", "HARD"]:
+    print(f"\n--- Match on {surface} ---")
 
-# ---------------------------------------------------
-# Test 4 : Build feature row
-# ---------------------------------------------------
-print("\nTest 4 – Building feature row for (Alcaraz vs Sinner) on CLAY")
-X = build_feature_row(p1, p2, bank, surface="CLAY")
-print(X.T)
+    # Predict win probability
+    prob = predict_match(alcaraz_id, sinner_id, surface, model, global_df, surface_dfs)
+    print(f"Alcaraz win probability: {prob:.2%}")
+    print(f"Sinner  win probability: {1 - prob:.2%}")
 
-# ---------------------------------------------------
-# Test 5 : Predict match
-# ---------------------------------------------------
-print("\nTest 5 – Predicting match outcome (Alcaraz vs Sinner)")
-p1_prob, p2_prob = predict_match(model, p1, p2, bank, surface="CLAY")
-print(f"Probability Alcaraz wins: {p1_prob:.2%}")
-print(f"Probability Sinner wins : {p2_prob:.2%}")
+    # Run Monte Carlo simulations
+    for n in [100, 200, 500]:
+        winrate = run_monte_carlo(alcaraz_id, sinner_id, model, global_df, surface_dfs, n=n, surface=surface)
+        print(f"Monte Carlo ({n} runs): Alcaraz wins {winrate:.2%}")
