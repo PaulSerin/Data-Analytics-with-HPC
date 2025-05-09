@@ -37,8 +37,8 @@ df['RANK_RATIO'] = df['winner_rank'] / df['loser_rank']
 df['SERVE_DOMINANCE'] = df['w_ace'] - df['l_ace']
 
 # Compute breakpoint efficiency for both players
-df['BP_EFFICIENCY_WINNER'] = df['w_bpSaved'] / df['w_bpFaced'].replace(0, 1)
-df['BP_EFFICIENCY_LOSER'] = df['l_bpSaved'] / df['l_bpFaced'].replace(0, 1)
+df['WINNER_BP_EFFICIENCY'] = df['w_bpSaved'] / df['w_bpFaced'].replace(0, 1)
+df['LOSER_BP_EFFICIENCY'] = df['l_bpSaved'] / df['l_bpFaced'].replace(0, 1)
 
 # One-hot encode the surface
 df['surface_raw'] = df['surface']
@@ -124,15 +124,18 @@ def mean(arr):
 
 for k in [3, 5, 10, 20, 50, 100, 200, 300, 2000]:
     last_k = defaultdict(lambda: defaultdict(lambda: deque(maxlen=k)))
-    data_dict = {f"{stat}_{side}_LAST_{k}": [] for stat in [
+
+    # ✅ Noms de colonnes avec prefixe dès le départ : WINNER_... ou LOSER_...
+    data_dict = {f"{side}_{stat}_LAST_{k}": [] for stat in [
         "P_ACE", "P_DF", "P_1STIN", "P_1STWON", "P_2NDWON", "P_BPSAVED"
     ] for side in ['WINNER', 'LOSER']}
 
     for row in tqdm(df.itertuples(index=False), total=len(df)):
         w_id, l_id = row.winner_id, row.loser_id
+
         for stat in ["p_ace", "p_df", "p_1stIn", "p_1stWon", "p_2ndWon", "p_bpSaved"]:
-            data_dict[f"{stat.upper()}_WINNER_LAST_{k}"].append(mean(last_k[w_id][stat]))
-            data_dict[f"{stat.upper()}_LOSER_LAST_{k}"].append(mean(last_k[l_id][stat]))
+            data_dict[f"WINNER_P_{stat[2:].upper()}_LAST_{k}"].append(mean(last_k[w_id][stat]))
+            data_dict[f"LOSER_P_{stat[2:].upper()}_LAST_{k}"].append(mean(last_k[l_id][stat]))
 
         # Update stats history after the match
         if row.w_svpt:
@@ -210,46 +213,31 @@ diff_cols_to_invert = [
 
 # Renaming functions for forward and backward versions
 
-def safe_rename_forward(col: str) -> str:
+def rename_forward(col: str) -> str:
     col = re.sub(r'^w_', 'PLAYER1_', col)
     col = re.sub(r'^l_', 'PLAYER2_', col)
     col = col.replace('winner', 'PLAYER1').replace('loser', 'PLAYER2')
     col = col.replace('WINNER', 'PLAYER1').replace('LOSER', 'PLAYER2')
-    # Pour les features comme P_ACE_WINNER_LAST_3 → PLAYER2_P_ACE_LAST_3
-    col = re.sub(r'^P_(\w+)_PLAYER1_', r'PLAYER1_P_\1_', col)
-    col = re.sub(r'^P_(\w+)_PLAYER2_', r'PLAYER2_P_\1_', col)
-    col = re.sub(r'^P_(\w+)_WINNER_', r'PLAYER1_P_\1_', col)
-    col = re.sub(r'^P_(\w+)_LOSER_', r'PLAYER2_P_\1_', col)
-    # BP_EFFICIENCY
-    col = col.replace("BP_EFFICIENCY_PLAYER1", "PLAYER1_BP_EFFICIENCY")
-    col = col.replace("BP_EFFICIENCY_PLAYER2", "PLAYER2_BP_EFFICIENCY")
-
+    
     return col.upper()
 
-def safe_rename_backward(col: str) -> str:
+def rename_backward(col: str) -> str:
     col = re.sub(r'^w_', 'PLAYER2_', col)
     col = re.sub(r'^l_', 'PLAYER1_', col)
     col = col.replace('winner', 'PLAYER2').replace('loser', 'PLAYER1')
     col = col.replace('WINNER', 'PLAYER2').replace('LOSER', 'PLAYER1')
-    col = re.sub(r'^P_(\w+)_PLAYER1_', r'PLAYER2_P_\1_', col)
-    col = re.sub(r'^P_(\w+)_PLAYER2_', r'PLAYER1_P_\1_', col)
-    col = re.sub(r'^P_(\w+)_WINNER_', r'PLAYER2_P_\1_', col)
-    col = re.sub(r'^P_(\w+)_LOSER_', r'PLAYER1_P_\1_', col)
-    # BP_EFFICIENCY
-    col = col.replace("BP_EFFICIENCY_PLAYER1", "PLAYER2_BP_EFFICIENCY")
-    col = col.replace("BP_EFFICIENCY_PLAYER2", "PLAYER1_BP_EFFICIENCY")
 
     return col.upper()
 
 # Forward version: winner becomes player1
 df_forward = df.copy()
 df_forward['target'] = 1
-df_forward.columns = [safe_rename_forward(col) for col in df_forward.columns]
+df_forward.columns = [rename_forward(col) for col in df_forward.columns]
 
 # Backward version: winner becomes player2
 df_backward = df.copy()
 df_backward['target'] = 0
-df_backward.columns = [safe_rename_backward(col) for col in df_backward.columns]
+df_backward.columns = [rename_backward(col) for col in df_backward.columns]
 
 # Invert the sign of "diff" features in backward
 for col in diff_cols_to_invert:
