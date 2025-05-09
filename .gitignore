@@ -1,8 +1,12 @@
 Datasets/final_tennis_dataset.csv
 Datasets/final_tennis_dataset_symmetric.csv
 
-# Datasets trop volumineux
+# Datasets too huge (>100 MB)
 Datasets/final_tennis_dataset.csv
 Datasets/final_tennis_dataset_symmetric.csv
 Datasets/final_tennis_dataset_symmetric.parquet
 Datasets/*.parquet
+
+# Exclude Python cache files
+__pycache__/
+*.pyc
