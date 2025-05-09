@@ -8,7 +8,7 @@ wild‑cards:
 | --------- | ------------------------------------------------------ | ---------------------------------- |
 | `{P}`     | `PLAYER1` or `PLAYER2`                                 | `PLAYER1_HEIGHT`, `PLAYER2_HEIGHT` |
 | `{N}`     | Sliding‑window size (3, 5, 10, 25, 50, 100)            | `PLAYER1_LAST_25_WINRATE`          |
-| `{K}`     | Service window (3, 5, 10, 20, 50, 100, 200, 300, 2000) | `P_ACE_PLAYER2_LAST_50`            |
+| `{K}`     | Service window (3, 5, 10, 20, 50, 100, 200, 300, 2000) | `PLAYER2_P_ACE_LAST_50`            |
 | `{S}`     | Court surface (`CLAY`, `GRASS`, `HARD`, `CARPET`)      | `SURFACE_CLAY`                     |
 
 ---
@@ -77,14 +77,18 @@ wild‑cards:
 
 All values are expressed as percentages [0;100] averaged over the last **{K}** matches **before** to the current one.
 
+ON a un petit probleme, pas mal de variables ne sont pas pris en comte dans le modèle car elles ne commencent pas par PLAYER1\_.
+
+L'erreur provient dans la construction de mon dataset, toutes ces varaibale là tu vois
+
 | Pattern                  | What it measures                       |
 | ------------------------ | -------------------------------------- |
-| `P_ACE_{P}_LAST_{K}`     | Ace rate = 100 × (aces / serve points) |
-| `P_DF_{P}_LAST_{K}`      | Double‑fault rate                      |
-| `P_1STIN_{P}_LAST_{K}`   | 1st‑serve‑in %                         |
-| `P_1STWON_{P}_LAST_{K}`  | Points won on 1st serve                |
-| `P_2NDWON_{P}_LAST_{K}`  | Points won on 2nd serve                |
-| `P_BPSAVED_{P}_LAST_{K}` | Break points saved %                   |
+| `{P}_P_ACE_LAST_{K}`     | Ace rate = 100 × (aces / serve points) |
+| `{P}_P_DF_LAST_{K}`      | Double‑fault rate                      |
+| `{P}_P_1STIN_LAST_{K}`   | 1st‑serve‑in %                         |
+| `{P}_P_1STWON_LAST_{K}`  | Points won on 1st serve                |
+| `{P}_P_2NDWON_LAST_{K}`  | Points won on 2nd serve                |
+| `{P}_P_BPSAVED_LAST_{K}` | Break points saved %                   |
 
 ---
 
@@ -92,7 +96,7 @@ All values are expressed as percentages [0;100] averaged over the last **{K}** m
 
 | Column                                           | Description                       |
 | ------------------------------------------------ | --------------------------------- |
-| `BP_EFFICIENCY_PLAYER1`, `BP_EFFICIENCY_PLAYER2` | `bpsaved / bpfaced` for the match |
+| `PLAYER1_BP_EFFICIENCY`, `PLAYER2_BP_EFFICIENCY` | `bpsaved / bpfaced` for the match |
 
 ---
 
