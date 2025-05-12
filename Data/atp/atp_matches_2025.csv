@@ -1,0 +1,959 @@
+tourney_id,tourney_name,surface,draw_size,tourney_level,tourney_date,match_num,winner_id,winner_seed,winner_entry,winner_name,winner_hand,winner_ht,winner_ioc,winner_age,loser_id,loser_seed,loser_entry,loser_name,loser_hand,loser_ht,loser_ioc,loser_age,score,best_of,round,minutes,w_ace,w_df,w_svpt,w_1stIn,w_1stWon,w_2ndWon,w_SvGms,w_bpSaved,w_bpFaced,l_ace,l_df,l_svpt,l_1stIn,l_1stWon,l_2ndWon,l_SvGms,l_bpSaved,l_bpFaced,winner_rank,winner_rank_points,loser_rank,loser_rank_points
+,Brisbane International,Hard,0,,2025-01-01,0,132399,0,,Yasuo Nishioka,,0,,0,208103,0,,Jiri Lehecka,,0,,0,2-6 7-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,776,28,1660
+,Brisbane International,Hard,0,,2025-01-01,0,111797,0,,Nicolas Jarry,,0,,0,126127,0,,Benjamin Bonzi,,0,,0,6-2 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1370,75,730
+,Brisbane International,Hard,0,,2025-01-01,0,126846,0,,Aleksandar Vukic,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,2-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,68,778,10,3350
+,Brisbane International,Hard,0,,2025-01-01,0,147490,0,,Jerry Thompson,,0,,0,210506,0,,Alex Michelsen,,0,,0,7-5 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1745,41,1245
+,Brisbane International,Hard,0,,2025-01-02,0,105583,0,,Dusan Lajovic,,0,,0,210150,0,,Jakub Mensik,,0,,0,3-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,81,710,48,1136
+,Brisbane International,Hard,0,,2025-01-02,0,124187,0,,Reilly Opelka,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,7-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,293,176,37,1345
+,Brisbane International,Hard,0,,2025-01-02,0,126207,0,,Frances Tiafoe,,0,,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,4-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2585,31,1561
+,Brisbane International,Hard,0,,2025-01-02,0,104925,0,,Novak Djokovic,,0,,0,104792,0,,Gael Monfils,,0,,0,6-3 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3910,55,1005
+,Brisbane International,Hard,0,,2025-01-03,0,111797,0,,Nicolas Jarry,,0,,0,208103,0,,Jiri Lehecka,,0,,0,4-6 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1370,28,1660
+,Brisbane International,Hard,0,,2025-01-03,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,210150,0,,Jakub Mensik,,0,,0,7-5 7-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1561,48,1136
+,Brisbane International,Hard,0,,2025-01-03,0,104925,0,,Novak Djokovic,,0,,0,124187,0,,Reilly Opelka,,0,,0,6-7 3-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3910,293,176
+,Brisbane International,Hard,0,,2025-01-04,0,124187,0,,Reilly Opelka,,0,,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,6-3 7-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,293,176,31,1561
+,Hong Kong Tennis Open,Hard,0,,2025-01-01,0,200175,0,,Miomir Kecmanovic,,0,,0,142378,0,,Arthur Muller,,0,,0,7-5 6-7 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,1021,67,778
+,Hong Kong Tennis Open,Hard,0,,2025-01-01,0,111815,0,,Cameron Norrie,,0,,0,132283,0,,Lorenzo Sonego,,0,,0,6-2 4-6 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49,1119,53,1026
+,Hong Kong Tennis Open,Hard,0,,2025-01-01,0,200267,0,,Zizou Bergs,,0,,0,209950,0,,Arthur Fils,,0,,0,6-7 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,768,20,2355
+,Hong Kong Tennis Open,Hard,0,,2025-01-01,0,105453,0,,Kei Nishikori,,0,,0,111575,0,,Karen Khachanov,,0,,0,4-6 6-3 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,106,578,19,2410
+,Hong Kong Tennis Open,Hard,0,,2025-01-02,0,132686,0,,Nuno Borges,,0,,0,144719,0,,Jaume Munar,,0,,0,3-6 5-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1355,62,832
+,Hong Kong Tennis Open,Hard,0,,2025-01-02,0,207518,0,,Lorenzo Musetti,,0,,0,209113,0,,Gabriel Diallo,,0,,0,6-4 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2600,87,643
+,Hong Kong Tennis Open,Hard,0,,2025-01-02,0,124079,0,,Pedro Martinez,,0,,0,210234,0,,Juncheng Shang,,0,,0,3-6 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1205,50,1115
+,Hong Kong Tennis Open,Hard,0,,2025-01-02,0,206681,0,,Fabian Marozsan,,0,,0,126094,0,,Andrey Rublev,,0,,0,7-5 3-6 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,935,8,3760
+,Hong Kong Tennis Open,Hard,0,,2025-01-03,0,209950,0,,Arthur Fils,,0,,0,142378,0,,Arthur Muller,,0,,0,6-3 3-6 1-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,2355,67,778
+,Hong Kong Tennis Open,Hard,0,,2025-01-03,0,144719,0,,Jaume Munar,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,2-6 7-6 7-5,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,832,17,2600
+,Hong Kong Tennis Open,Hard,0,,2025-01-03,0,206681,0,,Fabian Marozsan,,0,,0,210234,0,,Juncheng Shang,,0,,0,6-1 3-6 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,935,50,1115
+,Hong Kong Tennis Open,Hard,0,,2025-01-03,0,105453,0,,Kei Nishikori,,0,,0,111815,0,,Cameron Norrie,,0,,0,6-3 3-6 6-2,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,106,578,49,1119
+,Hong Kong Tennis Open,Hard,0,,2025-01-04,0,144719,0,,Jaume Munar,,0,,0,142378,0,,Arthur Muller,,0,,0,6-7 4-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,832,67,778
+,Hong Kong Tennis Open,Hard,0,,2025-01-05,0,142378,0,,Arthur Muller,,0,,0,105453,0,,Kei Nishikori,,0,,0,2-6 6-1 6-3,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,778,106,578
+,Adelaide International,Hard,0,,2025-01-06,0,207405,0,,Zheng Qi Jonathan Zhang,,0,,0,133430,0,,Denis Shapovalov,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1140,58,981
+,Adelaide International,Hard,0,,2025-01-06,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,120759,0,,Alberto Bautista,,0,,0,7-5 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,68,775,51,1067
+,Adelaide International,Hard,0,,2025-01-06,0,126239,0,,Arthur Rinderknech,,0,,0,100099,0,,Thomaz Koch,,0,,0,5-7 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,927,64,795
+,Adelaide International,Hard,0,,2025-01-06,0,106423,0,,Thanasi Kokkinakis,,0,,0,132399,0,,Yasuo Nishioka,,0,,0,6-3 3-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,716,63,807
+,Adelaide International,Hard,0,,2025-01-07,0,105902,0,,James Duckworth,,0,,0,111454,0,,Li Tu,,0,,0,1-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,94,624,179,323
+,Adelaide International,Hard,0,,2025-01-07,0,131905,0,,Manuel Guinard,,0,,0,126128,0,,Roman Safiullin,,0,,0,7-6 2-6 6-1,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,261,209,62,823
+,Adelaide International,Hard,0,,2025-01-07,0,126846,0,,Aleksandar Vukic,,0,,0,106218,0,,Marcos Giron,,0,,0,2-6 6-3 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,778,45,1150
+,Adelaide International,Hard,0,,2025-01-07,0,200175,0,,Miomir Kecmanovic,,0,,0,122330,0,,Alexander Bublik,,0,,0,6-4 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,1021,33,1420
+,Adelaide International,Hard,0,,2025-01-07,0,200443,0,,Adam Walton,,0,,0,209070,0,,Arthur Cazaux,,0,,0,5-7 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91,636,80,707
+,Adelaide International,Hard,0,,2025-01-07,0,210416,0,,Bryce Nakashima,,0,,0,105870,0,,Yannick Hanfmann,,0,,0,6-1 2-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,1335,98,615
+,Adelaide International,Hard,0,,2025-01-07,0,105676,0,,David Goffin,,0,,0,208014,0,,Rinky Hijikata,,0,,0,1-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,1029,79,712
+,Adelaide International,Hard,0,,2025-01-07,0,144869,0,,Tomas Martin Etcheverry,,0,,0,209262,0,,Tristan Schoolkate,,0,,0,7-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1315,173,336
+,Adelaide International,Hard,0,,2025-01-08,0,209070,0,,Arthur Cazaux,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,6-1 4-6 5-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,707,29,1680
+,Adelaide International,Hard,0,,2025-01-08,0,106218,0,,Marcos Giron,,0,,0,133430,0,,Denis Shapovalov,,0,,0,7-5 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,1150,58,981
+,Adelaide International,Hard,0,,2025-01-08,0,100099,0,,Thomaz Koch,,0,,0,200175,0,,Miomir Kecmanovic,,0,,0,6-7 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,795,55,1021
+,Adelaide International,Hard,0,,2025-01-08,0,208014,0,,Rinky Hijikata,,0,,0,210416,0,,Bryce Nakashima,,0,,0,6-2 3-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,712,37,1335
+,Adelaide International,Hard,0,,2025-01-08,0,111454,0,,Li Tu,,0,,0,126127,0,,Benjamin Bonzi,,0,,0,3-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,179,323,70,762
+,Adelaide International,Hard,0,,2025-01-08,0,200624,0,,Sebastian Korda,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,6-3 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,1985,68,775
+,Adelaide International,Hard,0,,2025-01-08,0,131905,0,,Manuel Guinard,,0,,0,126205,0,,Tommy Paul,,0,,0,4-6 6-3 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,261,209,12,3145
+,Adelaide International,Hard,0,,2025-01-08,0,106423,0,,Thanasi Kokkinakis,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,7-5 4-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,716,39,1315
+,Adelaide International,Hard,0,,2025-01-09,0,208014,0,,Rinky Hijikata,,0,,0,126205,0,,Tommy Paul,,0,,0,3-6 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,712,12,3145
+,Adelaide International,Hard,0,,2025-01-09,0,200000,0,,Felix Auger Aliassime,,0,,0,106218,0,,Marcos Giron,,0,,0,7-6 6-3,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1680,45,1150
+,Adelaide International,Hard,0,,2025-01-09,0,126127,0,,Benjamin Bonzi,,0,,0,200175,0,,Miomir Kecmanovic,,0,,0,2-6 3-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,762,55,1021
+,Adelaide International,Hard,0,,2025-01-10,0,200000,0,,Felix Auger Aliassime,,0,,0,126205,0,,Tommy Paul,,0,,0,7-6 3-6 6-4,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1680,12,3145
+,Adelaide International,Hard,0,,2025-01-10,0,200175,0,,Miomir Kecmanovic,,0,,0,200624,0,,Sebastian Korda,,0,,0,3-6 6-7,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,1021,22,1985
+,Adelaide International,Hard,0,,2025-01-11,0,200000,0,,Felix Auger Aliassime,,0,,0,200624,0,,Sebastian Korda,,0,,0,6-3 3-6 6-1,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1680,22,1985
+,ASB Classic,Hard,0,,2025-01-05,0,209260,0,,Luciano Darderi,,0,,0,132686,0,,Nuno Borges,,0,,0,7-5 3-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,1198,36,1370
+,ASB Classic,Hard,0,,2025-01-06,0,106148,0,,Roberto Carballes Baena,,0,,0,127157,0,,Daniel Altmaier,,0,,0,6-3 3-6 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,981,93,625
+,ASB Classic,Hard,0,,2025-01-06,0,208653,0,,Isaac Becroft,,0,,0,200267,0,,Zizou Bergs,,0,,0,3-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,980,15,66,783
+,ASB Classic,Hard,0,,2025-01-06,0,210506,0,,Alex Michelsen,,0,,0,111576,0,,Sumit Nagal,,0,,0,6-7 6-4 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,1245,96,622
+,ASB Classic,Hard,0,,2025-01-06,0,105173,0,,Adrian Mannarino,,0,,0,208363,0,,Mariano Navone,,0,,0,6-7 7-6 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,73,744,46,1148
+,ASB Classic,Hard,0,,2025-01-06,0,132283,0,,Lorenzo Sonego,,0,,0,209113,0,,Gabriel Diallo,,0,,0,7-6 2-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,1026,87,646
+,ASB Classic,Hard,0,,2025-01-06,0,111815,0,,Cameron Norrie,,0,,0,200274,0,,Alex Diaz,,0,,0,2-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1124,78,714
+,ASB Classic,Hard,0,,2025-01-07,0,104792,0,,Gael Monfils,,0,,0,124079,0,,Pedro Martinez,,0,,0,1-6 7-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1030,43,1220
+,ASB Classic,Hard,0,,2025-01-07,0,102324,0,,Bart De Buyser,,0,,0,105526,0,,Jan Lennard Struff,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,784,42,1225
+,ASB Classic,Hard,0,,2025-01-07,0,210460,0,,Nishesh Basavareddy,,0,,0,207681,0,,Francisco Comesana,,0,,0,6-2 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,133,453,85,661
+,ASB Classic,Hard,0,,2025-01-07,0,105807,0,,Pablo Carreno Busta,,0,,0,210150,0,,Jakub Mensik,,0,,0,0-6 6-4 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,184,317,49,1122
+,ASB Classic,Hard,0,,2025-01-07,0,210460,0,,Nishesh Basavareddy,,0,,0,126214,0,,Alejandro Tabilo,,0,,0,6-4 5-7 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,133,453,23,1943
+,ASB Classic,Hard,0,,2025-01-07,0,208134,0,,Luca Nardi,,0,,0,200267,0,,Zizou Bergs,,0,,0,1-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,637,66,783
+,ASB Classic,Hard,0,,2025-01-08,0,210506,0,,Alex Michelsen,,0,,0,132283,0,,Lorenzo Sonego,,0,,0,7-6 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,1245,54,1026
+,ASB Classic,Hard,0,,2025-01-08,0,202104,0,,Sebastian Baez,,0,,0,200274,0,,Alex Diaz,,0,,0,4-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,1690,78,714
+,ASB Classic,Hard,0,,2025-01-08,0,106148,0,,Roberto Carballes Baena,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,6-2 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,981,31,1620
+,ASB Classic,Hard,0,,2025-01-08,0,105526,0,,Jan Lennard Struff,,0,,0,104792,0,,Gael Monfils,,0,,0,1-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,1225,52,1030
+,ASB Classic,Hard,0,,2025-01-08,0,132686,0,,Nuno Borges,,0,,0,208363,0,,Mariano Navone,,0,,0,4-6 7-5 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1370,46,1148
+,ASB Classic,Hard,0,,2025-01-08,0,210097,0,,Ben Shelton,,0,,0,210150,0,,Jakub Mensik,,0,,0,6-7 6-4 5-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2330,49,1122
+,ASB Classic,Hard,0,,2025-01-08,0,210460,0,,Nishesh Basavareddy,,0,,0,210506,0,,Alex Michelsen,,0,,0,2-6 6-2 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,133,453,41,1245
+,ASB Classic,Hard,0,,2025-01-09,0,200274,0,,Alex Diaz,,0,,0,104792,0,,Gael Monfils,,0,,0,3-6 1-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,714,52,1030
+,ASB Classic,Hard,0,,2025-01-09,0,200267,0,,Zizou Bergs,,0,,0,106148,0,,Roberto Carballes Baena,,0,,0,1-6 6-2 6-3,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,783,59,981
+,ASB Classic,Hard,0,,2025-01-09,0,210150,0,,Jakub Mensik,,0,,0,132686,0,,Nuno Borges,,0,,0,7-6 2-6 6-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49,1122,36,1370
+,ASB Classic,Hard,0,,2025-01-10,0,104792,0,,Gael Monfils,,0,,0,210460,0,,Nishesh Basavareddy,,0,,0,7-6 6-4,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1030,133,453
+,ASB Classic,Hard,0,,2025-01-10,0,132686,0,,Nuno Borges,,0,,0,200267,0,,Zizou Bergs,,0,,0,2-6 6-3 5-7,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1370,66,783
+,ASB Classic,Hard,0,,2025-01-11,0,104792,0,,Gael Monfils,,0,,0,200267,0,,Zizou Bergs,,0,,0,6-3 6-4,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1030,66,783
+,Australian Open,Hard,0,,2025-01-12,0,117357,0,,Omar Jasika,,0,,0,200384,0,,Hugo Gaston,,0,,0,2-6 6-3 2-6 2-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,179,323,81,703
+,Australian Open,Hard,0,,2025-01-12,0,209950,0,,Arthur Fils,,0,,0,202261,0,,Otto Virtanen,,0,,0,3-6 7-6 6-4 6-4,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2280,93,627
+,Australian Open,Hard,0,,2025-01-12,0,106329,0,,Thiago Monteiro,,0,,0,105453,0,,Kei Nishikori,,0,,0,6-4 7-6 5-7 2-6 3-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,105,566,76,743
+,Australian Open,Hard,0,,2025-01-12,0,134770,0,,Casper Ruud,,0,,0,144719,0,,Jaume Munar,,0,,0,6-3 1-6 7-5 2-6 6-1,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4210,62,922
+,Australian Open,Hard,0,,2025-01-12,0,102324,0,,Bart De Buyser,,0,,0,200273,0,,Hady Habib,,0,,0,6-7 4-6 6-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,784,219,264
+,Australian Open,Hard,0,,2025-01-12,0,208103,0,,Jiri Lehecka,,0,,0,111454,0,,Li Tu,,0,,0,6-1 3-6 6-3 7-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1660,168,342
+,Australian Open,Hard,0,,2025-01-12,0,111576,0,,Sumit Nagal,,0,,0,207830,0,,Tomas Machac,,0,,0,3-6 1-6 5-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91,635,25,1805
+,Australian Open,Hard,0,,2025-01-12,0,200005,0,,Ugo Humbert,,0,,0,209263,0,,Matteo Gigante,,0,,0,7-6 7-5 6-4,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2765,145,403
+,Australian Open,Hard,0,,2025-01-12,0,206904,0,,Gauthier Onclin,,0,,0,124187,0,,Reilly Opelka,,0,,0,6-3 6-7 3-6 2-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,239,242,170,341
+,Australian Open,Hard,0,,2025-01-12,0,111460,0,,Quentin Halys,,0,,0,200443,0,,Adam Walton,,0,,0,4-6 4-6 6-4 7-6 7-5,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,74,756,90,636
+,Australian Open,Hard,0,,2025-01-12,0,106298,0,,Lucas Pouille,,0,,0,100644,0,,Alexander Zverev,,0,,0,4-6 4-6 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,575,2,7635
+,Australian Open,Hard,0,,2025-01-13,0,126207,0,,Frances Tiafoe,,0,,0,126239,0,,Arthur Rinderknech,,0,,0,7-6 6-3 4-6 6-7 6-3,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2560,61,927
+,Australian Open,Hard,0,,2025-01-13,0,126214,0,,Alejandro Tabilo,,0,,0,106148,0,,Roberto Carballes Baena,,0,,0,6-1 2-6 3-6 6-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1705,57,981
+,Australian Open,Hard,0,,2025-01-13,0,210150,0,,Jakub Mensik,,0,,0,105932,0,,Nikoloz Basilashvili,,0,,0,6-1 6-7 6-3 6-3,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1162,206,273
+,Australian Open,Hard,0,,2025-01-13,0,126774,0,,Stefanos Tsitsipas,,0,,0,210506,0,,Alex Michelsen,,0,,0,5-7 3-6 6-2 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,3195,42,1270
+,Australian Open,Hard,0,,2025-01-13,0,132686,0,,Nuno Borges,,0,,0,142378,0,,Arthur Muller,,0,,0,6-7 6-3 6-2 7-5,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,1445,58,965
+,Australian Open,Hard,0,,2025-01-13,0,205734,0,,Thiago Seyboth Wild,,0,,0,206681,0,,Fabian Marozsan,,0,,0,3-6 7-6 5-7 7-5 5-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,732,59,960
+,Australian Open,Hard,0,,2025-01-13,0,105902,0,,James Duckworth,,0,,0,208502,0,,Dominic Stricker,,0,,0,6-2 6-4 6-2,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,89,637,304,173
+,Australian Open,Hard,0,,2025-01-13,0,212021,0,,Martin Landaluce,,0,,0,212324,0,,John Mccabe,,0,,0,4-6 3-6 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,142,414,258,216
+,Australian Open,Hard,0,,2025-01-13,0,206173,0,,Jannik Sinner,,0,,0,111797,0,,Nicolas Jarry,,0,,0,7-6 7-6 6-1,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,11830,36,1340
+,Australian Open,Hard,0,,2025-01-13,0,136440,0,,Dominik Koepfer,,0,,0,147490,0,,Jerry Thompson,,0,,0,6-7 4-6 6-4 3-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,124,485,27,1695
+,Australian Open,Hard,0,,2025-01-13,0,209262,0,,Tristan Schoolkate,,0,,0,106121,0,,Taro Daniel,,0,,0,6-7 7-6 6-1 6-4,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,173,336,113,519
+,Australian Open,Hard,0,,2025-01-13,0,106000,0,,Damir Dzumhur,,0,,0,126846,0,,Aleksandar Vukic,,0,,0,7-6 0-6 6-3 3-6 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,82,679,68,778
+,Australian Open,Hard,0,,2025-01-13,0,207733,0,,Jack Draper,,0,,0,208363,0,,Mariano Navone,,0,,0,4-6 6-3 3-6 6-3 6-2,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2530,47,1173
+,Australian Open,Hard,0,,2025-01-13,0,126128,0,,Roman Safiullin,,0,,0,106423,0,,Thanasi Kokkinakis,,0,,0,6-3 3-6 3-6 6-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,823,71,766
+,Australian Open,Hard,0,,2025-01-13,0,209070,0,,Arthur Cazaux,,0,,0,202104,0,,Sebastian Baez,,0,,0,6-3 5-7 3-6 6-0 6-3,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,732,28,1690
+,Australian Open,Hard,0,,2025-01-13,0,144826,0,,Aziz Dougaz,,0,,0,132399,0,,Yasuo Nishioka,,0,,0,6-3 4-6 6-7 3-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,231,254,65,807
+,Australian Open,Hard,0,,2025-01-13,0,200624,0,,Sebastian Korda,,0,,0,147680,0,,Ladislav Klein,,0,,0,6-3 0-6 6-3 7-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,2065,144,405
+,Australian Open,Hard,0,,2025-01-13,0,200303,0,,Pavel Kotov,,0,,0,210262,0,,Jaime Faria,,0,,0,1-6 1-6 5-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97,612,125,481
+,Australian Open,Hard,0,,2025-01-13,0,200000,0,,Felix Auger Aliassime,,0,,0,105526,0,,Jan Lennard Struff,,0,,0,6-3 6-0 4-6 6-1,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,1905,43,1240
+,Australian Open,Hard,0,,2025-01-13,0,207686,0,,Alexander Shevchenko,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,1-6 5-7 1-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,743,3,7010
+,Australian Open,Hard,0,,2025-01-13,0,104925,0,,Novak Djokovic,,0,,0,210460,0,,Nishesh Basavareddy,,0,,0,4-6 6-3 6-4 6-2,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3900,107,566
+,Australian Open,Hard,0,,2025-01-13,0,105676,0,,David Goffin,,0,,0,126127,0,,Benjamin Bonzi,,0,,0,1-6 2-6 6-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,1029,64,819
+,Australian Open,Hard,0,,2025-01-13,0,126205,0,,Tommy Paul,,0,,0,100099,0,,Thomaz Koch,,0,,0,6-2 3-6 6-1 6-7 7-5,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3195,70,770
+,Australian Open,Hard,0,,2025-01-14,0,111815,0,,Cameron Norrie,,0,,0,126610,0,,Matteo Berrettini,,0,,0,7-6 4-6 1-6 3-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1082,34,1380
+,Australian Open,Hard,0,,2025-01-14,0,200175,0,,Miomir Kecmanovic,,0,,0,105583,0,,Dusan Lajovic,,0,,0,7-5 3-6 6-3 3-6 6-3,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,1096,80,717
+,Australian Open,Hard,0,,2025-01-14,0,105173,0,,Adrian Mannarino,,0,,0,111575,0,,Karen Khachanov,,0,,0,6-7 3-6 3-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,751,19,2410
+,Australian Open,Hard,0,,2025-01-14,0,209113,0,,Gabriel Diallo,,0,,0,208134,0,,Luca Nardi,,0,,0,6-7 7-6 5-7 6-1 6-2,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,646,83,675
+,Australian Open,Hard,0,,2025-01-14,0,207405,0,,Zheng Qi Jonathan Zhang,,0,,0,208029,0,,Holger Rune,,0,,0,6-4 3-6 4-6 6-3 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49,1140,13,2910
+,Australian Open,Hard,0,,2025-01-14,0,106426,0,,Cristian Garin,,0,,0,106432,0,,Borna Coric,,0,,0,7-5 6-1 6-2,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,382,87,639
+,Australian Open,Hard,0,,2025-01-14,0,110247,0,,Colin Mchugo,,0,,0,210530,0,,Learner Tien,,0,,0,6-4 6-7 3-6 7-5 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,94,624,121,493
+,Australian Open,Hard,0,,2025-01-14,0,202103,0,,Francisco Cerundolo,,0,,0,122330,0,,Alexander Bublik,,0,,0,7-6 6-3 6-2,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1620,37,1330
+,Australian Open,Hard,0,,2025-01-14,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,104792,0,,Gael Monfils,,0,,0,6-7 3-6 7-6 7-6 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,1651,41,1280
+,Australian Open,Hard,0,,2025-01-14,0,128034,0,,Hubert Hurkacz,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,7-5 6-4 6-4,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2555,40,1280
+,Australian Open,Hard,0,,2025-01-14,0,200267,0,,Zizou Bergs,,0,,0,200274,0,,Alex Diaz,,0,,0,7-6 4-6 6-1 3-6 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,948,73,758
+,Australian Open,Hard,0,,2025-01-14,0,106421,0,,Daniil Medvedev,,0,,0,208937,0,,Kasidit Samrej,,0,,0,6-2 4-6 3-6 6-1 6-2,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5030,418,109
+,Australian Open,Hard,0,,2025-01-14,0,207681,0,,Francisco Comesana,,0,,0,127157,0,,Daniel Altmaier,,0,,0,2-6 6-3 6-7 6-4 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,85,662,101,582
+,Australian Open,Hard,0,,2025-01-14,0,207518,0,,Lorenzo Musetti,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,7-6 4-6 7-6 6-3,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2600,39,1305
+,Australian Open,Hard,0,,2025-01-14,0,210416,0,,Bryce Nakashima,,0,,0,210097,0,,Ben Shelton,,0,,0,6-7 5-7 5-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1355,20,2280
+,Australian Open,Hard,0,,2025-01-14,0,132283,0,,Lorenzo Sonego,,0,,0,104527,0,,Stan Wawrinka,,0,,0,6-4 5-7 7-5 7-5,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,1026,156,371
+,Australian Open,Hard,0,,2025-01-14,0,105948,0,,Federico Coria,,0,,0,208142,0,,Toby D Boyer,,0,,0,3-6 7-6 6-4 5-7 1-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,617,136,448
+,Australian Open,Hard,0,,2025-01-14,0,205546,0,,Martin Krueger,,0,,0,208014,0,,Rinky Hijikata,,0,,0,6-4 6-4 6-3,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,146,396,72,759
+,Australian Open,Hard,0,,2025-01-14,0,207925,0,,Flavio Cobolli,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,7-6 3-6 5-7 1-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1512,38,1315
+,Australian Open,Hard,0,,2025-01-14,0,106218,0,,Marcos Giron,,0,,0,105870,0,,Yannick Hanfmann,,0,,0,2-6 7-5 6-1 7-5,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1175,95,618
+,Australian Open,Hard,0,,2025-01-14,0,120759,0,,Alberto Bautista,,0,,0,133430,0,,Denis Shapovalov,,0,,0,6-3 4-6 4-6 6-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,1067,56,1006
+,Australian Open,Hard,0,,2025-01-14,0,144895,0,,Corentin Moutet,,0,,0,202270,0,,Anthony Popyrin,,0,,0,4-6 6-3 6-4 6-4,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,772,24,1840
+,Australian Open,Hard,0,,2025-01-14,0,100231,0,,Erik Van Dillen,,0,,0,100417,0,,Hans Gildemeister,,0,,0,1-6 5-7 4-6,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,84,672,8,3535
+,Australian Open,Hard,0,,2025-01-14,0,105807,0,,Pablo Carreno Busta,,0,,0,111794,0,,Kamil Majchrzak,,0,,0,6-4 6-4 6-3,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,317,122,491
+,Australian Open,Hard,0,,2025-01-14,0,126094,0,,Andrey Rublev,,0,,0,211663,0,,Joao Fonseca,,0,,0,6-7 3-6 6-7,5,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3520,112,520
+,Australian Open,Hard,0,,2025-01-15,0,207830,0,,Tomas Machac,,0,,0,124187,0,,Reilly Opelka,,0,,0,3-6 7-6 6-7 7-6 6-4,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1805,170,341
+,Australian Open,Hard,0,,2025-01-15,0,132399,0,,Yasuo Nishioka,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,0-6 1-6 4-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,807,3,7010
+,Australian Open,Hard,0,,2025-01-15,0,126127,0,,Benjamin Bonzi,,0,,0,208859,0,,Francesco Passaro,,0,,0,6-2 6-4 3-6 6-4,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,819,104,571
+,Australian Open,Hard,0,,2025-01-15,0,147490,0,,Jerry Thompson,,0,,0,132686,0,,Nuno Borges,,0,,0,3-6 2-6 4-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,1695,33,1445
+,Australian Open,Hard,0,,2025-01-15,0,106148,0,,Roberto Carballes Baena,,0,,0,105902,0,,James Duckworth,,0,,0,6-4 6-2 7-5,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,981,89,637
+,Australian Open,Hard,0,,2025-01-15,0,210262,0,,Jaime Faria,,0,,0,104925,0,,Novak Djokovic,,0,,0,1-6 7-6 3-6 2-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,125,481,7,3900
+,Australian Open,Hard,0,,2025-01-15,0,209950,0,,Arthur Fils,,0,,0,111460,0,,Quentin Halys,,0,,0,6-2 4-6 7-6 7-5,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2280,74,756
+,Australian Open,Hard,0,,2025-01-15,0,200624,0,,Sebastian Korda,,0,,0,126846,0,,Aleksandar Vukic,,0,,0,4-6 6-3 6-2 3-6 5-7,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,2065,68,778
+,Australian Open,Hard,0,,2025-01-15,0,207985,0,,Jacob Fearnley,,0,,0,209070,0,,Arthur Cazaux,,0,,0,3-6 7-5 6-2 6-3,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92,632,78,732
+,Australian Open,Hard,0,,2025-01-15,0,134770,0,,Casper Ruud,,0,,0,210150,0,,Jakub Mensik,,0,,0,2-6 6-3 1-6 4-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4210,48,1162
+,Australian Open,Hard,0,,2025-01-15,0,207733,0,,Jack Draper,,0,,0,106423,0,,Thanasi Kokkinakis,,0,,0,6-7 6-3 3-6 7-5 6-3,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2530,71,766
+,Australian Open,Hard,0,,2025-01-15,0,200000,0,,Felix Auger Aliassime,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,7-6 7-6 4-6 1-6 3-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,1905,66,790
+,Australian Open,Hard,0,,2025-01-15,0,200005,0,,Ugo Humbert,,0,,0,200273,0,,Hady Habib,,0,,0,6-3 6-4 6-4,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2765,219,264
+,Australian Open,Hard,0,,2025-01-15,0,124079,0,,Pedro Martinez,,0,,0,100644,0,,Alexander Zverev,,0,,0,1-6 4-6 1-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,1220,2,7635
+,Australian Open,Hard,0,,2025-01-15,0,126205,0,,Tommy Paul,,0,,0,105453,0,,Kei Nishikori,,0,,0,6-7 6-0 6-3 6-1,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3195,76,743
+,Australian Open,Hard,0,,2025-01-16,0,128034,0,,Hubert Hurkacz,,0,,0,200175,0,,Miomir Kecmanovic,,0,,0,4-6 4-6 2-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2555,51,1096
+,Australian Open,Hard,0,,2025-01-16,0,111575,0,,Karen Khachanov,,0,,0,209113,0,,Gabriel Diallo,,0,,0,7-6 4-6 6-3 6-3,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,2410,86,646
+,Australian Open,Hard,0,,2025-01-16,0,127157,0,,Daniel Altmaier,,0,,0,104792,0,,Gael Monfils,,0,,0,5-7 3-6 6-7,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,101,582,41,1280
+,Australian Open,Hard,0,,2025-01-16,0,207518,0,,Lorenzo Musetti,,0,,0,133430,0,,Denis Shapovalov,,0,,0,7-6 7-6 6-2,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2600,56,1006
+,Australian Open,Hard,0,,2025-01-16,0,105807,0,,Pablo Carreno Busta,,0,,0,210097,0,,Ben Shelton,,0,,0,3-6 3-6 7-6 4-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,317,20,2280
+,Australian Open,Hard,0,,2025-01-16,0,100417,0,,Hans Gildemeister,,0,,0,208142,0,,Toby D Boyer,,0,,0,6-2 6-4 6-3,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3535,136,448
+,Australian Open,Hard,0,,2025-01-16,0,205546,0,,Martin Krueger,,0,,0,144895,0,,Corentin Moutet,,0,,0,6-4 4-6 6-7 4-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,146,396,69,772
+,Australian Open,Hard,0,,2025-01-16,0,205176,0,,Thomas Fritz,,0,,0,106426,0,,Cristian Garin,,0,,0,6-2 6-1 6-0,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5350,150,382
+,Australian Open,Hard,0,,2025-01-16,0,144869,0,,Tomas Martin Etcheverry,,0,,0,106218,0,,Marcos Giron,,0,,0,5-7 6-3 5-7 6-3 4-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,1315,46,1175
+,Australian Open,Hard,0,,2025-01-16,0,210506,0,,Alex Michelsen,,0,,0,212324,0,,John Mccabe,,0,,0,7-5 6-3 7-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,1270,258,216
+,Australian Open,Hard,0,,2025-01-16,0,126207,0,,Frances Tiafoe,,0,,0,206681,0,,Fabian Marozsan,,0,,0,7-6 4-6 6-3 4-6 1-6,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2560,59,960
+,Australian Open,Hard,0,,2025-01-16,0,132283,0,,Lorenzo Sonego,,0,,0,211663,0,,Joao Fonseca,,0,,0,6-7 6-3 6-1 3-6 6-3,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,1026,112,520
+,Australian Open,Hard,0,,2025-01-16,0,126610,0,,Matteo Berrettini,,0,,0,208029,0,,Holger Rune,,0,,0,6-7 6-2 3-6 6-7,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1380,13,2910
+,Australian Open,Hard,0,,2025-01-16,0,206173,0,,Jannik Sinner,,0,,0,209262,0,,Tristan Schoolkate,,0,,0,4-6 6-4 6-1 6-3,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,11830,173,336
+,Australian Open,Hard,0,,2025-01-16,0,106421,0,,Daniil Medvedev,,0,,0,210530,0,,Learner Tien,,0,,0,3-6 6-7 7-6 6-1 6-7,5,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5030,121,493
+,Australian Open,Hard,0,,2025-01-17,0,126205,0,,Tommy Paul,,0,,0,106148,0,,Roberto Carballes Baena,,0,,0,7-6 6-2 6-0,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3195,57,981
+,Australian Open,Hard,0,,2025-01-17,0,132686,0,,Nuno Borges,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,2-6 4-6 7-6 2-6,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,1445,3,7010
+,Australian Open,Hard,0,,2025-01-17,0,100644,0,,Alexander Zverev,,0,,0,207985,0,,Jacob Fearnley,,0,,0,6-3 6-4 6-4,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7635,92,632
+,Australian Open,Hard,0,,2025-01-17,0,210150,0,,Jakub Mensik,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,6-3 6-4 6-7 4-6 2-6,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1162,66,790
+,Australian Open,Hard,0,,2025-01-17,0,104925,0,,Novak Djokovic,,0,,0,207830,0,,Tomas Machac,,0,,0,6-1 6-4 6-4,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3900,25,1805
+,Australian Open,Hard,0,,2025-01-17,0,126127,0,,Benjamin Bonzi,,0,,0,208103,0,,Jiri Lehecka,,0,,0,2-6 3-6 3-6,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,819,29,1660
+,Australian Open,Hard,0,,2025-01-17,0,207733,0,,Jack Draper,,0,,0,126846,0,,Aleksandar Vukic,,0,,0,6-4 2-6 5-7 7-6 7-6,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2530,68,778
+,Australian Open,Hard,0,,2025-01-18,0,111575,0,,Karen Khachanov,,0,,0,210506,0,,Alex Michelsen,,0,,0,3-6 6-7 2-6,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,2410,42,1270
+,Australian Open,Hard,0,,2025-01-18,0,104792,0,,Gael Monfils,,0,,0,205176,0,,Thomas Fritz,,0,,0,3-6 7-5 7-6 6-4,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,1280,4,5350
+,Australian Open,Hard,0,,2025-01-18,0,202103,0,,Francisco Cerundolo,,0,,0,100417,0,,Hans Gildemeister,,0,,0,7-5 6-7 3-6 3-6,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1620,8,3535
+,Australian Open,Hard,0,,2025-01-18,0,132283,0,,Lorenzo Sonego,,0,,0,206681,0,,Fabian Marozsan,,0,,0,6-7 7-6 6-1 6-2,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,1026,59,960
+,Australian Open,Hard,0,,2025-01-18,0,144895,0,,Corentin Moutet,,0,,0,210530,0,,Learner Tien,,0,,0,6-7 3-6 3-6,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,772,121,493
+,Australian Open,Hard,0,,2025-01-18,0,210097,0,,Ben Shelton,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,6-3 3-6 6-4 7-6,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,2280,15,2600
+,Australian Open,Hard,0,,2025-01-18,0,106218,0,,Marcos Giron,,0,,0,206173,0,,Jannik Sinner,,0,,0,3-6 4-6 2-6,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1175,1,11830
+,Australian Open,Hard,0,,2025-01-18,0,208029,0,,Holger Rune,,0,,0,200175,0,,Miomir Kecmanovic,,0,,0,6-7 6-3 4-6 6-4 6-4,5,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,2910,51,1096
+,Australian Open,Hard,0,,2025-01-19,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,126205,0,,Tommy Paul,,0,,0,1-6 1-6 1-6,5,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,790,11,3195
+,Australian Open,Hard,0,,2025-01-19,0,100644,0,,Alexander Zverev,,0,,0,200005,0,,Ugo Humbert,,0,,0,6-1 2-6 6-3 6-2,5,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7635,14,2765
+,Australian Open,Hard,0,,2025-01-19,0,208103,0,,Jiri Lehecka,,0,,0,104925,0,,Novak Djokovic,,0,,0,3-6 4-6 6-7,5,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1660,7,3900
+,Australian Open,Hard,0,,2025-01-20,0,206173,0,,Jannik Sinner,,0,,0,208029,0,,Holger Rune,,0,,0,6-3 3-6 6-3 6-2,5,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,11830,13,2910
+,Australian Open,Hard,0,,2025-01-20,0,210530,0,,Learner Tien,,0,,0,132283,0,,Lorenzo Sonego,,0,,0,3-6 2-6 6-3 1-6,5,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,121,493,55,1026
+,Australian Open,Hard,0,,2025-01-20,0,100417,0,,Hans Gildemeister,,0,,0,210506,0,,Alex Michelsen,,0,,0,6-0 7-6 6-3,5,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3535,42,1270
+,Australian Open,Hard,0,,2025-01-21,0,126205,0,,Tommy Paul,,0,,0,100644,0,,Alexander Zverev,,0,,0,6-7 6-7 6-2 1-6,5,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3195,2,7635
+,Australian Open,Hard,0,,2025-01-21,0,104925,0,,Novak Djokovic,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,4-6 6-4 6-3 6-4,5,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3900,3,7010
+,Australian Open,Hard,0,,2025-01-22,0,132283,0,,Lorenzo Sonego,,0,,0,210097,0,,Ben Shelton,,0,,0,4-6 5-7 6-4 6-7,5,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,1026,20,2280
+,Australian Open,Hard,0,,2025-01-22,0,206173,0,,Jannik Sinner,,0,,0,100417,0,,Hans Gildemeister,,0,,0,6-3 6-2 6-1,5,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,11830,8,3535
+,Australian Open,Hard,0,,2025-01-24,0,210097,0,,Ben Shelton,,0,,0,206173,0,,Jannik Sinner,,0,,0,6-7 2-6 2-6,5,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,2280,1,11830
+,Australian Open,Hard,0,,2025-01-26,0,206173,0,,Jannik Sinner,,0,,0,100644,0,,Alexander Zverev,,0,,0,6-3 7-6 6-3,5,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,11830,2,7635
+,Open Sud de France,Hard,0,,2025-01-27,0,127157,0,,Daniel Altmaier,,0,,0,102324,0,,Bart De Buyser,,0,,0,6-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91,622,71,787
+,Open Sud de France,Hard,0,,2025-01-27,0,209070,0,,Arthur Cazaux,,0,,0,104527,0,,Stan Wawrinka,,0,,0,6-4 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,101,582,154,361
+,Open Sud de France,Hard,0,,2025-01-27,0,106296,0,,Gregoire Barrere,,0,,0,136440,0,,Dominik Koepfer,,0,,0,4-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,144,406,118,515
+,Open Sud de France,Hard,0,,2025-01-28,0,111153,0,,Christopher Eubanks,,0,,0,208230,0,,Alibek Kachmazov,,0,,0,7-5 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,548,199,299
+,Open Sud de France,Hard,0,,2025-01-28,0,106432,0,,Borna Coric,,0,,0,106005,0,,Constant Lestienne,,0,,0,3-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,575,177,323
+,Open Sud de France,Hard,0,,2025-01-28,0,134868,0,,Tallon Griekspoor,,0,,0,100231,0,,Erik Van Dillen,,0,,0,7-5 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1190,84,672
+,Open Sud de France,Hard,0,,2025-01-28,0,106298,0,,Lucas Pouille,,0,,0,208233,0,,Mattia Bellucci,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,575,98,605
+,Open Sud de France,Hard,0,,2025-01-28,0,104755,0,,Richard Gasquet,,0,,0,105173,0,,Adrian Mannarino,,0,,0,6-3 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,132,460,108,561
+,Open Sud de France,Hard,0,,2025-01-28,0,208004,0,,Harold Mayot,,0,,0,126239,0,,Arthur Rinderknech,,0,,0,6-7 6-2 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,130,472,61,924
+,Open Sud de France,Hard,0,,2025-01-29,0,206499,0,,Aleksandar Kovacevic,,0,,0,105676,0,,David Goffin,,0,,0,6-2 3-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102,577,56,994
+,Open Sud de France,Hard,0,,2025-01-29,0,111153,0,,Christopher Eubanks,,0,,0,126094,0,,Andrey Rublev,,0,,0,4-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,548,10,3130
+,Open Sud de France,Hard,0,,2025-01-29,0,102324,0,,Bart De Buyser,,0,,0,106005,0,,Constant Lestienne,,0,,0,6-2 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,787,177,323
+,Open Sud de France,Hard,0,,2025-01-29,0,209070,0,,Arthur Cazaux,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,4-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,101,582,23,1855
+,Open Sud de France,Hard,0,,2025-01-29,0,122330,0,,Alexander Bublik,,0,,0,136440,0,,Dominik Koepfer,,0,,0,6-4 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1330,118,515
+,Open Sud de France,Hard,0,,2025-01-30,0,207925,0,,Flavio Cobolli,,0,,0,100351,0,,Freddie De Jesus,,0,,0,3-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1392,131,466
+,Open Sud de France,Hard,0,,2025-01-30,0,206499,0,,Aleksandar Kovacevic,,0,,0,208233,0,,Mattia Bellucci,,0,,0,7-5 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102,577,98,605
+,Open Sud de France,Hard,0,,2025-01-30,0,104755,0,,Richard Gasquet,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,3-6 6-3 5-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,132,460,46,1190
+,Open Sud de France,Hard,0,,2025-01-30,0,105932,0,,Nikoloz Basilashvili,,0,,0,126239,0,,Arthur Rinderknech,,0,,0,6-0 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,178,323,61,924
+,Open Sud de France,Hard,0,,2025-01-31,0,102324,0,,Bart De Buyser,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,3-6 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,787,23,1855
+,Open Sud de France,Hard,0,,2025-01-31,0,100351,0,,Freddie De Jesus,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,7-6 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,466,46,1190
+,Open Sud de France,Hard,0,,2025-01-31,0,122330,0,,Alexander Bublik,,0,,0,206499,0,,Aleksandar Kovacevic,,0,,0,3-6 2-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1330,102,577
+,Open Sud de France,Hard,0,,2025-02-01,0,200000,0,,Felix Auger Aliassime,,0,,0,100351,0,,Freddie De Jesus,,0,,0,6-4 7-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,1855,131,466
+,Open Sud de France,Hard,0,,2025-02-01,0,126094,0,,Andrey Rublev,,0,,0,206499,0,,Aleksandar Kovacevic,,0,,0,5-7 4-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3130,102,577
+,Open Sud de France,Hard,0,,2025-02-02,0,200000,0,,Felix Auger Aliassime,,0,,0,206499,0,,Aleksandar Kovacevic,,0,,0,6-2 6-7 7-6,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,1855,102,577
+,Dallas Open,Hard,0,,2025-02-03,0,200695,0,,Bradley Holt,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,1-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,179,324,59,940
+,Dallas Open,Hard,0,,2025-02-03,0,208286,0,,Matteo Arnaldi,,0,,0,111153,0,,Christopher Eubanks,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1265,104,567
+,Dallas Open,Hard,0,,2025-02-03,0,105173,0,,Adrian Mannarino,,0,,0,208014,0,,Rinky Hijikata,,0,,0,5-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,107,561,73,759
+,Dallas Open,Hard,0,,2025-02-04,0,126207,0,,Frances Tiafoe,,0,,0,106121,0,,Taro Daniel,,0,,0,6-1 3-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2560,117,519
+,Dallas Open,Hard,0,,2025-02-04,0,212216,0,,Trevor Svajda,,0,,0,210319,0,,Ethan Quinn,,0,,0,4-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,669,43,199,307
+,Dallas Open,Hard,0,,2025-02-04,0,126205,0,,Tommy Paul,,0,,0,202385,0,,Jenson Brooksby,,0,,0,6-7 6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3495,1093,10
+,Dallas Open,Hard,0,,2025-02-04,0,210506,0,,Alex Michelsen,,0,,0,111815,0,,Cameron Norrie,,0,,0,6-2 6-7 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1370,63,892
+,Dallas Open,Hard,0,,2025-02-05,0,210097,0,,Ben Shelton,,0,,0,126846,0,,Aleksandar Vukic,,0,,0,6-3 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,2980,66,868
+,Dallas Open,Hard,0,,2025-02-05,0,105902,0,,James Duckworth,,0,,0,134770,0,,Casper Ruud,,0,,0,5-7 6-4 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,665,5,4160
+,Dallas Open,Hard,0,,2025-02-05,0,144719,0,,Jaume Munar,,0,,0,102324,0,,Bart De Buyser,,0,,0,7-5 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,882,68,830
+,Dallas Open,Hard,0,,2025-02-05,0,210416,0,,Bryce Nakashima,,0,,0,132399,0,,Yasuo Nishioka,,0,,0,4-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,1250,67,847
+,Dallas Open,Hard,0,,2025-02-05,0,111581,0,,Michael Mmoh,,0,,0,106148,0,,Roberto Carballes Baena,,0,,0,6-1 3-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,422,106,51,1071
+,Dallas Open,Hard,0,,2025-02-05,0,105453,0,,Kei Nishikori,,0,,0,207830,0,,Tomas Machac,,0,,0,2-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,793,25,1805
+,Dallas Open,Hard,0,,2025-02-05,0,124187,0,,Reilly Opelka,,0,,0,207686,0,,Alexander Shevchenko,,0,,0,7-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,145,391,82,693
+,Dallas Open,Hard,0,,2025-02-06,0,126239,0,,Arthur Rinderknech,,0,,0,205176,0,,Thomas Fritz,,0,,0,4-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,936,4,5050
+,Dallas Open,Hard,0,,2025-02-06,0,133430,0,,Denis Shapovalov,,0,,0,200175,0,,Miomir Kecmanovic,,0,,0,6-3 6-7 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,1021,55,996
+,Dallas Open,Hard,0,,2025-02-06,0,126207,0,,Frances Tiafoe,,0,,0,132399,0,,Yasuo Nishioka,,0,,0,6-3 4-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2560,67,847
+,Dallas Open,Hard,0,,2025-02-06,0,208286,0,,Matteo Arnaldi,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,6-1 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1265,59,940
+,Dallas Open,Hard,0,,2025-02-06,0,210097,0,,Ben Shelton,,0,,0,144719,0,,Jaume Munar,,0,,0,2-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,2980,64,882
+,Dallas Open,Hard,0,,2025-02-06,0,207830,0,,Tomas Machac,,0,,0,208014,0,,Rinky Hijikata,,0,,0,6-4 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1805,73,759
+,Dallas Open,Hard,0,,2025-02-06,0,111581,0,,Michael Mmoh,,0,,0,134770,0,,Casper Ruud,,0,,0,1-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,422,106,5,4160
+,Dallas Open,Hard,0,,2025-02-06,0,124187,0,,Reilly Opelka,,0,,0,111815,0,,Cameron Norrie,,0,,0,4-6 7-6 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,145,391,63,892
+,Dallas Open,Hard,0,,2025-02-07,0,210319,0,,Ethan Quinn,,0,,0,126205,0,,Tommy Paul,,0,,0,4-6 7-5 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,199,307,9,3495
+,Dallas Open,Hard,0,,2025-02-07,0,133430,0,,Denis Shapovalov,,0,,0,205176,0,,Thomas Fritz,,0,,0,2-6 6-3 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,1021,4,5050
+,Dallas Open,Hard,0,,2025-02-07,0,208286,0,,Matteo Arnaldi,,0,,0,144719,0,,Jaume Munar,,0,,0,4-6 6-3 3-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1265,64,882
+,Dallas Open,Hard,0,,2025-02-08,0,126205,0,,Tommy Paul,,0,,0,124187,0,,Reilly Opelka,,0,,0,7-6 6-2,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3495,145,391
+,Dallas Open,Hard,0,,2025-02-08,0,207830,0,,Tomas Machac,,0,,0,133430,0,,Denis Shapovalov,,0,,0,6-7 0-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1805,54,1021
+,Dallas Open,Hard,0,,2025-02-08,0,134770,0,,Casper Ruud,,0,,0,144719,0,,Jaume Munar,,0,,0,6-2 2-6 7-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4160,64,882
+,Dallas Open,Hard,0,,2025-02-08,0,126205,0,,Tommy Paul,,0,,0,133430,0,,Denis Shapovalov,,0,,0,5-7 3-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3495,54,1021
+,Dallas Open,Hard,0,,2025-02-09,0,133430,0,,Denis Shapovalov,,0,,0,134770,0,,Casper Ruud,,0,,0,7-6 6-3,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,1021,5,4160
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-03,0,207925,0,,Flavio Cobolli,,0,,0,128034,0,,Hubert Hurkacz,,0,,0,3-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1372,21,2205
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-03,0,126774,0,,Stefanos Tsitsipas,,0,,0,208004,0,,Harold Mayot,,0,,0,6-1 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,3005,138,428
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-03,0,104527,0,,Stan Wawrinka,,0,,0,106421,0,,Daniil Medvedev,,0,,0,7-6 4-6 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,155,361,7,3780
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-03,0,208233,0,,Mattia Bellucci,,0,,0,212219,0,,Mees Rottgering,,0,,0,6-3 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92,624,839,24
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-04,0,202270,0,,Anthony Popyrin,,0,,0,208103,0,,Jiri Lehecka,,0,,0,5-7 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1800,24,1810
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-04,0,100417,0,,Hans Gildemeister,,0,,0,105676,0,,David Goffin,,0,,0,6-2 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3735,56,994
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-04,0,122330,0,,Alexander Bublik,,0,,0,210150,0,,Jakub Mensik,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49,1130,47,1182
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-04,0,126094,0,,Andrey Rublev,,0,,0,207405,0,,Zheng Qi Jonathan Zhang,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3220,50,1100
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-04,0,120759,0,,Alberto Bautista,,0,,0,124079,0,,Pedro Martinez,,0,,0,3-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1067,44,1205
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-04,0,207989,0,,Carlos Alcaraz,,0,,0,100231,0,,Erik Van Dillen,,0,,0,7-6 3-6 6-1,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7010,84,672
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-04,0,132283,0,,Lorenzo Sonego,,0,,0,208029,0,,Holger Rune,,0,,0,6-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1376,14,2970
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-05,0,209950,0,,Arthur Fils,,0,,0,106005,0,,Constant Lestienne,,0,,0,6-7 6-2 6-1,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,2330,169,336
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-05,0,206499,0,,Aleksandar Kovacevic,,0,,0,127157,0,,Daniel Altmaier,,0,,0,6-1 4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,748,93,622
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-05,0,206681,0,,Fabian Marozsan,,0,,0,105526,0,,Jan Lennard Struff,,0,,0,6-3 4-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,960,45,1200
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-05,0,126610,0,,Matteo Berrettini,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,3-6 7-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,1430,43,1230
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-05,0,208233,0,,Mattia Bellucci,,0,,0,106421,0,,Daniil Medvedev,,0,,0,6-3 6-7 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92,624,7,3780
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-06,0,210150,0,,Jakub Mensik,,0,,0,100417,0,,Hans Gildemeister,,0,,0,4-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1182,8,3735
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-06,0,127157,0,,Daniel Altmaier,,0,,0,209950,0,,Arthur Fils,,0,,0,6-4 3-6 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,93,622,19,2330
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-06,0,206681,0,,Fabian Marozsan,,0,,0,126094,0,,Andrey Rublev,,0,,0,6-7 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,960,10,3220
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-06,0,126774,0,,Stefanos Tsitsipas,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,6-7 7-6 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,3005,43,1230
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-06,0,131934,0,,Andrea Vavassori,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,2-6 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,317,163,3,7010
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-06,0,124079,0,,Pedro Martinez,,0,,0,208029,0,,Holger Rune,,0,,0,6-4 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,1205,14,2970
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-07,0,127157,0,,Daniel Altmaier,,0,,0,100417,0,,Hans Gildemeister,,0,,0,1-6 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,93,622,8,3735
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-07,0,208233,0,,Mattia Bellucci,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,6-4 6-2,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92,624,12,3005
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-07,0,124079,0,,Pedro Martinez,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,2-6 1-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,1205,3,7010
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-07,0,128034,0,,Hubert Hurkacz,,0,,0,126094,0,,Andrey Rublev,,0,,0,6-7 6-3 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2205,10,3220
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-08,0,208233,0,,Mattia Bellucci,,0,,0,100417,0,,Hans Gildemeister,,0,,0,1-6 2-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92,624,8,3735
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-08,0,207989,0,,Carlos Alcaraz,,0,,0,128034,0,,Hubert Hurkacz,,0,,0,6-4 6-7 6-3,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7010,21,2205
+,ABN AMRO World Tennis Tournament,Hard,0,,2025-02-09,0,100417,0,,Hans Gildemeister,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,4-6 6-3 2-6,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3735,3,7010
+,Argentina Open,Clay,0,,2025-02-10,0,105583,0,,Dusan Lajovic,,0,,0,106148,0,,Roberto Carballes Baena,,0,,0,7-6 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,81,717,50,1071
+,Argentina Open,Clay,0,,2025-02-10,0,142378,0,,Arthur Muller,,0,,0,111513,0,,Laslo Djere,,0,,0,3-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,953,112,525
+,Argentina Open,Clay,0,,2025-02-10,0,205734,0,,Thiago Seyboth Wild,,0,,0,200274,0,,Alex Diaz,,0,,0,3-6 6-2 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,732,75,748
+,Argentina Open,Clay,0,,2025-02-11,0,207681,0,,Francisco Comesana,,0,,0,208363,0,,Mariano Navone,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,84,674,47,1158
+,Argentina Open,Clay,0,,2025-02-11,0,202104,0,,Sebastian Baez,,0,,0,110247,0,,Colin Mchugo,,0,,0,6-4 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1535,87,672
+,Argentina Open,Clay,0,,2025-02-11,0,208882,0,,Roman Andres Burruchaga,,0,,0,207678,0,,Juan Manuel Cerundolo,,0,,0,6-7 7-5 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,141,428,139,432
+,Argentina Open,Clay,0,,2025-02-11,0,202103,0,,Francisco Cerundolo,,0,,0,209260,0,,Luciano Darderi,,0,,0,6-4 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,1670,59,945
+,Argentina Open,Clay,0,,2025-02-12,0,144869,0,,Tomas Martin Etcheverry,,0,,0,211663,0,,Joao Fonseca,,0,,0,3-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,1240,99,600
+,Argentina Open,Clay,0,,2025-02-12,0,105948,0,,Federico Coria,,0,,0,200384,0,,Hugo Gaston,,0,,0,6-3 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,501,91,649
+,Argentina Open,Clay,0,,2025-02-12,0,106000,0,,Damir Dzumhur,,0,,0,124079,0,,Pedro Martinez,,0,,0,6-0 2-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,654,41,1295
+,Argentina Open,Clay,0,,2025-02-12,0,106043,0,,Diego Schwartzman,,0,,0,111797,0,,Nicolas Jarry,,0,,0,7-6 4-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,386,124,40,1340
+,Argentina Open,Clay,0,,2025-02-12,0,111576,0,,Sumit Nagal,,0,,0,144895,0,,Corentin Moutet,,0,,0,5-7 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,129,473,66,872
+,Argentina Open,Clay,0,,2025-02-12,0,111513,0,,Laslo Djere,,0,,0,126214,0,,Alejandro Tabilo,,0,,0,2-6 6-1 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,112,525,27,1705
+,Argentina Open,Clay,0,,2025-02-12,0,105583,0,,Dusan Lajovic,,0,,0,100644,0,,Alexander Zverev,,0,,0,4-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,81,717,2,8135
+,Argentina Open,Clay,0,,2025-02-12,0,205734,0,,Thiago Seyboth Wild,,0,,0,202104,0,,Sebastian Baez,,0,,0,6-3 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,732,31,1535
+,Argentina Open,Clay,0,,2025-02-12,0,207678,0,,Juan Manuel Cerundolo,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,2-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,139,432,28,1670
+,Argentina Open,Clay,0,,2025-02-13,0,211663,0,,Joao Fonseca,,0,,0,105948,0,,Federico Coria,,0,,0,2-6 6-4 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,600,115,501
+,Argentina Open,Clay,0,,2025-02-13,0,106043,0,,Diego Schwartzman,,0,,0,124079,0,,Pedro Martinez,,0,,0,2-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,386,124,41,1295
+,Argentina Open,Clay,0,,2025-02-13,0,208363,0,,Mariano Navone,,0,,0,208029,0,,Holger Rune,,0,,0,6-1 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1158,12,3010
+,Argentina Open,Clay,0,,2025-02-13,0,144895,0,,Corentin Moutet,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,2-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,872,16,2650
+,Argentina Open,Clay,0,,2025-02-14,0,111513,0,,Laslo Djere,,0,,0,205734,0,,Thiago Seyboth Wild,,0,,0,7-6 6-3,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,112,525,77,732
+,Argentina Open,Clay,0,,2025-02-14,0,208363,0,,Mariano Navone,,0,,0,211663,0,,Joao Fonseca,,0,,0,6-3 4-6 5-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1158,99,600
+,Argentina Open,Clay,0,,2025-02-14,0,202103,0,,Francisco Cerundolo,,0,,0,100644,0,,Alexander Zverev,,0,,0,3-6 6-3 6-2,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,1670,2,8135
+,Argentina Open,Clay,0,,2025-02-15,0,111513,0,,Laslo Djere,,0,,0,211663,0,,Joao Fonseca,,0,,0,6-7 7-5 1-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,112,525,99,600
+,Argentina Open,Clay,0,,2025-02-15,0,202103,0,,Francisco Cerundolo,,0,,0,124079,0,,Pedro Martinez,,0,,0,6-2 6-4,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,1670,41,1295
+,Argentina Open,Clay,0,,2025-02-16,0,202103,0,,Francisco Cerundolo,,0,,0,211663,0,,Joao Fonseca,,0,,0,4-6 6-7,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,1670,99,600
+,Delray Beach Open,Hard,0,,2025-02-10,0,200175,0,,Miomir Kecmanovic,,0,,0,127339,0,,Borna Gojo,,0,,0,6-4 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,996,414,111
+,Delray Beach Open,Hard,0,,2025-02-10,0,208260,0,,Zachary Svajda,,0,,0,111815,0,,Cameron Norrie,,0,,0,5-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,169,339,61,934
+,Delray Beach Open,Hard,0,,2025-02-10,0,210319,0,,Ethan Quinn,,0,,0,208142,0,,Toby D Boyer,,0,,0,6-2 6-7 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,382,113,524
+,Delray Beach Open,Hard,0,,2025-02-10,0,207686,0,,Alexander Shevchenko,,0,,0,111581,0,,Michael Mmoh,,0,,0,5-7 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,88,668,328,156
+,Delray Beach Open,Hard,0,,2025-02-11,0,210416,0,,Bryce Nakashima,,0,,0,208801,0,,James Kent Trotter,,0,,0,7-6 6-1,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1250,182,321
+,Delray Beach Open,Hard,0,,2025-02-11,0,126846,0,,Aleksandar Vukic,,0,,0,132399,0,,Yasuo Nishioka,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,868,63,922
+,Delray Beach Open,Hard,0,,2025-02-11,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,106121,0,,Taro Daniel,,0,,0,6-2 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,940,119,494
+,Delray Beach Open,Hard,0,,2025-02-11,0,208014,0,,Rinky Hijikata,,0,,0,102324,0,,Bart De Buyser,,0,,0,2-6 0-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72,784,69,830
+,Delray Beach Open,Hard,0,,2025-02-11,0,126239,0,,Arthur Rinderknech,,0,,0,122078,0,,Dmitry Popko,,0,,0,6-2 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,899,208,289
+,Delray Beach Open,Hard,0,,2025-02-11,0,105453,0,,Kei Nishikori,,0,,0,111456,0,,Mackenzie Mcdonald,,0,,0,6-7 6-4 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,793,123,488
+,Delray Beach Open,Hard,0,,2025-02-12,0,124187,0,,Reilly Opelka,,0,,0,111153,0,,Christopher Eubanks,,0,,0,6-3 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,121,491,104,567
+,Delray Beach Open,Hard,0,,2025-02-12,0,200443,0,,Adam Walton,,0,,0,210530,0,,Learner Tien,,0,,0,4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,89,655,82,707
+,Delray Beach Open,Hard,0,,2025-02-12,0,111815,0,,Cameron Norrie,,0,,0,126239,0,,Arthur Rinderknech,,0,,0,7-6 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,934,65,899
+,Delray Beach Open,Hard,0,,2025-02-12,0,210319,0,,Ethan Quinn,,0,,0,106218,0,,Marcos Giron,,0,,0,3-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,382,49,1125
+,Delray Beach Open,Hard,0,,2025-02-13,0,210416,0,,Bryce Nakashima,,0,,0,124187,0,,Reilly Opelka,,0,,0,3-6 7-5 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1250,121,491
+,Delray Beach Open,Hard,0,,2025-02-13,0,111456,0,,Mackenzie Mcdonald,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,2-6 7-5 0-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,488,60,940
+,Delray Beach Open,Hard,0,,2025-02-13,0,208286,0,,Matteo Arnaldi,,0,,0,210530,0,,Learner Tien,,0,,0,7-6 4-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,1355,82,707
+,Delray Beach Open,Hard,0,,2025-02-14,0,102324,0,,Bart De Buyser,,0,,0,205176,0,,Thomas Fritz,,0,,0,6-7 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,830,4,5100
+,Delray Beach Open,Hard,0,,2025-02-14,0,200175,0,,Miomir Kecmanovic,,0,,0,106218,0,,Marcos Giron,,0,,0,2-6 6-4 6-2,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,996,49,1125
+,Delray Beach Open,Hard,0,,2025-02-14,0,111815,0,,Cameron Norrie,,0,,0,210506,0,,Alex Michelsen,,0,,0,6-7 5-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,934,37,1370
+,Delray Beach Open,Hard,0,,2025-02-14,0,208286,0,,Matteo Arnaldi,,0,,0,210416,0,,Bryce Nakashima,,0,,0,7-6 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,1355,43,1250
+,Delray Beach Open,Hard,0,,2025-02-15,0,205176,0,,Thomas Fritz,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,6-7 6-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5100,60,940
+,Delray Beach Open,Hard,0,,2025-02-15,0,200175,0,,Miomir Kecmanovic,,0,,0,210506,0,,Alex Michelsen,,0,,0,7-6 6-3,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,996,37,1370
+,Delray Beach Open,Hard,0,,2025-02-16,0,208286,0,,Matteo Arnaldi,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,4-6 4-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,1355,60,940
+,Delray Beach Open,Hard,0,,2025-02-16,0,200175,0,,Miomir Kecmanovic,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,3-6 6-1 7-5,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,996,60,940
+,Open 13,Hard,0,,2025-02-10,0,209920,0,,Raphael Collignon,,0,,0,209098,0,,Hamad Medjedovic,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,122,491,96,617
+,Open 13,Hard,0,,2025-02-10,0,202261,0,,Otto Virtanen,,0,,0,200624,0,,Sebastian Korda,,0,,0,6-7 7-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,98,614,23,2000
+,Open 13,Hard,0,,2025-02-10,0,100231,0,,Erik Van Dillen,,0,,0,132283,0,,Lorenzo Sonego,,0,,0,1-6 6-3 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,85,672,35,1376
+,Open 13,Hard,0,,2025-02-11,0,127157,0,,Daniel Altmaier,,0,,0,208134,0,,Luca Nardi,,0,,0,6-2 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,728,83,681
+,Open 13,Hard,0,,2025-02-11,0,104755,0,,Richard Gasquet,,0,,0,122330,0,,Alexander Bublik,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128,478,48,1130
+,Open 13,Hard,0,,2025-02-11,0,101478,0,,Chris Vananroye,,0,,0,126127,0,,Benjamin Bonzi,,0,,0,3-6 6-3 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,164,346,64,911
+,Open 13,Hard,0,,2025-02-11,0,131905,0,,Manuel Guinard,,0,,0,105526,0,,Jan Lennard Struff,,0,,0,5-7 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,280,191,46,1200
+,Open 13,Hard,0,,2025-02-11,0,132686,0,,Nuno Borges,,0,,0,104527,0,,Stan Wawrinka,,0,,0,6-7 7-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1345,158,361
+,Open 13,Hard,0,,2025-02-11,0,206889,0,,Clement Chidekh,,0,,0,200267,0,,Zizou Bergs,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,189,317,62,932
+,Open 13,Hard,0,,2025-02-11,0,207405,0,,Zheng Qi Jonathan Zhang,,0,,0,111460,0,,Quentin Halys,,0,,0,6-3 6-7 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1050,74,756
+,Open 13,Hard,0,,2025-02-12,0,210338,0,,Arthur Gea,,0,,0,126409,0,,Hugo Grenier,,0,,0,5-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,306,171,202,306
+,Open 13,Hard,0,,2025-02-12,0,105732,0,,Pierre Hugues Herbert,,0,,0,208004,0,,Harold Mayot,,0,,0,2-6 7-5 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,315,136,447
+,Open 13,Hard,0,,2025-02-12,0,202261,0,,Otto Virtanen,,0,,0,127157,0,,Daniel Altmaier,,0,,0,4-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,98,614,80,728
+,Open 13,Hard,0,,2025-02-12,0,209098,0,,Hamad Medjedovic,,0,,0,111575,0,,Karen Khachanov,,0,,0,6-2 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,617,21,2210
+,Open 13,Hard,0,,2025-02-12,0,122330,0,,Alexander Bublik,,0,,0,200005,0,,Ugo Humbert,,0,,0,6-7 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1130,17,2625
+,Open 13,Hard,0,,2025-02-13,0,200267,0,,Zizou Bergs,,0,,0,132686,0,,Nuno Borges,,0,,0,6-2 6-7 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,932,39,1345
+,Open 13,Hard,0,,2025-02-13,0,128034,0,,Hubert Hurkacz,,0,,0,207405,0,,Zheng Qi Jonathan Zhang,,0,,0,4-6 7-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,2305,52,1050
+,Open 13,Hard,0,,2025-02-13,0,106421,0,,Daniil Medvedev,,0,,0,105732,0,,Pierre Hugues Herbert,,0,,0,6-2 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3830,192,315
+,Open 13,Hard,0,,2025-02-13,0,126409,0,,Hugo Grenier,,0,,0,105526,0,,Jan Lennard Struff,,0,,0,4-6 7-5 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,306,46,1200
+,Open 13,Hard,0,,2025-02-14,0,200005,0,,Ugo Humbert,,0,,0,132283,0,,Lorenzo Sonego,,0,,0,6-4 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2625,35,1376
+,Open 13,Hard,0,,2025-02-14,0,105526,0,,Jan Lennard Struff,,0,,0,106421,0,,Daniil Medvedev,,0,,0,3-6 2-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1200,8,3830
+,Open 13,Hard,0,,2025-02-14,0,209098,0,,Hamad Medjedovic,,0,,0,127157,0,,Daniel Altmaier,,0,,0,7-5 6-7 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,617,80,728
+,Open 13,Hard,0,,2025-02-15,0,200267,0,,Zizou Bergs,,0,,0,200005,0,,Ugo Humbert,,0,,0,4-6 4-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,932,17,2625
+,Open 13,Hard,0,,2025-02-15,0,209098,0,,Hamad Medjedovic,,0,,0,106421,0,,Daniil Medvedev,,0,,0,6-3 6-2,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,617,8,3830
+,Open 13,Hard,0,,2025-02-16,0,209098,0,,Hamad Medjedovic,,0,,0,200005,0,,Ugo Humbert,,0,,0,6-7 4-6,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,617,17,2625
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-17,0,100099,0,,Thomaz Koch,,0,,0,200273,0,,Hady Habib,,0,,0,7-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,82,730,166,341
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-17,0,105777,0,,Grigor Dimitrov,,0,,0,208103,0,,Jiri Lehecka,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2745,25,1835
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-17,0,206681,0,,Fabian Marozsan,,0,,0,144826,0,,Aziz Dougaz,,0,,0,7-5 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,1010,216,265
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-17,0,131894,0,,Mile Cilic,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,313,3,7410
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-17,0,207733,0,,Jack Draper,,0,,0,202270,0,,Anthony Popyrin,,0,,0,6-2 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2680,27,1800
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,126128,0,,Roman Safiullin,,0,,0,100417,0,,Hans Gildemeister,,0,,0,1-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,823,8,3735
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,100231,0,,Erik Van Dillen,,0,,0,209406,0,,Abedallah Shelbayh,,0,,0,7-5 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87,672,267,201
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,207405,0,,Zheng Qi Jonathan Zhang,,0,,0,208134,0,,Luca Nardi,,0,,0,4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49,1100,85,674
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,132686,0,,Nuno Borges,,0,,0,202261,0,,Otto Virtanen,,0,,0,7-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1345,92,639
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,120759,0,,Alberto Bautista,,0,,0,200267,0,,Zizou Bergs,,0,,0,4-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,1052,58,1007
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,134868,0,,Tallon Griekspoor,,0,,0,105526,0,,Jan Lennard Struff,,0,,0,7-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,1080,44,1200
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,122330,0,,Alexander Bublik,,0,,0,126094,0,,Andrey Rublev,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1105,10,3220
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,106421,0,,Daniil Medvedev,,0,,0,111575,0,,Karen Khachanov,,0,,0,4-6 7-5 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3930,21,2210
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,111460,0,,Quentin Halys,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,6-4 4-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,734,23,1965
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,126610,0,,Matteo Berrettini,,0,,0,104925,0,,Novak Djokovic,,0,,0,7-6 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1430,7,3900
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-18,0,126774,0,,Stefanos Tsitsipas,,0,,0,209098,0,,Hamad Medjedovic,,0,,0,6-7 7-5 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3095,73,782
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-19,0,100417,0,,Hans Gildemeister,,0,,0,100231,0,,Erik Van Dillen,,0,,0,6-4 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3735,87,672
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-19,0,132686,0,,Nuno Borges,,0,,0,126094,0,,Andrey Rublev,,0,,0,3-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1345,10,3220
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-19,0,207733,0,,Jack Draper,,0,,0,100099,0,,Thomaz Koch,,0,,0,6-2 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2680,82,730
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-19,0,200267,0,,Zizou Bergs,,0,,0,106421,0,,Daniil Medvedev,,0,,0,2-6 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,1007,6,3930
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-19,0,208103,0,,Jiri Lehecka,,0,,0,206681,0,,Fabian Marozsan,,0,,0,6-4 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1835,57,1010
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-19,0,208134,0,,Luca Nardi,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,1-6 6-4 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,85,674,3,7410
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-19,0,126610,0,,Matteo Berrettini,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,7-6 6-7 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1430,51,1080
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-20,0,100417,0,,Hans Gildemeister,,0,,0,126094,0,,Andrey Rublev,,0,,0,1-6 6-3 6-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3735,10,3220
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-20,0,208103,0,,Jiri Lehecka,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,6-3 3-6 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1835,3,7410
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-20,0,126610,0,,Matteo Berrettini,,0,,0,207733,0,,Jack Draper,,0,,0,6-4 4-6 3-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1430,16,2680
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-21,0,126094,0,,Andrey Rublev,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,7-5 4-6 7-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3220,23,1965
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-21,0,208103,0,,Jiri Lehecka,,0,,0,207733,0,,Jack Draper,,0,,0,6-3 6-7 3-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1835,16,2680
+,Qatar Exxon Mobil Open,Hard,0,,2025-02-22,0,126094,0,,Andrey Rublev,,0,,0,207733,0,,Jack Draper,,0,,0,7-5 5-7 6-1,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3220,16,2680
+,Rio Open,Clay,0,,2025-02-17,0,200335,0,,Felipe Meligeni Alves,,0,,0,207686,0,,Alexander Shevchenko,,0,,0,4-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,149,382,103,568
+,Rio Open,Clay,0,,2025-02-17,0,111797,0,,Nicolas Jarry,,0,,0,207678,0,,Juan Manuel Cerundolo,,0,,0,4-6 6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1175,127,464
+,Rio Open,Clay,0,,2025-02-17,0,208361,0,,Gustavo Heide,,0,,0,207681,0,,Francisco Comesana,,0,,0,6-7 7-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,162,359,86,673
+,Rio Open,Clay,0,,2025-02-17,0,106329,0,,Thiago Monteiro,,0,,0,200274,0,,Alex Diaz,,0,,0,3-6 6-3 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,590,119,498
+,Rio Open,Clay,0,,2025-02-18,0,205734,0,,Thiago Seyboth Wild,,0,,0,144719,0,,Jaume Munar,,0,,0,4-6 6-3 0-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,757,55,1032
+,Rio Open,Clay,0,,2025-02-18,0,202358,0,,Chun Hsin Tseng,,0,,0,126214,0,,Alejandro Tabilo,,0,,0,6-2 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,125,480,28,1690
+,Rio Open,Clay,0,,2025-02-18,0,208882,0,,Roman Andres Burruchaga,,0,,0,202104,0,,Sebastian Baez,,0,,0,3-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,137,435,31,1510
+,Rio Open,Clay,0,,2025-02-18,0,106000,0,,Damir Dzumhur,,0,,0,105583,0,,Dusan Lajovic,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97,619,83,692
+,Rio Open,Clay,0,,2025-02-18,0,144895,0,,Corentin Moutet,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,3-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,897,43,1215
+,Rio Open,Clay,0,,2025-02-18,0,208363,0,,Mariano Navone,,0,,0,106148,0,,Roberto Carballes Baena,,0,,0,6-4 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1195,53,1071
+,Rio Open,Clay,0,,2025-02-18,0,122628,0,,Mariano Barrios,,0,,0,210262,0,,Jaime Faria,,0,,0,2-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,139,432,107,561
+,Rio Open,Clay,0,,2025-02-18,0,202103,0,,Francisco Cerundolo,,0,,0,200384,0,,Hugo Gaston,,0,,0,7-6 6-0,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1825,93,636
+,Rio Open,Clay,0,,2025-02-18,0,102324,0,,Bart De Buyser,,0,,0,100644,0,,Alexander Zverev,,0,,0,6-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,847,2,8135
+,Rio Open,Clay,0,,2025-02-18,0,110247,0,,Colin Mchugo,,0,,0,124079,0,,Pedro Martinez,,0,,0,4-6 6-3 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91,644,37,1385
+,Rio Open,Clay,0,,2025-02-19,0,211663,0,,Joao Fonseca,,0,,0,142378,0,,Arthur Muller,,0,,0,1-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,68,850,60,953
+,Rio Open,Clay,0,,2025-02-19,0,207681,0,,Francisco Comesana,,0,,0,111797,0,,Nicolas Jarry,,0,,0,7-6 6-7 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,673,47,1175
+,Rio Open,Clay,0,,2025-02-19,0,208363,0,,Mariano Navone,,0,,0,202104,0,,Sebastian Baez,,0,,0,4-6 6-1 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1195,31,1510
+,Rio Open,Clay,0,,2025-02-19,0,100644,0,,Alexander Zverev,,0,,0,207686,0,,Alexander Shevchenko,,0,,0,7-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,8135,103,568
+,Rio Open,Clay,0,,2025-02-20,0,106329,0,,Thiago Monteiro,,0,,0,202358,0,,Chun Hsin Tseng,,0,,0,7-6 3-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,590,125,480
+,Rio Open,Clay,0,,2025-02-20,0,210262,0,,Jaime Faria,,0,,0,144719,0,,Jaume Munar,,0,,0,6-4 2-6 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,107,561,55,1032
+,Rio Open,Clay,0,,2025-02-20,0,106000,0,,Damir Dzumhur,,0,,0,110247,0,,Colin Mchugo,,0,,0,4-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97,619,91,644
+,Rio Open,Clay,0,,2025-02-20,0,202103,0,,Francisco Cerundolo,,0,,0,209260,0,,Luciano Darderi,,0,,0,6-7 6-3 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1825,61,945
+,Rio Open,Clay,0,,2025-02-21,0,144869,0,,Tomas Martin Etcheverry,,0,,0,142378,0,,Arthur Muller,,0,,0,5-7 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1215,60,953
+,Rio Open,Clay,0,,2025-02-21,0,202104,0,,Sebastian Baez,,0,,0,202358,0,,Chun Hsin Tseng,,0,,0,6-4 6-1,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1510,125,480
+,Rio Open,Clay,0,,2025-02-21,0,210262,0,,Jaime Faria,,0,,0,110247,0,,Colin Mchugo,,0,,0,6-7 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,107,561,91,644
+,Rio Open,Clay,0,,2025-02-21,0,207681,0,,Francisco Comesana,,0,,0,100644,0,,Alexander Zverev,,0,,0,4-6 6-3 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,673,2,8135
+,Rio Open,Clay,0,,2025-02-22,0,202103,0,,Francisco Cerundolo,,0,,0,142378,0,,Arthur Muller,,0,,0,5-7 1-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1825,60,953
+,Rio Open,Clay,0,,2025-02-22,0,202104,0,,Sebastian Baez,,0,,0,110247,0,,Colin Mchugo,,0,,0,3-6 6-1 6-1,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1510,91,644
+,Rio Open,Clay,0,,2025-02-22,0,207681,0,,Francisco Comesana,,0,,0,142378,0,,Arthur Muller,,0,,0,5-7 7-6 3-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,673,60,953
+,Rio Open,Clay,0,,2025-02-23,0,202104,0,,Sebastian Baez,,0,,0,142378,0,,Arthur Muller,,0,,0,6-2 6-3,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1510,60,953
+,Abierto Mexicano,Hard,0,,2025-02-25,0,126239,0,,Arthur Rinderknech,,0,,0,134770,0,,Casper Ruud,,0,,0,4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,911,5,4325
+,Abierto Mexicano,Hard,0,,2025-02-25,0,207830,0,,Tomas Machac,,0,,0,210150,0,,Jakub Mensik,,0,,0,6-4 2-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1855,54,1042
+,Abierto Mexicano,Hard,0,,2025-02-25,0,200175,0,,Miomir Kecmanovic,,0,,0,127157,0,,Daniel Altmaier,,0,,0,6-4 4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,1236,76,768
+,Abierto Mexicano,Hard,0,,2025-02-25,0,210097,0,,Ben Shelton,,0,,0,207925,0,,Flavio Cobolli,,0,,0,7-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2930,39,1345
+,Abierto Mexicano,Hard,0,,2025-02-25,0,200443,0,,Adam Walton,,0,,0,106218,0,,Marcos Giron,,0,,0,6-7 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97,616,52,1060
+,Abierto Mexicano,Hard,0,,2025-02-25,0,105676,0,,David Goffin,,0,,0,208014,0,,Rinky Hijikata,,0,,0,6-2 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,906,82,735
+,Abierto Mexicano,Hard,0,,2025-02-25,0,111815,0,,Cameron Norrie,,0,,0,210530,0,,Learner Tien,,0,,0,6-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,74,784,83,732
+,Abierto Mexicano,Hard,0,,2025-02-25,0,126205,0,,Tommy Paul,,0,,0,209113,0,,Gabriel Diallo,,0,,0,6-2 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3280,89,665
+,Abierto Mexicano,Hard,0,,2025-02-26,0,126846,0,,Aleksandar Vukic,,0,,0,202043,0,,Marco Pacheco,,0,,0,5-7 6-4 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,868,356,142
+,Abierto Mexicano,Hard,0,,2025-02-26,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,208233,0,,Mattia Bellucci,,0,,0,1-6 7-6 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1095,70,833
+,Abierto Mexicano,Hard,0,,2025-02-26,0,106148,0,,Roberto Carballes Baena,,0,,0,208029,0,,Holger Rune,,0,,0,6-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,1071,13,2970
+,Abierto Mexicano,Hard,0,,2025-02-26,0,100644,0,,Alexander Zverev,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,6-7 6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,8135,33,1430
+,Abierto Mexicano,Hard,0,,2025-02-26,0,126127,0,,Benjamin Bonzi,,0,,0,210416,0,,Bryce Nakashima,,0,,0,6-7 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,910,42,1265
+,Abierto Mexicano,Hard,0,,2025-02-26,0,133430,0,,Denis Shapovalov,,0,,0,210460,0,,Nishesh Basavareddy,,0,,0,7-5 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1496,106,562
+,Abierto Mexicano,Hard,0,,2025-02-26,0,102324,0,,Bart De Buyser,,0,,0,210506,0,,Alex Michelsen,,0,,0,6-2 6-7 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,68,847,34,1420
+,Abierto Mexicano,Hard,0,,2025-02-26,0,126207,0,,Frances Tiafoe,,0,,0,142378,0,,Arthur Muller,,0,,0,6-4 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2485,41,1270
+,Abierto Mexicano,Hard,0,,2025-02-27,0,127157,0,,Daniel Altmaier,,0,,0,207830,0,,Tomas Machac,,0,,0,6-7 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76,768,25,1855
+,Abierto Mexicano,Hard,0,,2025-02-27,0,105676,0,,David Goffin,,0,,0,210097,0,,Ben Shelton,,0,,0,7-6 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,906,14,2930
+,Abierto Mexicano,Hard,0,,2025-02-27,0,210506,0,,Alex Michelsen,,0,,0,133430,0,,Denis Shapovalov,,0,,0,4-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1420,32,1496
+,Abierto Mexicano,Hard,0,,2025-02-27,0,210530,0,,Learner Tien,,0,,0,100644,0,,Alexander Zverev,,0,,0,6-3 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,83,732,2,8135
+,Abierto Mexicano,Hard,0,,2025-02-27,0,126207,0,,Frances Tiafoe,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,3-6 7-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2485,48,1095
+,Abierto Mexicano,Hard,0,,2025-02-28,0,207830,0,,Tomas Machac,,0,,0,210530,0,,Learner Tien,,0,,0,6-3 7-5,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1855,83,732
+,Abierto Mexicano,Hard,0,,2025-02-28,0,105676,0,,David Goffin,,0,,0,210416,0,,Bryce Nakashima,,0,,0,6-7 2-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,906,42,1265
+,Abierto Mexicano,Hard,0,,2025-02-28,0,133430,0,,Denis Shapovalov,,0,,0,106218,0,,Marcos Giron,,0,,0,4-6 6-3 6-2,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1496,52,1060
+,Abierto Mexicano,Hard,0,,2025-02-28,0,202043,0,,Marco Pacheco,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,2-6 2-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,356,142,48,1095
+,Abierto Mexicano,Hard,0,,2025-03-01,0,207830,0,,Tomas Machac,,0,,0,210416,0,,Bryce Nakashima,,0,,0,6-4 1-6 6-4,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1855,42,1265
+,Abierto Mexicano,Hard,0,,2025-03-01,0,133430,0,,Denis Shapovalov,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,6-7 6-7,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1496,48,1095
+,Abierto Mexicano,Hard,0,,2025-03-02,0,207830,0,,Tomas Machac,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,7-6 6-2,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1855,48,1095
+,Dubai Tennis Championships,Hard,0,,2025-02-24,0,206681,0,,Fabian Marozsan,,0,,0,120759,0,,Alberto Bautista,,0,,0,6-3 3-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,1035,53,1052
+,Dubai Tennis Championships,Hard,0,,2025-02-24,0,202270,0,,Anthony Popyrin,,0,,0,200273,0,,Hady Habib,,0,,0,6-2 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,1700,168,339
+,Dubai Tennis Championships,Hard,0,,2025-02-24,0,125236,0,,Donald Evans,,0,,0,111575,0,,Karen Khachanov,,0,,0,1-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,178,321,24,1960
+,Dubai Tennis Championships,Hard,0,,2025-02-24,0,200267,0,,Zizou Bergs,,0,,0,144826,0,,Aziz Dougaz,,0,,0,6-3 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,1035,212,265
+,Dubai Tennis Championships,Hard,0,,2025-02-24,0,132283,0,,Lorenzo Sonego,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,6-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1401,11,3005
+,Dubai Tennis Championships,Hard,0,,2025-02-24,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,207405,0,,Zheng Qi Jonathan Zhang,,0,,0,6-3 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1580,49,1075
+,Dubai Tennis Championships,Hard,0,,2025-02-25,0,209950,0,,Arthur Fils,,0,,0,132686,0,,Nuno Borges,,0,,0,2-6 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,2355,38,1345
+,Dubai Tennis Championships,Hard,0,,2025-02-25,0,208134,0,,Luca Nardi,,0,,0,105916,0,,Marton Fucsovics,,0,,0,1-6 6-2 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,749,88,666
+,Dubai Tennis Championships,Hard,0,,2025-02-25,0,100417,0,,Hans Gildemeister,,0,,0,131894,0,,Mile Cilic,,0,,0,2-6 6-3 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3785,187,313
+,Dubai Tennis Championships,Hard,0,,2025-02-25,0,200000,0,,Felix Auger Aliassime,,0,,0,122330,0,,Alexander Bublik,,0,,0,7-6 6-7 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2155,51,1065
+,Dubai Tennis Championships,Hard,0,,2025-02-25,0,126128,0,,Roman Safiullin,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,7-5 6-7 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72,823,47,1120
+,Dubai Tennis Championships,Hard,0,,2025-02-25,0,111460,0,,Quentin Halys,,0,,0,126094,0,,Andrey Rublev,,0,,0,3-6 6-4 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,751,9,3670
+,Dubai Tennis Championships,Hard,0,,2025-02-25,0,208103,0,,Jiri Lehecka,,0,,0,200005,0,,Ugo Humbert,,0,,0,3-6 0-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,2035,15,2825
+,Dubai Tennis Championships,Hard,0,,2025-02-25,0,106421,0,,Daniil Medvedev,,0,,0,105526,0,,Jan Lennard Struff,,0,,0,6-4 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4030,46,1200
+,Dubai Tennis Championships,Hard,0,,2025-02-25,0,104792,0,,Gael Monfils,,0,,0,126610,0,,Matteo Berrettini,,0,,0,5-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,1280,30,1530
+,Dubai Tennis Championships,Hard,0,,2025-02-26,0,200000,0,,Felix Auger Aliassime,,0,,0,132686,0,,Nuno Borges,,0,,0,4-6 6-3 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2155,38,1345
+,Dubai Tennis Championships,Hard,0,,2025-02-26,0,202270,0,,Anthony Popyrin,,0,,0,131894,0,,Mile Cilic,,0,,0,7-5 3-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,1700,187,313
+,Dubai Tennis Championships,Hard,0,,2025-02-26,0,208134,0,,Luca Nardi,,0,,0,200267,0,,Zizou Bergs,,0,,0,6-4 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,749,56,1035
+,Dubai Tennis Championships,Hard,0,,2025-02-26,0,200005,0,,Ugo Humbert,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,6-4 3-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2825,47,1120
+,Dubai Tennis Championships,Hard,0,,2025-02-26,0,111460,0,,Quentin Halys,,0,,0,120759,0,,Alberto Bautista,,0,,0,7-6 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,751,53,1052
+,Dubai Tennis Championships,Hard,0,,2025-02-26,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,106421,0,,Daniil Medvedev,,0,,0,4-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1580,6,4030
+,Dubai Tennis Championships,Hard,0,,2025-02-26,0,126610,0,,Matteo Berrettini,,0,,0,100099,0,,Thomaz Koch,,0,,0,7-6 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,1530,75,780
+,Dubai Tennis Championships,Hard,0,,2025-02-26,0,111575,0,,Karen Khachanov,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,6-7 6-2 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,1960,11,3005
+,Dubai Tennis Championships,Hard,0,,2025-02-27,0,200000,0,,Felix Auger Aliassime,,0,,0,131894,0,,Mile Cilic,,0,,0,6-4 3-6 6-2,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2155,187,313
+,Dubai Tennis Championships,Hard,0,,2025-02-27,0,208134,0,,Luca Nardi,,0,,0,111460,0,,Quentin Halys,,0,,0,6-2 3-6 6-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,749,77,751
+,Dubai Tennis Championships,Hard,0,,2025-02-27,0,134868,0,,Tallon Griekspoor,,0,,0,106421,0,,Daniil Medvedev,,0,,0,2-6 7-6 7-5,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1120,6,4030
+,Dubai Tennis Championships,Hard,0,,2025-02-27,0,126610,0,,Matteo Berrettini,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,6-7 6-1 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,1530,11,3005
+,Dubai Tennis Championships,Hard,0,,2025-02-28,0,200000,0,,Felix Auger Aliassime,,0,,0,111460,0,,Quentin Halys,,0,,0,5-7 6-4 6-3,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2155,77,751
+,Dubai Tennis Championships,Hard,0,,2025-02-28,0,134868,0,,Tallon Griekspoor,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,4-6 4-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1120,11,3005
+,Dubai Tennis Championships,Hard,0,,2025-03-01,0,126774,0,,Stefanos Tsitsipas,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,6-3 6-3,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3005,21,2155
+,Chile Open,Clay,0,,2025-02-24,0,200274,0,,Alex Diaz,,0,,0,105870,0,,Yannick Hanfmann,,0,,0,5-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,130,448,109,534
+,Chile Open,Clay,0,,2025-02-24,0,111513,0,,Laslo Djere,,0,,0,209860,0,,Ignacio Buse,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,571,227,245
+,Chile Open,Clay,0,,2025-02-24,0,205734,0,,Thiago Seyboth Wild,,0,,0,208361,0,,Gustavo Heide,,0,,0,5-7 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,682,160,359
+,Chile Open,Clay,0,,2025-02-24,0,106426,0,,Cristian Garin,,0,,0,126663,0,,Juan Pablo Ficovich,,0,,0,2-6 6-4 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,147,402,175,330
+,Chile Open,Clay,0,,2025-02-25,0,200384,0,,Hugo Gaston,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,2-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92,636,43,1240
+,Chile Open,Clay,0,,2025-02-25,0,106000,0,,Damir Dzumhur,,0,,0,144895,0,,Corentin Moutet,,0,,0,6-2 3-6 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,662,65,872
+,Chile Open,Clay,0,,2025-02-25,0,207678,0,,Juan Manuel Cerundolo,,0,,0,106329,0,,Thiago Monteiro,,0,,0,3-6 6-3 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,476,108,540
+,Chile Open,Clay,0,,2025-02-25,0,110247,0,,Colin Mchugo,,0,,0,111797,0,,Nicolas Jarry,,0,,0,5-7 6-3 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,847,45,1225
+,Chile Open,Clay,0,,2025-02-25,0,209260,0,,Luciano Darderi,,0,,0,210262,0,,Jaime Faria,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,985,87,674
+,Chile Open,Clay,0,,2025-02-25,0,208363,0,,Mariano Navone,,0,,0,207686,0,,Alexander Shevchenko,,0,,0,6-2 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,890,95,618
+,Chile Open,Clay,0,,2025-02-26,0,122628,0,,Mariano Barrios,,0,,0,105948,0,,Federico Coria,,0,,0,1-6 0-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,145,407,136,433
+,Chile Open,Clay,0,,2025-02-26,0,207681,0,,Francisco Comesana,,0,,0,200335,0,,Felipe Meligeni Alves,,0,,0,7-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,848,194,307
+,Chile Open,Clay,0,,2025-02-26,0,124079,0,,Pedro Martinez,,0,,0,111513,0,,Laslo Djere,,0,,0,1-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1385,103,571
+,Chile Open,Clay,0,,2025-02-26,0,210262,0,,Jaime Faria,,0,,0,208361,0,,Gustavo Heide,,0,,0,6-7 7-6 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87,674,160,359
+,Chile Open,Clay,0,,2025-02-26,0,105870,0,,Yannick Hanfmann,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,2-6 6-4 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,534,26,1725
+,Chile Open,Clay,0,,2025-02-26,0,144869,0,,Tomas Martin Etcheverry,,0,,0,106426,0,,Cristian Garin,,0,,0,6-2 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1240,147,402
+,Chile Open,Clay,0,,2025-02-27,0,208363,0,,Mariano Navone,,0,,0,106000,0,,Damir Dzumhur,,0,,0,4-6 6-3 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,890,90,662
+,Chile Open,Clay,0,,2025-02-27,0,202104,0,,Sebastian Baez,,0,,0,207681,0,,Francisco Comesana,,0,,0,6-3 5-7 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1510,67,848
+,Chile Open,Clay,0,,2025-02-27,0,106329,0,,Thiago Monteiro,,0,,0,110247,0,,Colin Mchugo,,0,,0,6-4 6-7 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,108,540,69,847
+,Chile Open,Clay,0,,2025-02-27,0,105948,0,,Federico Coria,,0,,0,126214,0,,Alejandro Tabilo,,0,,0,7-6 4-6 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,136,433,28,1690
+,Chile Open,Clay,0,,2025-02-28,0,210262,0,,Jaime Faria,,0,,0,111513,0,,Laslo Djere,,0,,0,6-7 6-4 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87,674,103,571
+,Chile Open,Clay,0,,2025-02-28,0,202103,0,,Francisco Cerundolo,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,4-6 6-3 7-5,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1725,43,1240
+,Chile Open,Clay,0,,2025-02-28,0,105948,0,,Federico Coria,,0,,0,110247,0,,Colin Mchugo,,0,,0,4-6 3-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,136,433,69,847
+,Chile Open,Clay,0,,2025-03-01,0,202104,0,,Sebastian Baez,,0,,0,106000,0,,Damir Dzumhur,,0,,0,6-4 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1510,90,662
+,Chile Open,Clay,0,,2025-03-01,0,202103,0,,Francisco Cerundolo,,0,,0,111513,0,,Laslo Djere,,0,,0,1-6 6-4 3-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1725,103,571
+,Chile Open,Clay,0,,2025-03-01,0,202104,0,,Sebastian Baez,,0,,0,110247,0,,Colin Mchugo,,0,,0,6-1 3-6 6-2,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1510,69,847
+,Chile Open,Clay,0,,2025-03-02,0,202104,0,,Sebastian Baez,,0,,0,111513,0,,Laslo Djere,,0,,0,4-6 6-3 5-7,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1510,103,571
+,BNP Paribas Open,Hard,0,,2025-03-05,0,105453,0,,Kei Nishikori,,0,,0,144719,0,,Jaume Munar,,0,,0,6-2 5-7 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76,793,58,992
+,BNP Paribas Open,Hard,0,,2025-03-05,0,126846,0,,Aleksandar Vukic,,0,,0,208142,0,,Toby D Boyer,,0,,0,6-4 2-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,868,117,501
+,BNP Paribas Open,Hard,0,,2025-03-05,0,205734,0,,Thiago Seyboth Wild,,0,,0,142378,0,,Arthur Muller,,0,,0,4-6 7-5 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91,657,44,1270
+,BNP Paribas Open,Hard,0,,2025-03-05,0,106148,0,,Roberto Carballes Baena,,0,,0,100099,0,,Thomaz Koch,,0,,0,3-6 6-0 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1071,75,805
+,BNP Paribas Open,Hard,0,,2025-03-05,0,134868,0,,Tallon Griekspoor,,0,,0,200175,0,,Miomir Kecmanovic,,0,,0,6-7 6-4 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1270,49,1146
+,BNP Paribas Open,Hard,0,,2025-03-05,0,210460,0,,Nishesh Basavareddy,,0,,0,102324,0,,Bart De Buyser,,0,,0,5-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,101,587,71,833
+,BNP Paribas Open,Hard,0,,2025-03-05,0,206681,0,,Fabian Marozsan,,0,,0,124079,0,,Pedro Martinez,,0,,0,6-3 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,1035,41,1295
+,BNP Paribas Open,Hard,0,,2025-03-05,0,207925,0,,Flavio Cobolli,,0,,0,212256,0,,Colton Smith,,0,,0,6-3 2-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,1295,261,209
+,BNP Paribas Open,Hard,0,,2025-03-05,0,106000,0,,Damir Dzumhur,,0,,0,120759,0,,Alberto Bautista,,0,,0,6-4 1-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,84,712,50,1089
+,BNP Paribas Open,Hard,0,,2025-03-05,0,124187,0,,Reilly Opelka,,0,,0,126128,0,,Roman Safiullin,,0,,0,5-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,114,516,69,848
+,BNP Paribas Open,Hard,0,,2025-03-06,0,106218,0,,Marcos Giron,,0,,0,105932,0,,Nikoloz Basilashvili,,0,,0,7-5 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1150,152,383
+,BNP Paribas Open,Hard,0,,2025-03-06,0,210319,0,,Ethan Quinn,,0,,0,200267,0,,Zizou Bergs,,0,,0,6-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,137,432,53,1060
+,BNP Paribas Open,Hard,0,,2025-03-06,0,144895,0,,Corentin Moutet,,0,,0,147490,0,,Jerry Thompson,,0,,0,6-4 4-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,759,38,1375
+,BNP Paribas Open,Hard,0,,2025-03-06,0,208134,0,,Luca Nardi,,0,,0,111815,0,,Cameron Norrie,,0,,0,0-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,862,77,784
+,BNP Paribas Open,Hard,0,,2025-03-06,0,133297,0,,Yosuke Watanuki,,0,,0,122330,0,,Alexander Bublik,,0,,0,6-3 3-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,144,82,745
+,BNP Paribas Open,Hard,0,,2025-03-06,0,207686,0,,Alexander Shevchenko,,0,,0,208014,0,,Rinky Hijikata,,0,,0,1-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,98,618,83,732
+,BNP Paribas Open,Hard,0,,2025-03-06,0,211663,0,,Joao Fonseca,,0,,0,207985,0,,Jacob Fearnley,,0,,0,6-2 1-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,750,81,747
+,BNP Paribas Open,Hard,0,,2025-03-06,0,126127,0,,Benjamin Bonzi,,0,,0,202385,0,,Jenson Brooksby,,0,,0,6-1 5-7 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,910,937,17
+,BNP Paribas Open,Hard,0,,2025-03-06,0,210150,0,,Jakub Mensik,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,6-4 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,992,45,1265
+,BNP Paribas Open,Hard,0,,2025-03-06,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,111456,0,,Mackenzie Mcdonald,,0,,0,6-2 3-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1325,109,555
+,BNP Paribas Open,Hard,0,,2025-03-06,0,209113,0,,Gabriel Diallo,,0,,0,207405,0,,Zheng Qi Jonathan Zhang,,0,,0,2-6 6-2 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,88,690,51,1075
+,BNP Paribas Open,Hard,0,,2025-03-06,0,202104,0,,Sebastian Baez,,0,,0,209263,0,,Matteo Gigante,,0,,0,6-3 1-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1425,217,256
+,BNP Paribas Open,Hard,0,,2025-03-06,0,208286,0,,Matteo Arnaldi,,0,,0,206499,0,,Aleksandar Kovacevic,,0,,0,6-3 5-7 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1390,94,630
+,BNP Paribas Open,Hard,0,,2025-03-06,0,105526,0,,Jan Lennard Struff,,0,,0,104792,0,,Gael Monfils,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1200,42,1280
+,BNP Paribas Open,Hard,0,,2025-03-07,0,200384,0,,Hugo Gaston,,0,,0,209260,0,,Luciano Darderi,,0,,0,6-3 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,93,636,60,945
+,BNP Paribas Open,Hard,0,,2025-03-07,0,126239,0,,Arthur Rinderknech,,0,,0,132686,0,,Nuno Borges,,0,,0,1-6 7-5 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,73,824,36,1385
+,BNP Paribas Open,Hard,0,,2025-03-07,0,105676,0,,David Goffin,,0,,0,132283,0,,Lorenzo Sonego,,0,,0,6-4 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,1006,37,1376
+,BNP Paribas Open,Hard,0,,2025-03-07,0,206748,0,,Giulio Zeppieri,,0,,0,200443,0,,Adam Walton,,0,,0,5-7 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,394,125,96,629
+,BNP Paribas Open,Hard,0,,2025-03-07,0,105583,0,,Dusan Lajovic,,0,,0,111454,0,,Li Tu,,0,,0,6-2 6-0,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,108,555,177,326
+,BNP Paribas Open,Hard,0,,2025-03-07,0,105807,0,,Pablo Carreno Busta,,0,,0,111460,0,,Quentin Halys,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,112,524,59,976
+,BNP Paribas Open,Hard,0,,2025-03-07,0,208363,0,,Mariano Navone,,0,,0,210530,0,,Learner Tien,,0,,0,7-5 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,905,68,857
+,BNP Paribas Open,Hard,0,,2025-03-07,0,105453,0,,Kei Nishikori,,0,,0,200005,0,,Ugo Humbert,,0,,0,4-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76,793,19,2375
+,BNP Paribas Open,Hard,0,,2025-03-07,0,134868,0,,Tallon Griekspoor,,0,,0,100644,0,,Alexander Zverev,,0,,0,4-6 7-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1270,2,8135
+,BNP Paribas Open,Hard,0,,2025-03-07,0,208142,0,,Toby D Boyer,,0,,0,126205,0,,Tommy Paul,,0,,0,3-6 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,117,501,11,3330
+,BNP Paribas Open,Hard,0,,2025-03-07,0,202270,0,,Anthony Popyrin,,0,,0,200267,0,,Zizou Bergs,,0,,0,7-6 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,1750,53,1060
+,BNP Paribas Open,Hard,0,,2025-03-07,0,208103,0,,Jiri Lehecka,,0,,0,111815,0,,Cameron Norrie,,0,,0,6-3 4-6 5-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,1935,77,784
+,BNP Paribas Open,Hard,0,,2025-03-07,0,106218,0,,Marcos Giron,,0,,0,134770,0,,Casper Ruud,,0,,0,7-6 3-6 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1150,5,4045
+,BNP Paribas Open,Hard,0,,2025-03-07,0,100099,0,,Thomaz Koch,,0,,0,126610,0,,Matteo Berrettini,,0,,0,2-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,805,29,1620
+,BNP Paribas Open,Hard,0,,2025-03-07,0,207518,0,,Lorenzo Musetti,,0,,0,126128,0,,Roman Safiullin,,0,,0,7-5 5-7 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2650,69,848
+,BNP Paribas Open,Hard,0,,2025-03-07,0,212256,0,,Colton Smith,,0,,0,210506,0,,Alex Michelsen,,0,,0,3-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,261,209,32,1445
+,BNP Paribas Open,Hard,0,,2025-03-08,0,208029,0,,Holger Rune,,0,,0,144895,0,,Corentin Moutet,,0,,0,6-2 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,2820,79,759
+,BNP Paribas Open,Hard,0,,2025-03-08,0,205734,0,,Thiago Seyboth Wild,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,2-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91,657,9,3405
+,BNP Paribas Open,Hard,0,,2025-03-08,0,209950,0,,Arthur Fils,,0,,0,209113,0,,Gabriel Diallo,,0,,0,6-2 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2330,88,690
+,BNP Paribas Open,Hard,0,,2025-03-08,0,102324,0,,Bart De Buyser,,0,,0,106421,0,,Daniil Medvedev,,0,,0,2-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,833,6,3930
+,BNP Paribas Open,Hard,0,,2025-03-08,0,126207,0,,Frances Tiafoe,,0,,0,106000,0,,Damir Dzumhur,,0,,0,7-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2485,84,712
+,BNP Paribas Open,Hard,0,,2025-03-08,0,209263,0,,Matteo Gigante,,0,,0,205176,0,,Thomas Fritz,,0,,0,3-6 5-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,217,256,4,4900
+,BNP Paribas Open,Hard,0,,2025-03-08,0,202385,0,,Jenson Brooksby,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,6-4 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,937,17,18,2455
+,BNP Paribas Open,Hard,0,,2025-03-08,0,105583,0,,Dusan Lajovic,,0,,0,126214,0,,Alejandro Tabilo,,0,,0,3-6 5-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,108,555,31,1535
+,BNP Paribas Open,Hard,0,,2025-03-08,0,207733,0,,Jack Draper,,0,,0,211663,0,,Joao Fonseca,,0,,0,6-4 6-0,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2810,80,750
+,BNP Paribas Open,Hard,0,,2025-03-08,0,126094,0,,Andrey Rublev,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,4-6 5-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3480,35,1390
+,BNP Paribas Open,Hard,0,,2025-03-08,0,133430,0,,Denis Shapovalov,,0,,0,200443,0,,Adam Walton,,0,,0,6-3 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,1696,96,629
+,BNP Paribas Open,Hard,0,,2025-03-08,0,111456,0,,Mackenzie Mcdonald,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,6-4 6-7 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,555,26,1775
+,BNP Paribas Open,Hard,0,,2025-03-08,0,207989,0,,Carlos Alcaraz,,0,,0,111460,0,,Quentin Halys,,0,,0,6-4 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7510,59,976
+,BNP Paribas Open,Hard,0,,2025-03-08,0,104925,0,,Novak Djokovic,,0,,0,100231,0,,Erik Van Dillen,,0,,0,2-6 6-3 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3900,85,710
+,BNP Paribas Open,Hard,0,,2025-03-08,0,128034,0,,Hubert Hurkacz,,0,,0,200384,0,,Hugo Gaston,,0,,0,7-5 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,2165,93,636
+,BNP Paribas Open,Hard,0,,2025-03-08,0,208014,0,,Rinky Hijikata,,0,,0,210416,0,,Bryce Nakashima,,0,,0,5-7 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,83,732,33,1430
+,BNP Paribas Open,Hard,0,,2025-03-09,0,111575,0,,Karen Khachanov,,0,,0,210150,0,,Jakub Mensik,,0,,0,3-6 6-0 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,1960,57,992
+,BNP Paribas Open,Hard,0,,2025-03-09,0,132686,0,,Nuno Borges,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,3-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1385,15,2745
+,BNP Paribas Open,Hard,0,,2025-03-09,0,210097,0,,Ben Shelton,,0,,0,208363,0,,Mariano Navone,,0,,0,6-3 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,2880,63,905
+,BNP Paribas Open,Hard,0,,2025-03-09,0,105676,0,,David Goffin,,0,,0,100417,0,,Hans Gildemeister,,0,,0,2-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,1006,10,3335
+,BNP Paribas Open,Hard,0,,2025-03-09,0,104792,0,,Gael Monfils,,0,,0,200624,0,,Sebastian Korda,,0,,0,7-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,1280,25,1900
+,BNP Paribas Open,Hard,0,,2025-03-09,0,111815,0,,Cameron Norrie,,0,,0,126205,0,,Tommy Paul,,0,,0,3-6 5-7,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,784,11,3330
+,BNP Paribas Open,Hard,0,,2025-03-09,0,134868,0,,Tallon Griekspoor,,0,,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,7-6 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1270,30,1616
+,BNP Paribas Open,Hard,0,,2025-03-09,0,202270,0,,Anthony Popyrin,,0,,0,106218,0,,Marcos Giron,,0,,0,7-5 3-6 3-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,1750,48,1150
+,BNP Paribas Open,Hard,0,,2025-03-09,0,126774,0,,Stefanos Tsitsipas,,0,,0,126610,0,,Matteo Berrettini,,0,,0,6-3 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3405,29,1620
+,BNP Paribas Open,Hard,0,,2025-03-09,0,200005,0,,Ugo Humbert,,0,,0,208029,0,,Holger Rune,,0,,0,7-5 4-6 5-7,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,2375,13,2820
+,BNP Paribas Open,Hard,0,,2025-03-10,0,209950,0,,Arthur Fils,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,3-6 7-6 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2330,16,2650
+,BNP Paribas Open,Hard,0,,2025-03-10,0,126207,0,,Frances Tiafoe,,0,,0,133297,0,,Yosuke Watanuki,,0,,0,4-6 6-7,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2485,349,144
+,BNP Paribas Open,Hard,0,,2025-03-10,0,202103,0,,Francisco Cerundolo,,0,,0,100231,0,,Erik Van Dillen,,0,,0,6-3 6-4,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1775,85,710
+,BNP Paribas Open,Hard,0,,2025-03-10,0,202385,0,,Jenson Brooksby,,0,,0,207733,0,,Jack Draper,,0,,0,5-7 4-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,937,17,14,2810
+,BNP Paribas Open,Hard,0,,2025-03-10,0,100417,0,,Hans Gildemeister,,0,,0,128034,0,,Hubert Hurkacz,,0,,0,6-4 6-0,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3335,22,2165
+,BNP Paribas Open,Hard,0,,2025-03-10,0,126214,0,,Alejandro Tabilo,,0,,0,205176,0,,Thomas Fritz,,0,,0,6-4 3-6 1-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1535,4,4900
+,BNP Paribas Open,Hard,0,,2025-03-10,0,210416,0,,Bryce Nakashima,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,6-2 6-4,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,1430,35,1390
+,BNP Paribas Open,Hard,0,,2025-03-10,0,111575,0,,Karen Khachanov,,0,,0,210097,0,,Ben Shelton,,0,,0,3-6 5-7,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,1960,12,2880
+,BNP Paribas Open,Hard,0,,2025-03-11,0,207989,0,,Carlos Alcaraz,,0,,0,133430,0,,Denis Shapovalov,,0,,0,6-2 6-4,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7510,28,1696
+,BNP Paribas Open,Hard,0,,2025-03-11,0,104792,0,,Gael Monfils,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,6-7 6-4 6-7,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,1280,15,2745
+,BNP Paribas Open,Hard,0,,2025-03-11,0,134868,0,,Tallon Griekspoor,,0,,0,133297,0,,Yosuke Watanuki,,0,,0,7-6 6-1,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1270,349,144
+,BNP Paribas Open,Hard,0,,2025-03-11,0,126774,0,,Stefanos Tsitsipas,,0,,0,208029,0,,Holger Rune,,0,,0,4-6 4-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3405,13,2820
+,BNP Paribas Open,Hard,0,,2025-03-11,0,209950,0,,Arthur Fils,,0,,0,106218,0,,Marcos Giron,,0,,0,6-2 2-6 6-3,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2330,48,1150
+,BNP Paribas Open,Hard,0,,2025-03-12,0,126205,0,,Tommy Paul,,0,,0,106421,0,,Daniil Medvedev,,0,,0,4-6 0-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3330,6,3930
+,BNP Paribas Open,Hard,0,,2025-03-12,0,210097,0,,Ben Shelton,,0,,0,210416,0,,Bryce Nakashima,,0,,0,7-6 6-1,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,2880,33,1430
+,BNP Paribas Open,Hard,0,,2025-03-12,0,100417,0,,Hans Gildemeister,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,5-7 3-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3335,26,1775
+,BNP Paribas Open,Hard,0,,2025-03-12,0,207733,0,,Jack Draper,,0,,0,205176,0,,Thomas Fritz,,0,,0,7-5 6-4,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2810,4,4900
+,BNP Paribas Open,Hard,0,,2025-03-13,0,105777,0,,Grigor Dimitrov,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,1-6 1-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2745,3,7510
+,BNP Paribas Open,Hard,0,,2025-03-13,0,208029,0,,Holger Rune,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,5-7 6-0 6-3,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,2820,43,1270
+,BNP Paribas Open,Hard,0,,2025-03-13,0,209950,0,,Arthur Fils,,0,,0,106421,0,,Daniil Medvedev,,0,,0,4-6 6-2 6-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2330,6,3930
+,BNP Paribas Open,Hard,0,,2025-03-14,0,207733,0,,Jack Draper,,0,,0,210097,0,,Ben Shelton,,0,,0,6-4 7-5,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2810,12,2880
+,BNP Paribas Open,Hard,0,,2025-03-14,0,202103,0,,Francisco Cerundolo,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,3-6 6-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1775,3,7510
+,BNP Paribas Open,Hard,0,,2025-03-15,0,208029,0,,Holger Rune,,0,,0,106421,0,,Daniil Medvedev,,0,,0,7-5 6-4,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,2820,6,3930
+,BNP Paribas Open,Hard,0,,2025-03-15,0,207989,0,,Carlos Alcaraz,,0,,0,207733,0,,Jack Draper,,0,,0,1-6 6-0 4-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7510,14,2810
+,BNP Paribas Open,Hard,0,,2025-03-16,0,207733,0,,Jack Draper,,0,,0,208029,0,,Holger Rune,,0,,0,6-2 6-2,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2810,13,2820
+,Miami Open,Hard,0,,2025-03-19,0,126846,0,,Aleksandar Vukic,,0,,0,105676,0,,David Goffin,,0,,0,6-2 4-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,814,55,1003
+,Miami Open,Hard,0,,2025-03-19,0,122330,0,,Alexander Bublik,,0,,0,202104,0,,Sebastian Baez,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,785,36,1385
+,Miami Open,Hard,0,,2025-03-19,0,209098,0,,Hamad Medjedovic,,0,,0,208014,0,,Rinky Hijikata,,0,,0,5-7 6-3 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,73,829,86,752
+,Miami Open,Hard,0,,2025-03-19,0,209262,0,,Tristan Schoolkate,,0,,0,210319,0,,Ethan Quinn,,0,,0,6-0 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,129,450,135,432
+,Miami Open,Hard,0,,2025-03-19,0,206681,0,,Fabian Marozsan,,0,,0,104792,0,,Gael Monfils,,0,,0,3-6 6-3 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,965,46,1230
+,Miami Open,Hard,0,,2025-03-19,0,210748,0,,Federico Cina,,0,,0,207681,0,,Francisco Comesana,,0,,0,7-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,441,105,67,866
+,Miami Open,Hard,0,,2025-03-19,0,208233,0,,Mattia Bellucci,,0,,0,202358,0,,Chun Hsin Tseng,,0,,0,6-7 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72,838,115,529
+,Miami Open,Hard,0,,2025-03-19,0,110247,0,,Colin Mchugo,,0,,0,200695,0,,Bradley Holt,,0,,0,2-6 7-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,870,116,528
+,Miami Open,Hard,0,,2025-03-19,0,111456,0,,Mackenzie Mcdonald,,0,,0,106401,0,,Nick Kyrgios,,0,,0,6-3 3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,101,575,892,20
+,Miami Open,Hard,0,,2025-03-19,0,144895,0,,Corentin Moutet,,0,,0,210696,0,,Alexander Blockx,,0,,0,7-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76,814,163,354
+,Miami Open,Hard,0,,2025-03-19,0,100099,0,,Thomaz Koch,,0,,0,106148,0,,Roberto Carballes Baena,,0,,0,3-6 6-3 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,805,53,1051
+,Miami Open,Hard,0,,2025-03-19,0,200175,0,,Miomir Kecmanovic,,0,,0,206499,0,,Aleksandar Kovacevic,,0,,0,6-4 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1161,79,800
+,Miami Open,Hard,0,,2025-03-19,0,210536,0,,Rei Sakamoto,,0,,0,142378,0,,Arthur Muller,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,330,157,41,1287
+,Miami Open,Hard,0,,2025-03-19,0,144719,0,,Jaume Munar,,0,,0,126239,0,,Arthur Rinderknech,,0,,0,6-3 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,992,74,821
+,Miami Open,Hard,0,,2025-03-20,0,203880,0,,Brian Harris,,0,,0,208118,0,,Eliot Spizzirri,,0,,0,6-7 6-3 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,107,558,134,434
+,Miami Open,Hard,0,,2025-03-20,0,111460,0,,Quentin Halys,,0,,0,205734,0,,Thiago Seyboth Wild,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,981,96,617
+,Miami Open,Hard,0,,2025-03-20,0,132686,0,,Nuno Borges,,0,,0,200267,0,,Zizou Bergs,,0,,0,6-7 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,1280,51,1065
+,Miami Open,Hard,0,,2025-03-20,0,207985,0,,Jacob Fearnley,,0,,0,126127,0,,Benjamin Bonzi,,0,,0,7-6 2-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,83,770,63,920
+,Miami Open,Hard,0,,2025-03-20,0,207925,0,,Flavio Cobolli,,0,,0,202058,0,,Thiago Agustin Tirante,,0,,0,1-6 6-3 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1280,117,512
+,Miami Open,Hard,0,,2025-03-20,0,124187,0,,Reilly Opelka,,0,,0,111153,0,,Christopher Eubanks,,0,,0,6-3 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,114,529,104,563
+,Miami Open,Hard,0,,2025-03-20,0,127157,0,,Daniel Altmaier,,0,,0,209409,0,,Coleman Wong,,0,,0,4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,82,783,182,312
+,Miami Open,Hard,0,,2025-03-20,0,209260,0,,Luciano Darderi,,0,,0,124079,0,,Pedro Martinez,,0,,0,6-4 6-1,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,945,40,1295
+,Miami Open,Hard,0,,2025-03-20,0,111815,0,,Cameron Norrie,,0,,0,102324,0,,Bart De Buyser,,0,,0,4-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,81,784,69,855
+,Miami Open,Hard,0,,2025-03-20,0,147490,0,,Jerry Thompson,,0,,0,106218,0,,Marcos Giron,,0,,0,3-6 6-4 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,1375,45,1240
+,Miami Open,Hard,0,,2025-03-20,0,105526,0,,Jan Lennard Struff,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,6-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49,1160,39,1325
+,Miami Open,Hard,0,,2025-03-20,0,209113,0,,Gabriel Diallo,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,6-3 6-0,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87,730,44,1275
+,Miami Open,Hard,0,,2025-03-20,0,208363,0,,Mariano Navone,,0,,0,132283,0,,Lorenzo Sonego,,0,,0,5-7 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,925,38,1356
+,Miami Open,Hard,0,,2025-03-20,0,126128,0,,Roman Safiullin,,0,,0,202385,0,,Jenson Brooksby,,0,,0,6-3 3-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,851,544,67
+,Miami Open,Hard,0,,2025-03-20,0,208167,0,,Yuchen Wu,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,6-7 6-4 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,421,113,35,1410
+,Miami Open,Hard,0,,2025-03-20,0,211663,0,,Joao Fonseca,,0,,0,210530,0,,Learner Tien,,0,,0,6-7 6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,955,66,867
+,Miami Open,Hard,0,,2025-03-20,0,120759,0,,Alberto Bautista,,0,,0,210150,0,,Jakub Mensik,,0,,0,4-6 6-3 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,1089,54,1042
+,Miami Open,Hard,0,,2025-03-21,0,200000,0,,Felix Auger Aliassime,,0,,0,209262,0,,Tristan Schoolkate,,0,,0,6-4 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,2415,129,450
+,Miami Open,Hard,0,,2025-03-21,0,210748,0,,Federico Cina,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,1-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,441,105,15,2745
+,Miami Open,Hard,0,,2025-03-21,0,134770,0,,Casper Ruud,,0,,0,200175,0,,Miomir Kecmanovic,,0,,0,3-6 6-4 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3855,48,1161
+,Miami Open,Hard,0,,2025-03-21,0,111460,0,,Quentin Halys,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,6-3 6-7 5-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,981,16,2650
+,Miami Open,Hard,0,,2025-03-21,0,111575,0,,Karen Khachanov,,0,,0,106401,0,,Nick Kyrgios,,0,,0,7-6 6-0,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,2000,892,20
+,Miami Open,Hard,0,,2025-03-21,0,210506,0,,Alex Michelsen,,0,,0,110247,0,,Colin Mchugo,,0,,0,7-6 5-7 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,1465,65,870
+,Miami Open,Hard,0,,2025-03-21,0,144719,0,,Jaume Munar,,0,,0,106421,0,,Daniil Medvedev,,0,,0,6-2 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,992,8,3680
+,Miami Open,Hard,0,,2025-03-21,0,202358,0,,Chun Hsin Tseng,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,6-4 5-7 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,529,10,3405
+,Miami Open,Hard,0,,2025-03-21,0,104792,0,,Gael Monfils,,0,,0,208103,0,,Jiri Lehecka,,0,,0,6-1 3-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1230,27,1745
+,Miami Open,Hard,0,,2025-03-21,0,208014,0,,Rinky Hijikata,,0,,0,104925,0,,Novak Djokovic,,0,,0,0-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,752,5,3860
+,Miami Open,Hard,0,,2025-03-21,0,126214,0,,Alejandro Tabilo,,0,,0,144895,0,,Corentin Moutet,,0,,0,5-7 6-3 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1555,76,814
+,Miami Open,Hard,0,,2025-03-21,0,106148,0,,Roberto Carballes Baena,,0,,0,210416,0,,Bryce Nakashima,,0,,0,4-6 6-4 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,1051,32,1500
+,Miami Open,Hard,0,,2025-03-21,0,200624,0,,Sebastian Korda,,0,,0,208118,0,,Eliot Spizzirri,,0,,0,6-4 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1860,134,434
+,Miami Open,Hard,0,,2025-03-21,0,122330,0,,Alexander Bublik,,0,,0,126205,0,,Tommy Paul,,0,,0,7-5 5-7 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,785,13,3030
+,Miami Open,Hard,0,,2025-03-22,0,202103,0,,Francisco Cerundolo,,0,,0,142378,0,,Arthur Muller,,0,,0,6-1 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,1925,41,1287
+,Miami Open,Hard,0,,2025-03-22,0,207989,0,,Carlos Alcaraz,,0,,0,105676,0,,David Goffin,,0,,0,7-5 4-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,6910,55,1003
+,Miami Open,Hard,0,,2025-03-22,0,200443,0,,Adam Walton,,0,,0,209260,0,,Luciano Darderi,,0,,0,6-4 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,89,666,61,945
+,Miami Open,Hard,0,,2025-03-22,0,210097,0,,Ben Shelton,,0,,0,209409,0,,Coleman Wong,,0,,0,6-7 6-2 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2980,182,312
+,Miami Open,Hard,0,,2025-03-22,0,100644,0,,Alexander Zverev,,0,,0,207985,0,,Jacob Fearnley,,0,,0,6-2 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7945,83,770
+,Miami Open,Hard,0,,2025-03-22,0,132283,0,,Lorenzo Sonego,,0,,0,205176,0,,Thomas Fritz,,0,,0,6-7 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,1356,4,4900
+,Miami Open,Hard,0,,2025-03-22,0,207830,0,,Tomas Machac,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,6-2 1-6 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2310,35,1410
+,Miami Open,Hard,0,,2025-03-22,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,147490,0,,Jerry Thompson,,0,,0,6-7 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1656,37,1375
+,Miami Open,Hard,0,,2025-03-22,0,133430,0,,Denis Shapovalov,,0,,0,202058,0,,Thiago Agustin Tirante,,0,,0,6-3 6-7 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,1716,117,512
+,Miami Open,Hard,0,,2025-03-22,0,207733,0,,Jack Draper,,0,,0,210150,0,,Jakub Mensik,,0,,0,6-7 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3800,54,1042
+,Miami Open,Hard,0,,2025-03-22,0,126128,0,,Roman Safiullin,,0,,0,202270,0,,Anthony Popyrin,,0,,0,6-7 6-3 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,851,26,1800
+,Miami Open,Hard,0,,2025-03-22,0,208029,0,,Holger Rune,,0,,0,124187,0,,Reilly Opelka,,0,,0,6-4 3-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,3270,114,529
+,Miami Open,Hard,0,,2025-03-22,0,211663,0,,Joao Fonseca,,0,,0,200005,0,,Ugo Humbert,,0,,0,6-4 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,955,20,2375
+,Miami Open,Hard,0,,2025-03-22,0,126094,0,,Andrey Rublev,,0,,0,200267,0,,Zizou Bergs,,0,,0,5-7 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3440,51,1065
+,Miami Open,Hard,0,,2025-03-22,0,126610,0,,Matteo Berrettini,,0,,0,200384,0,,Hugo Gaston,,0,,0,4-6 6-3 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,1580,88,711
+,Miami Open,Hard,0,,2025-03-22,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,126207,0,,Frances Tiafoe,,0,,0,5-7 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1325,17,2485
+,Miami Open,Hard,0,,2025-03-23,0,100417,0,,Hans Gildemeister,,0,,0,102324,0,,Bart De Buyser,,0,,0,6-4 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3335,69,855
+,Miami Open,Hard,0,,2025-03-23,0,111575,0,,Karen Khachanov,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,7-6 4-6 5-7,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,2000,15,2745
+,Miami Open,Hard,0,,2025-03-23,0,207518,0,,Lorenzo Musetti,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,4-6 6-2 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2650,19,2415
+,Miami Open,Hard,0,,2025-03-23,0,126774,0,,Stefanos Tsitsipas,,0,,0,200624,0,,Sebastian Korda,,0,,0,6-7 3-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3405,25,1860
+,Miami Open,Hard,0,,2025-03-23,0,210416,0,,Bryce Nakashima,,0,,0,105676,0,,David Goffin,,0,,0,6-3 6-7 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1500,55,1003
+,Miami Open,Hard,0,,2025-03-23,0,110247,0,,Colin Mchugo,,0,,0,104925,0,,Novak Djokovic,,0,,0,1-6 6-7,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,870,5,3860
+,Miami Open,Hard,0,,2025-03-23,0,104792,0,,Gael Monfils,,0,,0,144719,0,,Jaume Munar,,0,,0,7-5 5-7 7-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1230,56,992
+,Miami Open,Hard,0,,2025-03-24,0,126214,0,,Alejandro Tabilo,,0,,0,134770,0,,Casper Ruud,,0,,0,4-6 6-7,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1555,6,3855
+,Miami Open,Hard,0,,2025-03-24,0,202103,0,,Francisco Cerundolo,,0,,0,126205,0,,Tommy Paul,,0,,0,6-2 7-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,1925,13,3030
+,Miami Open,Hard,0,,2025-03-24,0,124187,0,,Reilly Opelka,,0,,0,207830,0,,Tomas Machac,,0,,0,6-7 3-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,114,529,21,2310
+,Miami Open,Hard,0,,2025-03-24,0,200443,0,,Adam Walton,,0,,0,209409,0,,Coleman Wong,,0,,0,7-6 4-6 6-4,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,89,666,182,312
+,Miami Open,Hard,0,,2025-03-24,0,147490,0,,Jerry Thompson,,0,,0,100644,0,,Alexander Zverev,,0,,0,5-7 4-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,1375,2,7945
+,Miami Open,Hard,0,,2025-03-24,0,205176,0,,Thomas Fritz,,0,,0,133430,0,,Denis Shapovalov,,0,,0,7-5 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4900,28,1716
+,Miami Open,Hard,0,,2025-03-24,0,126128,0,,Roman Safiullin,,0,,0,210150,0,,Jakub Mensik,,0,,0,4-6 4-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,851,54,1042
+,Miami Open,Hard,0,,2025-03-24,0,209950,0,,Arthur Fils,,0,,0,126207,0,,Frances Tiafoe,,0,,0,7-6 5-7 6-2,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2480,17,2485
+,Miami Open,Hard,0,,2025-03-24,0,200267,0,,Zizou Bergs,,0,,0,126610,0,,Matteo Berrettini,,0,,0,4-6 4-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,1065,30,1580
+,Miami Open,Hard,0,,2025-03-24,0,100417,0,,Hans Gildemeister,,0,,0,211663,0,,Joao Fonseca,,0,,0,5-7 7-5 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3335,60,955
+,Miami Open,Hard,0,,2025-03-25,0,210416,0,,Bryce Nakashima,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,4-6 5-7,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1500,15,2745
+,Miami Open,Hard,0,,2025-03-25,0,200624,0,,Sebastian Korda,,0,,0,104792,0,,Gael Monfils,,0,,0,6-4 2-6 6-4,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1860,46,1230
+,Miami Open,Hard,0,,2025-03-25,0,134770,0,,Casper Ruud,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,4-6 2-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3855,24,1925
+,Miami Open,Hard,0,,2025-03-25,0,104925,0,,Novak Djokovic,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,6-2 6-2,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3860,16,2650
+,Miami Open,Hard,0,,2025-03-25,0,100417,0,,Hans Gildemeister,,0,,0,126610,0,,Matteo Berrettini,,0,,0,3-6 6-7,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3335,30,1580
+,Miami Open,Hard,0,,2025-03-25,0,205176,0,,Thomas Fritz,,0,,0,200443,0,,Adam Walton,,0,,0,6-3 7-5,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4900,89,666
+,Miami Open,Hard,0,,2025-03-26,0,100644,0,,Alexander Zverev,,0,,0,209950,0,,Arthur Fils,,0,,0,6-3 3-6 4-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7945,18,2480
+,Miami Open,Hard,0,,2025-03-26,0,105777,0,,Grigor Dimitrov,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,6-7 6-4 7-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2745,24,1925
+,Miami Open,Hard,0,,2025-03-27,0,209950,0,,Arthur Fils,,0,,0,210150,0,,Jakub Mensik,,0,,0,6-7 1-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2480,54,1042
+,Miami Open,Hard,0,,2025-03-27,0,104925,0,,Novak Djokovic,,0,,0,200624,0,,Sebastian Korda,,0,,0,6-3 7-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3860,25,1860
+,Miami Open,Hard,0,,2025-03-27,0,126610,0,,Matteo Berrettini,,0,,0,205176,0,,Thomas Fritz,,0,,0,5-7 7-6 5-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,1580,4,4900
+,Miami Open,Hard,0,,2025-03-28,0,104925,0,,Novak Djokovic,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,6-2 6-3,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3860,15,2745
+,Miami Open,Hard,0,,2025-03-28,0,205176,0,,Thomas Fritz,,0,,0,210150,0,,Jakub Mensik,,0,,0,6-7 6-4 6-7,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4900,54,1042
+,Miami Open,Hard,0,,2025-03-31,0,210150,0,,Jakub Mensik,,0,,0,104925,0,,Novak Djokovic,,0,,0,7-6 7-6,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,1042,5,3860
+,Tiriac Open,Clay,0,,2025-03-31,0,111513,0,,Laslo Djere,,0,,0,208363,0,,Mariano Navone,,0,,0,1-6 6-4 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,791,61,925
+,Tiriac Open,Clay,0,,2025-03-31,0,202262,0,,Filip Cristian Jianu,,0,,0,210460,0,,Nishesh Basavareddy,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,241,229,108,571
+,Tiriac Open,Clay,0,,2025-03-31,0,100231,0,,Erik Van Dillen,,0,,0,104755,0,,Richard Gasquet,,0,,0,6-4 5-7 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,88,730,148,386
+,Tiriac Open,Clay,0,,2025-04-01,0,100099,0,,Thomaz Koch,,0,,0,105583,0,,Dusan Lajovic,,0,,0,6-4 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87,735,109,570
+,Tiriac Open,Clay,0,,2025-04-01,0,200473,0,,Valentin Vacherot,,0,,0,106000,0,,Damir Dzumhur,,0,,0,2-6 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,259,208,65,874
+,Tiriac Open,Clay,0,,2025-04-01,0,105916,0,,Marton Fucsovics,,0,,0,208134,0,,Luca Nardi,,0,,0,6-3 6-1,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,655,93,637
+,Tiriac Open,Clay,0,,2025-04-01,0,207686,0,,Alexander Shevchenko,,0,,0,209209,0,,Filip Misolic,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,105,578,232,235
+,Tiriac Open,Clay,0,,2025-04-01,0,110247,0,,Colin Mchugo,,0,,0,105430,0,,Radu Albot,,0,,0,6-4 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,918,223,248
+,Tiriac Open,Clay,0,,2025-04-01,0,102324,0,,Bart De Buyser,,0,,0,120759,0,,Alberto Bautista,,0,,0,6-3 2-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,873,52,1049
+,Tiriac Open,Clay,0,,2025-04-01,0,207681,0,,Francisco Comesana,,0,,0,105373,0,,Martin Klizan,,0,,0,4-6 7-5 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,890,316,165
+,Tiriac Open,Clay,0,,2025-04-01,0,207608,0,,Timofey Skatov,,0,,0,104527,0,,Stan Wawrinka,,0,,0,4-6 7-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,174,324,161,355
+,Tiriac Open,Clay,0,,2025-04-02,0,209209,0,,Filip Misolic,,0,,0,110247,0,,Colin Mchugo,,0,,0,6-3 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,232,235,63,918
+,Tiriac Open,Clay,0,,2025-04-02,0,104755,0,,Richard Gasquet,,0,,0,207925,0,,Flavio Cobolli,,0,,0,4-6 6-4 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,148,386,45,1260
+,Tiriac Open,Clay,0,,2025-04-02,0,207681,0,,Francisco Comesana,,0,,0,120759,0,,Alberto Bautista,,0,,0,6-4 3-6 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,890,52,1049
+,Tiriac Open,Clay,0,,2025-04-03,0,111797,0,,Nicolas Jarry,,0,,0,100099,0,,Thomaz Koch,,0,,0,2-6 7-5 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,965,87,735
+,Tiriac Open,Clay,0,,2025-04-03,0,202104,0,,Sebastian Baez,,0,,0,209113,0,,Gabriel Diallo,,0,,0,7-6 2-6 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1385,81,770
+,Tiriac Open,Clay,0,,2025-04-03,0,208363,0,,Mariano Navone,,0,,0,105916,0,,Marton Fucsovics,,0,,0,6-4 4-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,925,90,655
+,Tiriac Open,Clay,0,,2025-04-03,0,106000,0,,Damir Dzumhur,,0,,0,202262,0,,Filip Cristian Jianu,,0,,0,6-4 3-6 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,874,241,229
+,Tiriac Open,Clay,0,,2025-04-03,0,104527,0,,Stan Wawrinka,,0,,0,124079,0,,Pedro Martinez,,0,,0,6-4 5-7 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,161,355,47,1205
+,Tiriac Open,Clay,0,,2025-04-04,0,105916,0,,Marton Fucsovics,,0,,0,100099,0,,Thomaz Koch,,0,,0,6-0 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,655,87,735
+,Tiriac Open,Clay,0,,2025-04-04,0,207681,0,,Francisco Comesana,,0,,0,202104,0,,Sebastian Baez,,0,,0,6-7 6-2 1-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,890,36,1385
+,Tiriac Open,Clay,0,,2025-04-04,0,207925,0,,Flavio Cobolli,,0,,0,209209,0,,Filip Misolic,,0,,0,7-6 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,1260,232,235
+,Tiriac Open,Clay,0,,2025-04-05,0,105916,0,,Marton Fucsovics,,0,,0,202104,0,,Sebastian Baez,,0,,0,2-6 2-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,655,36,1385
+,Tiriac Open,Clay,0,,2025-04-05,0,207925,0,,Flavio Cobolli,,0,,0,106000,0,,Damir Dzumhur,,0,,0,6-3 6-0,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,1260,65,874
+,Tiriac Open,Clay,0,,2025-04-06,0,202104,0,,Sebastian Baez,,0,,0,207925,0,,Flavio Cobolli,,0,,0,4-6 4-6,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1385,45,1260
+,U.S. Men's Clay Court Championships,Clay,0,,2025-03-31,0,106426,0,,Cristian Garin,,0,,0,106310,0,,Alexander Ritschard,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,133,439,125,466
+,U.S. Men's Clay Court Championships,Clay,0,,2025-03-31,0,106121,0,,Taro Daniel,,0,,0,202385,0,,Jenson Brooksby,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,124,478,507,77
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-01,0,210506,0,,Alex Michelsen,,0,,0,210530,0,,Learner Tien,,0,,0,6-4 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1445,69,865
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-01,0,200695,0,,Bradley Holt,,0,,0,144656,0,,Corentin Denolly,,0,,0,6-7 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,533,328,159
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-01,0,206499,0,,Aleksandar Kovacevic,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,780,44,1260
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-01,0,105870,0,,Yannick Hanfmann,,0,,0,105173,0,,Adrian Mannarino,,0,,0,6-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,479,144,409
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-01,0,111456,0,,Mackenzie Mcdonald,,0,,0,123755,0,,Daniel Elahi Galan,,0,,0,6-2 6-7 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,592,114,538
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-01,0,111581,0,,Michael Mmoh,,0,,0,200443,0,,Adam Walton,,0,,0,3-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,282,186,85,746
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-01,0,212256,0,,Colton Smith,,0,,0,105902,0,,James Duckworth,,0,,0,6-2 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,200,284,89,698
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-01,0,147490,0,,Jerry Thompson,,0,,0,210319,0,,Ethan Quinn,,0,,0,6-4 4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1415,130,456
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-02,0,111153,0,,Christopher Eubanks,,0,,0,208014,0,,Rinky Hijikata,,0,,0,6-2 4-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,117,515,82,769
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-02,0,205546,0,,Martin Krueger,,0,,0,105453,0,,Kei Nishikori,,0,,0,4-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,141,416,66,873
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-02,0,202385,0,,Jenson Brooksby,,0,,0,126214,0,,Alejandro Tabilo,,0,,0,3-6 6-4 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,507,77,32,1575
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-02,0,210319,0,,Ethan Quinn,,0,,0,212256,0,,Colton Smith,,0,,0,3-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,130,456,200,284
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-03,0,126205,0,,Tommy Paul,,0,,0,106426,0,,Cristian Garin,,0,,0,2-6 6-2 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3070,133,439
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-03,0,144656,0,,Corentin Denolly,,0,,0,206499,0,,Aleksandar Kovacevic,,0,,0,3-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,328,159,79,780
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-03,0,210416,0,,Bryce Nakashima,,0,,0,111456,0,,Mackenzie Mcdonald,,0,,0,6-1 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,1570,100,592
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-04,0,200443,0,,Adam Walton,,0,,0,126207,0,,Frances Tiafoe,,0,,0,5-7 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,85,746,17,2525
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-04,0,210506,0,,Alex Michelsen,,0,,0,105173,0,,Adrian Mannarino,,0,,0,6-7 6-4 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1445,144,409
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-04,0,206499,0,,Aleksandar Kovacevic,,0,,0,202385,0,,Jenson Brooksby,,0,,0,6-2 3-6 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,780,507,77
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-04,0,126205,0,,Tommy Paul,,0,,0,212256,0,,Colton Smith,,0,,0,6-1 7-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3070,200,284
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-04,0,111153,0,,Christopher Eubanks,,0,,0,210416,0,,Bryce Nakashima,,0,,0,4-6 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,117,515,33,1570
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-05,0,126207,0,,Frances Tiafoe,,0,,0,210506,0,,Alex Michelsen,,0,,0,7-5 6-1,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2525,34,1445
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-05,0,126205,0,,Tommy Paul,,0,,0,202385,0,,Jenson Brooksby,,0,,0,6-7 6-3 6-7,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3070,507,77
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-06,0,126207,0,,Frances Tiafoe,,0,,0,210416,0,,Bryce Nakashima,,0,,0,6-4 7-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2525,33,1570
+,U.S. Men's Clay Court Championships,Clay,0,,2025-04-06,0,126207,0,,Frances Tiafoe,,0,,0,202385,0,,Jenson Brooksby,,0,,0,4-6 2-6,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2525,507,77
+,Grand Prix Hassan II,Clay,0,,2025-03-31,0,106148,0,,Roberto Carballes Baena,,0,,0,207220,0,,Taha Baadi,,0,,0,7-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,1051,703,40
+,Grand Prix Hassan II,Clay,0,,2025-03-31,0,104926,0,,Fabio Fognini,,0,,0,209920,0,,Raphael Collignon,,0,,0,3-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,607,92,644
+,Grand Prix Hassan II,Clay,0,,2025-03-31,0,106198,0,,Hugo Dellien,,0,,0,126846,0,,Aleksandar Vukic,,0,,0,7-5 4-6 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102,582,76,808
+,Grand Prix Hassan II,Clay,0,,2025-04-01,0,200611,0,,Elliot Benchetrit,,0,,0,100351,0,,Freddie De Jesus,,0,,0,5-7 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,608,54,98,609
+,Grand Prix Hassan II,Clay,0,,2025-04-01,0,202261,0,,Otto Virtanen,,0,,0,127157,0,,Daniel Altmaier,,0,,0,6-2 4-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,430,83,763
+,Grand Prix Hassan II,Clay,0,,2025-04-01,0,144719,0,,Jaume Munar,,0,,0,111794,0,,Kamil Majchrzak,,0,,0,4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,1029,122,482
+,Grand Prix Hassan II,Clay,0,,2025-04-01,0,208233,0,,Mattia Bellucci,,0,,0,200303,0,,Pavel Kotov,,0,,0,6-4 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,842,107,573
+,Grand Prix Hassan II,Clay,0,,2025-04-01,0,207794,0,,Younes Lalami Laaroussi,,0,,0,105807,0,,Pablo Carreno Busta,,0,,0,1-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1193,8,110,568
+,Grand Prix Hassan II,Clay,0,,2025-04-01,0,105732,0,,Pierre Hugues Herbert,,0,,0,105948,0,,Federico Coria,,0,,0,4-6 6-3 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,169,335,126,464
+,Grand Prix Hassan II,Clay,0,,2025-04-01,0,207678,0,,Juan Manuel Cerundolo,,0,,0,200384,0,,Hugo Gaston,,0,,0,7-5 3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128,461,84,751
+,Grand Prix Hassan II,Clay,0,,2025-04-02,0,209260,0,,Luciano Darderi,,0,,0,208142,0,,Toby D Boyer,,0,,0,6-4 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,989,121,491
+,Grand Prix Hassan II,Clay,0,,2025-04-02,0,127339,0,,Borna Gojo,,0,,0,200240,0,,Vit Kopriva,,0,,0,6-2 2-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,414,116,106,576
+,Grand Prix Hassan II,Clay,0,,2025-04-02,0,142378,0,,Arthur Muller,,0,,0,106198,0,,Hugo Dellien,,0,,0,6-7 6-1 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,1304,102,582
+,Grand Prix Hassan II,Clay,0,,2025-04-02,0,100351,0,,Freddie De Jesus,,0,,0,111794,0,,Kamil Majchrzak,,0,,0,6-7 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,98,609,122,482
+,Grand Prix Hassan II,Clay,0,,2025-04-02,0,106148,0,,Roberto Carballes Baena,,0,,0,202261,0,,Otto Virtanen,,0,,0,6-4 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,1051,135,430
+,Grand Prix Hassan II,Clay,0,,2025-04-02,0,209920,0,,Raphael Collignon,,0,,0,132686,0,,Nuno Borges,,0,,0,2-6 6-3 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92,644,43,1265
+,Grand Prix Hassan II,Clay,0,,2025-04-03,0,208233,0,,Mattia Bellucci,,0,,0,105732,0,,Pierre Hugues Herbert,,0,,0,6-2 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,842,169,335
+,Grand Prix Hassan II,Clay,0,,2025-04-03,0,105807,0,,Pablo Carreno Busta,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,6-7 6-3 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,110,568,37,1370
+,Grand Prix Hassan II,Clay,0,,2025-04-03,0,209260,0,,Luciano Darderi,,0,,0,200384,0,,Hugo Gaston,,0,,0,2-6 6-2 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,989,84,751
+,Grand Prix Hassan II,Clay,0,,2025-04-03,0,132283,0,,Lorenzo Sonego,,0,,0,200240,0,,Vit Kopriva,,0,,0,2-6 7-5 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,1361,106,576
+,Grand Prix Hassan II,Clay,0,,2025-04-04,0,106148,0,,Roberto Carballes Baena,,0,,0,132686,0,,Nuno Borges,,0,,0,6-4 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,1051,43,1265
+,Grand Prix Hassan II,Clay,0,,2025-04-04,0,200240,0,,Vit Kopriva,,0,,0,209260,0,,Luciano Darderi,,0,,0,5-7 2-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,106,576,57,989
+,Grand Prix Hassan II,Clay,0,,2025-04-04,0,134868,0,,Tallon Griekspoor,,0,,0,208233,0,,Mattia Bellucci,,0,,0,6-3 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,1370,71,842
+,Grand Prix Hassan II,Clay,0,,2025-04-04,0,142378,0,,Arthur Muller,,0,,0,111794,0,,Kamil Majchrzak,,0,,0,5-7 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,1304,122,482
+,Grand Prix Hassan II,Clay,0,,2025-04-05,0,209260,0,,Luciano Darderi,,0,,0,106148,0,,Roberto Carballes Baena,,0,,0,6-3 6-2,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,989,51,1051
+,Grand Prix Hassan II,Clay,0,,2025-04-05,0,111794,0,,Kamil Majchrzak,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,5-7 6-7,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,122,482,37,1370
+,Grand Prix Hassan II,Clay,0,,2025-04-06,0,209260,0,,Luciano Darderi,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,7-6 7-6,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,989,37,1370
+,Monte Carlo Masters,Clay,0,,2025-04-06,0,105526,0,,Jan Lennard Struff,,0,,0,200473,0,,Valentin Vacherot,,0,,0,2-6 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49,1120,255,214
+,Monte Carlo Masters,Clay,0,,2025-04-06,0,104755,0,,Richard Gasquet,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,6-3 4-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,164,354,40,1340
+,Monte Carlo Masters,Clay,0,,2025-04-06,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,147490,0,,Jerry Thompson,,0,,0,4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,1644,38,1365
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,126214,0,,Alejandro Tabilo,,0,,0,104527,0,,Stan Wawrinka,,0,,0,1-6 7-5 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1575,163,355
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,133430,0,,Denis Shapovalov,,0,,0,106218,0,,Marcos Giron,,0,,0,3-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1716,45,1200
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,208103,0,,Jiri Lehecka,,0,,0,200624,0,,Sebastian Korda,,0,,0,6-3 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,1745,24,2010
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,206681,0,,Fabian Marozsan,,0,,0,104792,0,,Gael Monfils,,0,,0,6-4 1-6 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,81,775,44,1255
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,127157,0,,Daniel Altmaier,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,7-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,84,763,19,2415
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,102324,0,,Bart De Buyser,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,6-4 5-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,873,16,2650
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,126610,0,,Matteo Berrettini,,0,,0,208363,0,,Mariano Navone,,0,,0,6-4 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1530,70,850
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,110247,0,,Colin Mchugo,,0,,0,142378,0,,Arthur Muller,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,917,39,1344
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,106421,0,,Daniil Medvedev,,0,,0,111575,0,,Karen Khachanov,,0,,0,7-5 4-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3290,25,1950
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,210097,0,,Ben Shelton,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,7-6 2-6 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2690,42,1305
+,Monte Carlo Masters,Clay,0,,2025-04-07,0,202103,0,,Francisco Cerundolo,,0,,0,104926,0,,Fabio Fognini,,0,,0,6-0 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,2075,113,544
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,111797,0,,Nicolas Jarry,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,965,18,2495
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,124079,0,,Pedro Martinez,,0,,0,132283,0,,Lorenzo Sonego,,0,,0,6-4 1-6 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,1090,41,1336
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,200005,0,,Ugo Humbert,,0,,0,202270,0,,Anthony Popyrin,,0,,0,6-3 6-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,2335,27,1760
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,120759,0,,Alberto Bautista,,0,,0,210416,0,,Bryce Nakashima,,0,,0,6-2 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1049,31,1620
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,105583,0,,Dusan Lajovic,,0,,0,207925,0,,Flavio Cobolli,,0,,0,4-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,570,36,1500
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,144869,0,,Tomas Martin Etcheverry,,0,,0,144895,0,,Corentin Moutet,,0,,0,4-6 6-1 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1185,75,809
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,202104,0,,Sebastian Baez,,0,,0,207830,0,,Tomas Machac,,0,,0,6-3 3-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,1540,21,2210
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,209950,0,,Arthur Fils,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,6-7 6-4 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2670,35,1525
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,200175,0,,Miomir Kecmanovic,,0,,0,126207,0,,Frances Tiafoe,,0,,0,2-6 7-5 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1166,17,2525
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,126610,0,,Matteo Berrettini,,0,,0,100644,0,,Alexander Zverev,,0,,0,2-6 6-3 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1530,2,7645
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,147490,0,,Jerry Thompson,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,6-4 4-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,1365,8,3445
+,Monte Carlo Masters,Clay,0,,2025-04-08,0,207733,0,,Jack Draper,,0,,0,106218,0,,Marcos Giron,,0,,0,6-1 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3780,45,1200
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,144869,0,,Tomas Martin Etcheverry,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,6-7 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,1185,42,1305
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,207518,0,,Lorenzo Musetti,,0,,0,208103,0,,Jiri Lehecka,,0,,0,1-6 7-5 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2650,28,1745
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,104755,0,,Richard Gasquet,,0,,0,127157,0,,Daniel Altmaier,,0,,0,5-7 7-5 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,164,354,84,763
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,132686,0,,Nuno Borges,,0,,0,124079,0,,Pedro Martinez,,0,,0,7-5 6-7 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1280,51,1090
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,207925,0,,Flavio Cobolli,,0,,0,209950,0,,Arthur Fils,,0,,0,2-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1500,15,2670
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,126094,0,,Andrey Rublev,,0,,0,104792,0,,Gael Monfils,,0,,0,6-4 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3440,44,1255
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,202103,0,,Francisco Cerundolo,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,6-3 0-6 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,2075,3,6720
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,100417,0,,Hans Gildemeister,,0,,0,207830,0,,Tomas Machac,,0,,0,3-6 6-0 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3335,21,2210
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,120759,0,,Alberto Bautista,,0,,0,134770,0,,Casper Ruud,,0,,0,2-6 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1049,7,3765
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,126214,0,,Alejandro Tabilo,,0,,0,104925,0,,Novak Djokovic,,0,,0,6-3 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1575,5,4510
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,126207,0,,Frances Tiafoe,,0,,0,202270,0,,Anthony Popyrin,,0,,0,6-3 3-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2525,27,1760
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,105777,0,,Grigor Dimitrov,,0,,0,200473,0,,Valentin Vacherot,,0,,0,4-6 6-3 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2495,255,214
+,Monte Carlo Masters,Clay,0,,2025-04-09,0,142378,0,,Arthur Muller,,0,,0,106421,0,,Daniil Medvedev,,0,,0,6-7 7-5 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,1344,11,3290
+,Monte Carlo Masters,Clay,0,,2025-04-10,0,209950,0,,Arthur Fils,,0,,0,126094,0,,Andrey Rublev,,0,,0,6-2 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2670,9,3440
+,Monte Carlo Masters,Clay,0,,2025-04-10,0,207733,0,,Jack Draper,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,3-6 7-6 4-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3780,42,1305
+,Monte Carlo Masters,Clay,0,,2025-04-10,0,202270,0,,Anthony Popyrin,,0,,0,134770,0,,Casper Ruud,,0,,0,6-4 3-6 7-5,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,1760,7,3765
+,Monte Carlo Masters,Clay,0,,2025-04-10,0,127157,0,,Daniel Altmaier,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,3-6 1-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,84,763,3,6720
+,Monte Carlo Masters,Clay,0,,2025-04-10,0,207518,0,,Lorenzo Musetti,,0,,0,126610,0,,Matteo Berrettini,,0,,0,6-3 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2650,34,1530
+,Monte Carlo Masters,Clay,0,,2025-04-10,0,106421,0,,Daniil Medvedev,,0,,0,100417,0,,Hans Gildemeister,,0,,0,2-6 2-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3290,10,3335
+,Monte Carlo Masters,Clay,0,,2025-04-10,0,126774,0,,Stefanos Tsitsipas,,0,,0,132686,0,,Nuno Borges,,0,,0,6-1 6-1,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3445,43,1280
+,Monte Carlo Masters,Clay,0,,2025-04-10,0,126214,0,,Alejandro Tabilo,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,3-6 6-3 2-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1575,18,2495
+,Monte Carlo Masters,Clay,0,,2025-04-11,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,202270,0,,Anthony Popyrin,,0,,0,6-3 6-2,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,1305,27,1760
+,Monte Carlo Masters,Clay,0,,2025-04-11,0,209950,0,,Arthur Fils,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,6-4 5-7 3-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2670,3,6720
+,Monte Carlo Masters,Clay,0,,2025-04-11,0,100417,0,,Hans Gildemeister,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,6-0 6-0,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3335,18,2495
+,Monte Carlo Masters,Clay,0,,2025-04-11,0,126774,0,,Stefanos Tsitsipas,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,6-1 3-6 4-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3445,16,2650
+,Monte Carlo Masters,Clay,0,,2025-04-12,0,207989,0,,Carlos Alcaraz,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,7-6 6-4,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,6720,42,1305
+,Monte Carlo Masters,Clay,0,,2025-04-12,0,100417,0,,Hans Gildemeister,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,6-1 4-6 6-7,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3335,16,2650
+,Monte Carlo Masters,Clay,0,,2025-04-13,0,207989,0,,Carlos Alcaraz,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,3-6 6-1 6-0,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,6720,16,2650
+,Barcelona Open,Clay,0,,2025-04-14,0,210416,0,,Bryce Nakashima,,0,,0,124079,0,,Pedro Martinez,,0,,0,5-7 7-5 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1620,49,1130
+,Barcelona Open,Clay,0,,2025-04-14,0,200624,0,,Sebastian Korda,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,3-6 6-3 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,1970,42,1340
+,Barcelona Open,Clay,0,,2025-04-14,0,106148,0,,Roberto Carballes Baena,,0,,0,207985,0,,Jacob Fearnley,,0,,0,1-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,1001,74,820
+,Barcelona Open,Clay,0,,2025-04-14,0,209098,0,,Hamad Medjedovic,,0,,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,7-5 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72,843,34,1579
+,Barcelona Open,Clay,0,,2025-04-14,0,131367,0,,Andre Ramos,,0,,0,208029,0,,Holger Rune,,0,,0,5-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,234,242,13,3080
+,Barcelona Open,Clay,0,,2025-04-14,0,126094,0,,Andrey Rublev,,0,,0,100351,0,,Freddie De Jesus,,0,,0,6-1 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3490,94,622
+,Barcelona Open,Clay,0,,2025-04-15,0,105807,0,,Pablo Carreno Busta,,0,,0,209950,0,,Arthur Fils,,0,,0,6-7 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,607,14,2820
+,Barcelona Open,Clay,0,,2025-04-15,0,202104,0,,Sebastian Baez,,0,,0,106000,0,,Damir Dzumhur,,0,,0,6-1 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,1540,65,899
+,Barcelona Open,Clay,0,,2025-04-15,0,124187,0,,Reilly Opelka,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,2-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,105,579,16,2645
+,Barcelona Open,Clay,0,,2025-04-15,0,134770,0,,Casper Ruud,,0,,0,123755,0,,Daniel Elahi Galan,,0,,0,6-4 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3215,117,521
+,Barcelona Open,Clay,0,,2025-04-15,0,126239,0,,Arthur Rinderknech,,0,,0,111513,0,,Laslo Djere,,0,,0,7-6 1-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,815,80,797
+,Barcelona Open,Clay,0,,2025-04-15,0,100417,0,,Hans Gildemeister,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,6-4 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3535,46,1185
+,Barcelona Open,Clay,0,,2025-04-15,0,126207,0,,Frances Tiafoe,,0,,0,144719,0,,Jaume Munar,,0,,0,6-2 5-7 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2550,57,977
+,Barcelona Open,Clay,0,,2025-04-15,0,207989,0,,Carlos Alcaraz,,0,,0,210319,0,,Ethan Quinn,,0,,0,6-2 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7720,126,475
+,Barcelona Open,Clay,0,,2025-04-15,0,111815,0,,Cameron Norrie,,0,,0,111575,0,,Karen Khachanov,,0,,0,7-6 4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,88,742,27,1760
+,Barcelona Open,Clay,0,,2025-04-15,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,104527,0,,Stan Wawrinka,,0,,0,6-1 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,1680,162,355
+,Barcelona Open,Clay,0,,2025-04-16,0,124079,0,,Pedro Martinez,,0,,0,209950,0,,Arthur Fils,,0,,0,3-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49,1130,14,2820
+,Barcelona Open,Clay,0,,2025-04-16,0,208029,0,,Holger Rune,,0,,0,202104,0,,Sebastian Baez,,0,,0,4-6 6-1 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3080,35,1540
+,Barcelona Open,Clay,0,,2025-04-16,0,200624,0,,Sebastian Korda,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,6-7 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,1970,16,2645
+,Barcelona Open,Clay,0,,2025-04-16,0,134770,0,,Casper Ruud,,0,,0,209098,0,,Hamad Medjedovic,,0,,0,7-5 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3215,72,843
+,Barcelona Open,Clay,0,,2025-04-17,0,144719,0,,Jaume Munar,,0,,0,111575,0,,Karen Khachanov,,0,,0,5-7 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,977,27,1760
+,Barcelona Open,Clay,0,,2025-04-17,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,126094,0,,Andrey Rublev,,0,,0,7-5 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,1680,8,3490
+,Barcelona Open,Clay,0,,2025-04-17,0,111513,0,,Laslo Djere,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,2-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,797,2,7720
+,Barcelona Open,Clay,0,,2025-04-17,0,100417,0,,Hans Gildemeister,,0,,0,207985,0,,Jacob Fearnley,,0,,0,6-1 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3535,74,820
+,Barcelona Open,Clay,0,,2025-04-18,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,111575,0,,Karen Khachanov,,0,,0,4-6 5-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,1680,27,1760
+,Barcelona Open,Clay,0,,2025-04-18,0,208029,0,,Holger Rune,,0,,0,134770,0,,Casper Ruud,,0,,0,6-4 6-2,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3080,10,3215
+,Barcelona Open,Clay,0,,2025-04-18,0,100417,0,,Hans Gildemeister,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,5-7 3-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3535,2,7720
+,Barcelona Open,Clay,0,,2025-04-19,0,208029,0,,Holger Rune,,0,,0,111575,0,,Karen Khachanov,,0,,0,6-3 6-2,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3080,27,1760
+,Barcelona Open,Clay,0,,2025-04-19,0,209950,0,,Arthur Fils,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,2-6 4-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2820,2,7720
+,Barcelona Open,Clay,0,,2025-04-20,0,208029,0,,Holger Rune,,0,,0,207989,0,,Carlos Alcaraz,,0,,0,7-6 6-2,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3080,2,7720
+,BMW Open,Clay,0,,2025-04-14,0,210530,0,,Learner Tien,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,4-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,865,37,1485
+,BMW Open,Clay,0,,2025-04-14,0,200175,0,,Miomir Kecmanovic,,0,,0,106218,0,,Marcos Giron,,0,,0,6-2 6-7 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1141,45,1240
+,BMW Open,Clay,0,,2025-04-14,0,203880,0,,Brian Harris,,0,,0,105676,0,,David Goffin,,0,,0,2-6 7-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,106,576,52,1021
+,BMW Open,Clay,0,,2025-04-14,0,210097,0,,Ben Shelton,,0,,0,127339,0,,Borna Gojo,,0,,0,4-6 7-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2700,410,116
+,BMW Open,Clay,0,,2025-04-14,0,142378,0,,Arthur Muller,,0,,0,100644,0,,Alexander Zverev,,0,,0,4-6 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,1378,3,7595
+,BMW Open,Clay,0,,2025-04-14,0,127157,0,,Daniel Altmaier,,0,,0,202358,0,,Chun Hsin Tseng,,0,,0,7-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,68,867,103,587
+,BMW Open,Clay,0,,2025-04-15,0,100099,0,,Thomaz Koch,,0,,0,209260,0,,Luciano Darderi,,0,,0,6-7 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87,745,47,1154
+,BMW Open,Clay,0,,2025-04-15,0,100231,0,,Erik Van Dillen,,0,,0,120759,0,,Alberto Bautista,,0,,0,6-4 3-6 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,89,705,53,1019
+,BMW Open,Clay,0,,2025-04-15,0,210150,0,,Jakub Mensik,,0,,0,105870,0,,Yannick Hanfmann,,0,,0,6-7 6-4 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,2032,131,453
+,BMW Open,Clay,0,,2025-04-15,0,206681,0,,Fabian Marozsan,,0,,0,211514,0,,Justin Engel,,0,,0,6-4 6-1,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,805,347,146
+,BMW Open,Clay,0,,2025-04-15,0,207925,0,,Flavio Cobolli,,0,,0,207686,0,,Alexander Shevchenko,,0,,0,7-6 3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,1520,104,585
+,BMW Open,Clay,0,,2025-04-15,0,202103,0,,Francisco Cerundolo,,0,,0,105526,0,,Jan Lennard Struff,,0,,0,6-0 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,2075,51,1030
+,BMW Open,Clay,0,,2025-04-15,0,111797,0,,Nicolas Jarry,,0,,0,200005,0,,Ugo Humbert,,0,,0,6-4 3-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,965,21,2145
+,BMW Open,Clay,0,,2025-04-15,0,208363,0,,Mariano Navone,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,2-6 6-4 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,865,19,2415
+,BMW Open,Clay,0,,2025-04-15,0,122330,0,,Alexander Bublik,,0,,0,200267,0,,Zizou Bergs,,0,,0,7-6 4-6 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,805,50,1071
+,BMW Open,Clay,0,,2025-04-16,0,209260,0,,Luciano Darderi,,0,,0,200175,0,,Miomir Kecmanovic,,0,,0,2-6 7-6 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1154,48,1141
+,BMW Open,Clay,0,,2025-04-16,0,100231,0,,Erik Van Dillen,,0,,0,210097,0,,Ben Shelton,,0,,0,6-7 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,89,705,15,2700
+,BMW Open,Clay,0,,2025-04-16,0,100644,0,,Alexander Zverev,,0,,0,127157,0,,Daniel Altmaier,,0,,0,6-3 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7595,68,867
+,BMW Open,Clay,0,,2025-04-16,0,105870,0,,Yannick Hanfmann,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,6-7 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,453,37,1485
+,BMW Open,Clay,0,,2025-04-17,0,105676,0,,David Goffin,,0,,0,208363,0,,Mariano Navone,,0,,0,0-6 7-5 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1021,70,865
+,BMW Open,Clay,0,,2025-04-17,0,207686,0,,Alexander Shevchenko,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,3-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,585,22,2075
+,BMW Open,Clay,0,,2025-04-17,0,200267,0,,Zizou Bergs,,0,,0,212309,0,,Diego Dedura Palomero,,0,,0,6-1 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,1071,549,67
+,BMW Open,Clay,0,,2025-04-17,0,200005,0,,Ugo Humbert,,0,,0,206681,0,,Fabian Marozsan,,0,,0,4-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,2145,77,805
+,BMW Open,Clay,0,,2025-04-18,0,202103,0,,Francisco Cerundolo,,0,,0,105676,0,,David Goffin,,0,,0,6-2 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,2075,52,1021
+,BMW Open,Clay,0,,2025-04-18,0,209260,0,,Luciano Darderi,,0,,0,210097,0,,Ben Shelton,,0,,0,4-6 3-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,1154,15,2700
+,BMW Open,Clay,0,,2025-04-18,0,100644,0,,Alexander Zverev,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,6-7 7-6 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7595,37,1485
+,BMW Open,Clay,0,,2025-04-18,0,200267,0,,Zizou Bergs,,0,,0,206681,0,,Fabian Marozsan,,0,,0,3-6 6-7,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,1071,77,805
+,BMW Open,Clay,0,,2025-04-19,0,210097,0,,Ben Shelton,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,2-6 7-6 6-4,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2700,22,2075
+,BMW Open,Clay,0,,2025-04-19,0,206681,0,,Fabian Marozsan,,0,,0,100644,0,,Alexander Zverev,,0,,0,6-7 3-6,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,805,3,7595
+,BMW Open,Clay,0,,2025-04-20,0,100644,0,,Alexander Zverev,,0,,0,210097,0,,Ben Shelton,,0,,0,6-2 6-4,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7595,15,2700
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,208659,0,,Giovanni Mpetshi Perricard,,0,,0,208363,0,,Mariano Navone,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,1464,85,750
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,126239,0,,Arthur Rinderknech,,0,,0,126128,0,,Roman Safiullin,,0,,0,7-6 6-1,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76,809,73,856
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,209409,0,,Coleman Wong,,0,,0,210748,0,,Federico Cina,,0,,0,6-7 1-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,169,322,373,130
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,100099,0,,Thomaz Koch,,0,,0,110247,0,,Colin Mchugo,,0,,0,6-3 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87,745,59,947
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,131894,0,,Mile Cilic,,0,,0,126127,0,,Benjamin Bonzi,,0,,0,3-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,563,62,908
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,132686,0,,Nuno Borges,,0,,0,105807,0,,Pablo Carreno Busta,,0,,0,6-7 7-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,1355,96,607
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,105583,0,,Dusan Lajovic,,0,,0,210319,0,,Ethan Quinn,,0,,0,3-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,426,119,494
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,120759,0,,Alberto Bautista,,0,,0,144719,0,,Jaume Munar,,0,,0,6-4 2-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,979,53,1002
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,200384,0,,Hugo Gaston,,0,,0,124116,0,,Sebastian Ofner,,0,,0,4-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,776,153,378
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,111513,0,,Laslo Djere,,0,,0,104926,0,,Fabio Fognini,,0,,0,6-2 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,872,112,536
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,124079,0,,Pedro Martinez,,0,,0,207681,0,,Francisco Comesana,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,1130,70,872
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,207678,0,,Juan Manuel Cerundolo,,0,,0,206499,0,,Aleksandar Kovacevic,,0,,0,3-6 7-5 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,126,469,77,805
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,210506,0,,Alex Michelsen,,0,,0,122330,0,,Alexander Bublik,,0,,0,6-7 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,1445,75,820
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,104792,0,,Gael Monfils,,0,,0,127339,0,,Borna Gojo,,0,,0,1-6 6-2 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,1255,353,141
+,Mutua Madrid Open,Clay,0,,2025-04-23,0,206681,0,,Fabian Marozsan,,0,,0,207925,0,,Flavio Cobolli,,0,,0,6-7 5-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,955,36,1520
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,105453,0,,Kei Nishikori,,0,,0,126846,0,,Aleksandar Vukic,,0,,0,6-4 3-6 6-3,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,898,83,758
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,208233,0,,Mattia Bellucci,,0,,0,106000,0,,Damir Dzumhur,,0,,0,6-4 4-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,893,63,906
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,144869,0,,Tomas Martin Etcheverry,,0,,0,209098,0,,Hamad Medjedovic,,0,,0,6-4 6-7 6-4,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,1010,61,911
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,200267,0,,Zizou Bergs,,0,,0,209113,0,,Gabriel Diallo,,0,,0,1-6 2-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,1096,78,791
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,132283,0,,Lorenzo Sonego,,0,,0,200175,0,,Miomir Kecmanovic,,0,,0,6-4 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1245,47,1166
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,111460,0,,Quentin Halys,,0,,0,209260,0,,Luciano Darderi,,0,,0,4-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,1005,46,1229
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,111797,0,,Nicolas Jarry,,0,,0,127157,0,,Daniel Altmaier,,0,,0,6-3 6-2,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,965,67,892
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,212021,0,,Martin Landaluce,,0,,0,111815,0,,Cameron Norrie,,0,,0,7-6 5-7 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,148,388,91,667
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,208286,0,,Matteo Arnaldi,,0,,0,106432,0,,Borna Coric,,0,,0,4-6 6-4 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,1240,104,576
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,209284,0,,Elmer Moller,,0,,0,211663,0,,Joao Fonseca,,0,,0,2-6 3-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,114,522,65,897
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,106218,0,,Marcos Giron,,0,,0,210530,0,,Learner Tien,,0,,0,6-1 1-6 7-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,1240,69,880
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,200240,0,,Vit Kopriva,,0,,0,134868,0,,Tallon Griekspoor,,0,,0,1-6 4-6,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,95,619,34,1575
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,124187,0,,Reilly Opelka,,0,,0,208014,0,,Rinky Hijikata,,0,,0,7-5 7-5,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,579,84,754
+,Mutua Madrid Open,Clay,0,,2025-04-24,0,102324,0,,Bart De Buyser,,0,,0,207985,0,,Jacob Fearnley,,0,,0,3-6 6-7,3,1st Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72,869,68,883
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,126127,0,,Benjamin Bonzi,,0,,0,128034,0,,Hubert Hurkacz,,0,,0,6-4 7-5,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,908,28,1755
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,208004,0,,Harold Mayot,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,3-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,354,21,2225
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,207681,0,,Francisco Comesana,,0,,0,209950,0,,Arthur Fils,,0,,0,7-6 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,872,14,2920
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,126239,0,,Arthur Rinderknech,,0,,0,134770,0,,Casper Ruud,,0,,0,3-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76,809,15,2815
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,207678,0,,Juan Manuel Cerundolo,,0,,0,200000,0,,Felix Auger Aliassime,,0,,0,7-6 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,126,469,19,2375
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,202270,0,,Anthony Popyrin,,0,,0,122330,0,,Alexander Bublik,,0,,0,4-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,1860,75,820
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,200624,0,,Sebastian Korda,,0,,0,210748,0,,Federico Cina,,0,,0,6-3 3-6 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,2020,373,130
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,210319,0,,Ethan Quinn,,0,,0,210150,0,,Jakub Mensik,,0,,0,6-7 1-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,119,494,23,2032
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,100644,0,,Alexander Zverev,,0,,0,120759,0,,Alberto Bautista,,0,,0,6-2 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,8085,55,979
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,100099,0,,Thomaz Koch,,0,,0,205176,0,,Thomas Fritz,,0,,0,1-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87,745,4,5115
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,210416,0,,Bryce Nakashima,,0,,0,124116,0,,Sebastian Ofner,,0,,0,6-3 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1605,153,378
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,208363,0,,Mariano Navone,,0,,0,210097,0,,Ben Shelton,,0,,0,6-4 6-7 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,85,750,13,3020
+,Mutua Madrid Open,Clay,0,,2025-04-25,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,132686,0,,Nuno Borges,,0,,0,6-2 6-3,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,1745,41,1355
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,105453,0,,Kei Nishikori,,0,,0,133430,0,,Denis Shapovalov,,0,,0,1-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,898,30,1726
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,207518,0,,Lorenzo Musetti,,0,,0,144869,0,,Tomas Martin Etcheverry,,0,,0,7-6 6-2,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3200,51,1010
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,202104,0,,Sebastian Baez,,0,,0,106000,0,,Damir Dzumhur,,0,,0,6-1 1-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,1580,63,906
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,111815,0,,Cameron Norrie,,0,,0,208103,0,,Jiri Lehecka,,0,,0,2-6 6-4 6-0,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91,667,27,1795
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,132283,0,,Lorenzo Sonego,,0,,0,100417,0,,Hans Gildemeister,,0,,0,2-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,1245,7,3585
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,209113,0,,Gabriel Diallo,,0,,0,111794,0,,Kamil Majchrzak,,0,,0,7-5 4-6 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,791,90,669
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,105526,0,,Jan Lennard Struff,,0,,0,126774,0,,Stefanos Tsitsipas,,0,,0,6-3 4-6 3-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,790,18,2415
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,208286,0,,Matteo Arnaldi,,0,,0,104925,0,,Novak Djokovic,,0,,0,6-3 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,1240,5,4120
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,207830,0,,Tomas Machac,,0,,0,207985,0,,Jacob Fearnley,,0,,0,6-1 3-6 2-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,2235,68,883
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,105777,0,,Grigor Dimitrov,,0,,0,111797,0,,Nicolas Jarry,,0,,0,6-3 6-4,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2595,57,965
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,200005,0,,Ugo Humbert,,0,,0,142378,0,,Arthur Muller,,0,,0,2-6 7-6 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,2185,39,1366
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,126610,0,,Matteo Berrettini,,0,,0,106218,0,,Marcos Giron,,0,,0,6-7 7-6 6-1,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,1620,45,1240
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,134868,0,,Tallon Griekspoor,,0,,0,207733,0,,Jack Draper,,0,,0,3-6 4-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,1575,6,3820
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,111575,0,,Karen Khachanov,,0,,0,124187,0,,Reilly Opelka,,0,,0,7-6 7-6,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1960,103,579
+,Mutua Madrid Open,Clay,0,,2025-04-26,0,211663,0,,Joao Fonseca,,0,,0,126205,0,,Tommy Paul,,0,,0,6-7 6-7,3,2nd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,897,12,3160
+,Mutua Madrid Open,Clay,0,,2025-04-27,0,210416,0,,Bryce Nakashima,,0,,0,207925,0,,Flavio Cobolli,,0,,0,7-5 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,1605,36,1520
+,Mutua Madrid Open,Clay,0,,2025-04-27,0,126094,0,,Andrey Rublev,,0,,0,122330,0,,Alexander Bublik,,0,,0,4-6 6-0 4-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3530,75,820
+,Mutua Madrid Open,Clay,0,,2025-04-27,0,100644,0,,Alexander Zverev,,0,,0,200221,0,,Alejandro Davidovich Fokina,,0,,0,2-6 7-6 7-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,8085,29,1745
+,Mutua Madrid Open,Clay,0,,2025-04-27,0,207678,0,,Juan Manuel Cerundolo,,0,,0,106421,0,,Daniil Medvedev,,0,,0,2-6 2-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,126,469,10,3290
+,Mutua Madrid Open,Clay,0,,2025-04-27,0,210150,0,,Jakub Mensik,,0,,0,210097,0,,Ben Shelton,,0,,0,6-1 6-4,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,2032,13,3020
+,Mutua Madrid Open,Clay,0,,2025-04-27,0,207681,0,,Francisco Comesana,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,4-6 4-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,872,21,2225
+,Mutua Madrid Open,Clay,0,,2025-04-27,0,134770,0,,Casper Ruud,,0,,0,200624,0,,Sebastian Korda,,0,,0,6-3 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2815,24,2020
+,Mutua Madrid Open,Clay,0,,2025-04-28,0,106000,0,,Damir Dzumhur,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,3-6 4-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,906,44,1240
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,100417,0,,Hans Gildemeister,,0,,0,133430,0,,Denis Shapovalov,,0,,0,6-3 7-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3585,30,1726
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,111575,0,,Karen Khachanov,,0,,0,126205,0,,Tommy Paul,,0,,0,3-6 6-3 2-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,1960,12,3160
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,126207,0,,Frances Tiafoe,,0,,0,142378,0,,Arthur Muller,,0,,0,6-3 6-3,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,2550,39,1366
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,111815,0,,Cameron Norrie,,0,,0,209113,0,,Gabriel Diallo,,0,,0,6-2 4-6 4-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91,667,78,791
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,105777,0,,Grigor Dimitrov,,0,,0,207985,0,,Jacob Fearnley,,0,,0,6-4 7-6,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,2595,68,883
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,126774,0,,Stefanos Tsitsipas,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,5-7 6-7,3,3rd Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,2415,11,3200
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,210150,0,,Jakub Mensik,,0,,0,122330,0,,Alexander Bublik,,0,,0,6-3 6-2,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,2032,75,820
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,100644,0,,Alexander Zverev,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,5-7 3-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,8085,21,2225
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,106421,0,,Daniil Medvedev,,0,,0,210416,0,,Bryce Nakashima,,0,,0,3-6 6-1 6-4,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3290,32,1605
+,Mutua Madrid Open,Clay,0,,2025-04-29,0,205176,0,,Thomas Fritz,,0,,0,134770,0,,Casper Ruud,,0,,0,5-7 4-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5115,15,2815
+,Mutua Madrid Open,Clay,0,,2025-04-30,0,208286,0,,Matteo Arnaldi,,0,,0,126207,0,,Frances Tiafoe,,0,,0,6-3 7-5,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,1240,17,2550
+,Mutua Madrid Open,Clay,0,,2025-04-30,0,126205,0,,Tommy Paul,,0,,0,207733,0,,Jack Draper,,0,,0,2-6 2-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,3160,6,3820
+,Mutua Madrid Open,Clay,0,,2025-04-30,0,209113,0,,Gabriel Diallo,,0,,0,105777,0,,Grigor Dimitrov,,0,,0,5-7 7-6 6-4,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,791,16,2595
+,Mutua Madrid Open,Clay,0,,2025-04-30,0,100417,0,,Hans Gildemeister,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,4-6 2-6,3,4th Round,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3585,11,3200
+,Mutua Madrid Open,Clay,0,,2025-05-01,0,134770,0,,Casper Ruud,,0,,0,106421,0,,Daniil Medvedev,,0,,0,6-3 7-5,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2815,10,3290
+,Mutua Madrid Open,Clay,0,,2025-05-01,0,210150,0,,Jakub Mensik,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,6-3 6-7 2-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,2032,21,2225
+,Mutua Madrid Open,Clay,0,,2025-05-01,0,207733,0,,Jack Draper,,0,,0,208286,0,,Matteo Arnaldi,,0,,0,6-0 6-4,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3820,44,1240
+,Mutua Madrid Open,Clay,0,,2025-05-01,0,209113,0,,Gabriel Diallo,,0,,0,207518,0,,Lorenzo Musetti,,0,,0,4-6 3-6,3,Quarterfinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,791,11,3200
+,Mutua Madrid Open,Clay,0,,2025-05-02,0,134770,0,,Casper Ruud,,0,,0,202103,0,,Francisco Cerundolo,,0,,0,6-4 7-5,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2815,21,2225
+,Mutua Madrid Open,Clay,0,,2025-05-02,0,207518,0,,Lorenzo Musetti,,0,,0,207733,0,,Jack Draper,,0,,0,3-6 6-7,3,Semifinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3200,6,3820
+,Mutua Madrid Open,Clay,0,,2025-05-03,0,134770,0,,Casper Ruud,,0,,0,207733,0,,Jack Draper,,0,,0,7-5 3-6 6-4,3,The Final,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,2815,6,3820
