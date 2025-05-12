@@ -7,7 +7,7 @@ from collections import defaultdict, deque
 # 1. Chargement et Concatenation
 #############################
 full_data = pd.concat([
-    pd.read_csv(f"./dataa/atp_matches_{year}.csv") for year in range(1968, 2025)
+    pd.read_csv(f"./Data/atp/atp_matches_{year}.csv") for year in range(1968, 2025)
 ], ignore_index=True)
 
 full_data['year'] = full_data['tourney_date'].astype(str).str[:4].astype(int)
