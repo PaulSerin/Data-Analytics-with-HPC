@@ -10,9 +10,9 @@ from utils import (
 )
 
 # Constants
-PARQUET_PATH = Path("./Datasets/final_tennis_dataset_symmetric.parquet")
-PLAYERS_CSV = Path("./data/atp_players.csv")
-MODEL_PATH = Path("./models/xgb_model.json")
+PARQUET_PATH = Path("././Datasets/final_tennis_dataset_symmetric.parquet")
+PLAYERS_CSV = Path("././Data/players/atp_players.csv")
+MODEL_PATH = Path("././Models/xgb_model.json")
 CUTOFF_DATE = "2024-05-20"
 
 # Load feature data
