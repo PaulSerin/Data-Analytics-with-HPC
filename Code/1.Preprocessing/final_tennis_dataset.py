@@ -7,7 +7,7 @@ from collections import defaultdict, deque
 # 1. Chargement et Concatenation
 #############################
 full_data = pd.concat([
-    pd.read_csv(f"./Data/atp/atp_matches_{year}.csv") for year in range(1968, 2025)
+    pd.read_csv(f"./Data/atp/atp_matches_{year}.csv") for year in range(1968, 2026)
 ], ignore_index=True)
 
 full_data['year'] = full_data['tourney_date'].astype(str).str[:4].astype(int)
@@ -33,6 +33,8 @@ df['SERVE_DOMINANCE'] = df['w_ace'] - df['l_ace']
 df['BP_EFFICIENCY_WINNER'] = df['w_bpSaved'] / df['w_bpFaced'].replace(0, 1)
 df['surface_raw'] = df['surface']
 df = pd.get_dummies(df, columns=['surface'], prefix='SURFACE')
+df['tourney_date'] = pd.to_datetime(df['tourney_date'], errors='coerce')
+df = df[df['tourney_date'].notna()]  # Optionnel : supprimer les lignes avec date invalide
 df.sort_values(by='tourney_date', inplace=True)
 df.reset_index(drop=True, inplace=True)
 
