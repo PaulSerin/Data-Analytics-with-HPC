@@ -14,7 +14,8 @@ full_data = pd.concat([
 ], ignore_index=True)
 
 # Extract year and filter from 2000 onwards
-full_data['year'] = full_data['tourney_date'].astype(str).str[:4].astype(int)
+full_data.rename(columns={"tourney_date": "TOURNEY_DATE"}, inplace=True)
+full_data['year'] = full_data['TOURNEY_DATE'].astype(str).str[:4].astype(int)
 filtered_data = full_data[full_data['year'] >= 2000].copy()
 
 # Keep only relevant columns (non-null)
@@ -45,9 +46,7 @@ df['surface_raw'] = df['surface']
 df = pd.get_dummies(df, columns=['surface'], prefix='SURFACE')
 
 # Sort chronologically
-df['tourney_date'] = pd.to_datetime(df['tourney_date'], errors='coerce')
-# df = df[df['tourney_date'].notna()] 
-df.sort_values(by='tourney_date', inplace=True)
+df.sort_values(by='TOURNEY_DATE', inplace=True)
 df.reset_index(drop=True, inplace=True)
 
 #############################
