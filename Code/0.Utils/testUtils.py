@@ -22,7 +22,7 @@ global_df, surface_dfs = get_latest_features_by_surface(PARQUET_PATH, CUTOFF_DAT
 model = load_trained_model(MODEL_PATH)
 
 # Player full names
-player1_name = "Ugo Blanchet"
+player1_name = "Carlos Alcaraz"
 player2_name = "Jannik Sinner"
 
 # Split full names into first and last
