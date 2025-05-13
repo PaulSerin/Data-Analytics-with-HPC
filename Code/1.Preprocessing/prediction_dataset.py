@@ -10,7 +10,7 @@ import pyarrow as pa
 # 1. Load and concatenate all CSVs
 #############################
 full_data = pd.concat([
-    pd.read_csv(f"./data/atp_matches_{year}.csv") for year in range(1968, 2025)
+    pd.read_csv(f"./Data/atp/atp_matches_{year}.csv") for year in range(1968, 2026)
 ], ignore_index=True)
 
 # Extract year and filter from 2000 onwards
@@ -45,6 +45,8 @@ df['surface_raw'] = df['surface']
 df = pd.get_dummies(df, columns=['surface'], prefix='SURFACE')
 
 # Sort chronologically
+df['tourney_date'] = pd.to_datetime(df['tourney_date'], errors='coerce')
+# df = df[df['tourney_date'].notna()] 
 df.sort_values(by='tourney_date', inplace=True)
 df.reset_index(drop=True, inplace=True)
 
