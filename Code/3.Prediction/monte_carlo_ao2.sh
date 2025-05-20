@@ -14,7 +14,7 @@
 module load python
 source $STORE/mypython/bin/activate
 
-RUNS_PER_JOB=125                    # 125 simulations each
+RUNS_PER_JOB=250                    # 125 simulations each
 SCRIPT=monte_carlo_ao.py
 
 echo "[$(date)] Starting job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"
@@ -26,6 +26,6 @@ python -u $SCRIPT \
     --cutoff        2025-01-01 \
     --runs-per-job  $RUNS_PER_JOB \
     --job-index     $SLURM_ARRAY_TASK_ID \
-    --output-dir    ./mc_aus_results
+    --output-dir    ./mc_aus_results2
 
 echo "[$(date)] Finished job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"

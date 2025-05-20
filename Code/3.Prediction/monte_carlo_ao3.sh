@@ -2,7 +2,7 @@
 #SBATCH --job-name=mc-ao
 #SBATCH --output=logs/mc-ao-%A_%a.out
 #SBATCH --error=logs/mc-ao-%A_%a.err
-#SBATCH --array=0-7                # 2 tasks: IDs 0 and 1
+#SBATCH --array=0-3                # 2 tasks: IDs 0 and 1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32         # 32 CPU cores per GPU (cluster policy)
@@ -14,7 +14,7 @@
 module load python
 source $STORE/mypython/bin/activate
 
-RUNS_PER_JOB=125                    # 125 simulations each
+RUNS_PER_JOB=500                    # 500 simulations each
 SCRIPT=monte_carlo_ao.py
 
 echo "[$(date)] Starting job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"
@@ -26,6 +26,6 @@ python -u $SCRIPT \
     --cutoff        2025-01-01 \
     --runs-per-job  $RUNS_PER_JOB \
     --job-index     $SLURM_ARRAY_TASK_ID \
-    --output-dir    ./mc_aus_results
+    --output-dir    ./mc_aus_results3
 
 echo "[$(date)] Finished job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"
