@@ -2,7 +2,7 @@
 #SBATCH --job-name=mc-ao
 #SBATCH --output=logs/mc-ao-%A_%a.out
 #SBATCH --error=logs/mc-ao-%A_%a.err
-#SBATCH --array=0-8                # 2 tasks: IDs 0 and 1
+#SBATCH --array=0-7                # 2 tasks: IDs 0 and 1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32         # 32 CPU cores per GPU (cluster policy)
