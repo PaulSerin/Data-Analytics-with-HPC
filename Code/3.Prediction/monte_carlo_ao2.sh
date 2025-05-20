@@ -2,27 +2,27 @@
 #SBATCH --job-name=mc-ao
 #SBATCH --output=logs/mc-ao-%A_%a.out
 #SBATCH --error=logs/mc-ao-%A_%a.err
+#SBATCH --array=0-0    # seulement 1 tâche au lieu de 4
+#SBATCH --nodes=1                    # one node each
+#SBATCH --ntasks=1                   # one task per job
+#SBATCH --cpus-per-task=32           # required by GPU policy
+#SBATCH --gres=gpu:a100:1
+#SBATCH --mem=10G                    # memory per node
+#SBATCH --time=00:05:00              # walltime
+#SBATCH --chdir=/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction
 
-#SBATCH --array=0-3                  # 4 tasks in the array
-#SBATCH --nodes=1                    # 1 node per job
-#SBATCH --ntasks=1                   # 1 MPI task
-#SBATCH --cpus-per-task=32           # MUST be 32 for 1 GPU
-#SBATCH --gres=gpu:a100:1            # 1 A100 GPU per job
-#SBATCH --mem=40G                    # total memory per node
-#SBATCH --time=01:00:00              # walltime HH:MM:SS
+module load python
+source $STORE/mypython/bin/activate  
 
-module load python/3.9 cuda/11.7     # or whatever modules you need
-source $STORE/mypython/bin/activate
-
-RUNS_PER_JOB=250
+RUNS_PER_JOB=1
 SCRIPT=monte_carlo_ao.py
 
-srun python $SCRIPT \
-    --utils-path    ./Code/0.Utils/utils.py \
-    --json-draw     ./Datasets/aus_open_2025_matches_all_ids.json \
-    --parquet       ./Datasets/final_tennis_dataset_symmetric.parquet \
-    --model         ./Models/xgb_model.json \
+python $SCRIPT \
+    --utils-path    ../0.Utils/utils.py \
+    --json-draw     ../../Datasets/aus_open_2025_matches_all_ids.json \
+    --parquet       ../../Datasets/final_tennis_dataset_symmetric.parquet \
+    --model         ../../Models/xgb_model.json \
     --cutoff        2025-01-01 \
     --runs-per-job  $RUNS_PER_JOB \
     --job-index     $SLURM_ARRAY_TASK_ID \
-    --output-dir    ./mc_results
+    --output-dir    ./mc_results2

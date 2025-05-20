@@ -1,0 +1,45 @@
+slurmstepd: info: Setting TMPDIR to /scratch/12823257. Previous errors about TMPDIR can be discarded
+/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/bin/python
+Current working directory: /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction
+Script path: /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction/print_path.py
+
+Python sys.path:
+  /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction
+  /opt/cesga/2020/software/Core/python/3.10.8/easybuild/python
+  /mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib/root/6.24/lib
+  /opt/cesga/2020/software/Core/python/3.10.8/lib/python310.zip
+  /opt/cesga/2020/software/Core/python/3.10.8/lib/python3.10
+  /opt/cesga/2020/software/Core/python/3.10.8/lib/python3.10/lib-dynload
+  /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages
+
+File existence checks:
+  Datasets/aus_open_2025_matches_all_ids.json: Missing (checked at /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction/Datasets/aus_open_2025_matches_all_ids.json)
+  Datasets/final_tennis_dataset_symmetric.parquet: Missing (checked at /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction/Datasets/final_tennis_dataset_symmetric.parquet)
+  Models/xgb_model.json: Missing (checked at /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction/Models/xgb_model.json)
+  ../0.Utils/utils.py: Exists (checked at /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction/../0.Utils/utils.py)
+
+*****************************************************************************
+*                                                                           *
+*                    JOB EFFICIENCY REPORT (seff 12823257)                   *
+*                                                                           *
+*****************************************************************************
+
+Job ID: 12823257
+Cluster: finisterrae3
+User/Group: curso363/ulc
+State: COMPLETED (exit code 0)
+Cores: 1
+CPU Utilized: 00:00:01
+CPU Efficiency: 33.33% of 00:00:03 core-walltime
+Job Wall-clock time: 00:00:03
+Memory Utilized: 0.00 MB (estimated maximum)
+Memory Efficiency: 0.00% of 4.00 GB (4.00 GB/node)
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++   Memory Efficiency is too small. Please review the requested memory. ++
+ ++ It seems that you do not need that much memory so we recommend        ++
+ ++ requesting less memory in other similar jobs.                         ++
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+*****************************************************************************
+
