@@ -9,19 +9,19 @@
 #SBATCH --gres=gpu:a100:1
 #SBATCH --mem=10G
 #SBATCH --time=00:05:00
-#SBATCH --chdir=/mnt/netapp2/.../Code/3.Prediction
+#SBATCH --chdir=/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction
 
 module load python
 source $STORE/mypython/bin/activate  
+
+RUNS_PER_JOB=1
+SCRIPT=monte_carlo_ao.py
 
 echo "[$(date)] Starting job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"
 echo "Script exists? " $( [ -f "$SCRIPT" ] && echo yes || echo no )
 echo "PWD: $(pwd)"
 echo "Listing:"
 ls -l .
-
-RUNS_PER_JOB=1
-SCRIPT=monte_carlo_ao.py
 
 python -u $SCRIPT \
     --utils-path    ../0.Utils/utils.py \
