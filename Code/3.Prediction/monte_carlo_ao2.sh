@@ -2,27 +2,22 @@
 #SBATCH --job-name=mc-ao
 #SBATCH --output=logs/mc-ao-%A_%a.out
 #SBATCH --error=logs/mc-ao-%A_%a.err
-#SBATCH --array=0-0
+#SBATCH --array=0-0                # 2 tasks: IDs 0 and 1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=32
-#SBATCH --gres=gpu:a100:1
-#SBATCH --mem=10G
-#SBATCH --time=00:05:00
+#SBATCH --cpus-per-task=32         # 32 CPU cores per GPU (cluster policy)
+#SBATCH --gres=gpu:a100:1          # 1x A100 per task
+#SBATCH --mem=40G
+#SBATCH --time=00:10:00
 #SBATCH --chdir=/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction
 
 module load python
-source $STORE/mypython/bin/activate  
+source $STORE/mypython/bin/activate
 
-RUNS_PER_JOB=1
+RUNS_PER_JOB=10                    # 50 simulations each
 SCRIPT=monte_carlo_ao.py
 
 echo "[$(date)] Starting job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"
-echo "Script exists? " $( [ -f "$SCRIPT" ] && echo yes || echo no )
-echo "PWD: $(pwd)"
-echo "Listing:"
-ls -l .
-
 python -u $SCRIPT \
     --utils-path    ../0.Utils/utils.py \
     --json-draw     ../../Datasets/aus_open_2025_matches_all_ids.json \
@@ -33,4 +28,4 @@ python -u $SCRIPT \
     --job-index     $SLURM_ARRAY_TASK_ID \
     --output-dir    ./mc_results2
 
-echo "[$(date)] Python finished with exit code $?"
+echo "[$(date)] Finished job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"

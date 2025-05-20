@@ -68,13 +68,13 @@ def main():
     parser.add_argument("--utils-path", type=Path, required=True,
                         help="Path to utils.py")
     parser.add_argument("--json-draw",    type=Path, required=True,
-                        help="JSON draw file (aus_open_2025_matches_all_ids.json)")
+                        help="JSON draw file")
     parser.add_argument("--parquet",      type=Path, required=True,
                         help="Parquet with historical features")
     parser.add_argument("--model",        type=Path, required=True,
                         help="XGBoost model JSON")
     parser.add_argument("--cutoff",       type=str, default="2025-01-01",
-                        help="Cutoff date for features (YYYY-MM-DD)")
+                        help="Cutoff date for features")
     parser.add_argument("--runs-per-job", type=int, required=True,
                         help="Number of MC simulations this job should run")
     parser.add_argument("--job-index",    type=int, required=True,
@@ -100,41 +100,51 @@ def main():
             if pid is not None:
                 id_to_name[pid] = name
 
-    # load features + model (once per job)
+    # load features + model once
     global_df, surface_dfs = utils.get_latest_features_by_surface(
         args.parquet, args.cutoff
     )
     model = utils.load_trained_model(args.model)
 
-    # build initial bracket
+    # initial bracket
     first_round = sorted(
         [m for m in tournament["matches"] if m["round"]=="1st Round"],
         key=lambda m: m["match_id"]
     )
-    bracket_init = [(m["player1"]["id"], m["player2"]["id"]) for m in first_round]
+    bracket_init = [(m["player1"]["id"], m["player2"]["id"])
+                    for m in first_round]
 
-    # run the assigned chunk of simulations
+    # run your assigned slice of simulations
     start = args.job_index * args.runs_per_job
     end   = start + args.runs_per_job
     champion_counts = {}
     final_probs = {}
 
     for i in range(start, end):
-        random.seed(i)  # reproducible
+        random.seed(i)
         champ, (f1, f2), prob = simulate_tournament(
             bracket_init, surface, model, global_df, surface_dfs, utils
         )
         champion_counts[champ] = champion_counts.get(champ, 0) + 1
         final_probs.setdefault(champ, []).append(prob)
 
+    # build a name‐aware stats list
+    champion_stats = [
+        {
+            "id":  pid,
+            "name": id_to_name.get(pid, "Unknown"),
+            "wins": count
+        }
+        for pid, count in champion_counts.items()
+    ]
+
     # write partial results
     args.output_dir.mkdir(parents=True, exist_ok=True)
     out = {
-        "job_index": args.job_index,
-        "runs": args.runs_per_job,
-        "champion_counts": champion_counts,
-        "final_probs": final_probs,
-        "id_to_name": id_to_name
+        "job_index":       args.job_index,
+        "runs":            args.runs_per_job,
+        "champion_stats":  champion_stats,
+        "final_probs":     final_probs,
     }
     out_path = args.output_dir / f"partial_{args.job_index}.json"
     with open(out_path, "w", encoding="utf-8") as f:
