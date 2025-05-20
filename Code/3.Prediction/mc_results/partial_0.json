@@ -1,0 +1,76 @@
+{
+  "job_index": 0,
+  "runs": 10,
+  "stats": [
+    {
+      "id": 207989,
+      "name": "Alcaraz C.",
+      "wins": 1,
+      "semifinals": 2,
+      "quarterfinals": 2
+    },
+    {
+      "id": 126774,
+      "name": "Tsitsipas S.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 2
+    },
+    {
+      "id": 208029,
+      "name": "Rune H.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 2
+    },
+    {
+      "id": 111575,
+      "name": "Khachanov K.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 1
+    },
+    {
+      "id": 111797,
+      "name": "Jarry N.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 3
+    },
+    {
+      "id": 124187,
+      "name": "Opelka R.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 1
+    },
+    {
+      "id": 206173,
+      "name": "Sinner J.",
+      "wins": 1,
+      "semifinals": 3,
+      "quarterfinals": 4
+    },
+    {
+      "id": 200282,
+      "name": "De Minaur A.",
+      "wins": 1,
+      "semifinals": 2,
+      "quarterfinals": 3
+    },
+    {
+      "id": 210530,
+      "name": "Tien L.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 2
+    },
+    {
+      "id": 126207,
+      "name": "Tiafoe F.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 2
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "job_index": 1,
+  "runs": 10,
+  "stats": [
+    {
+      "id": 200282,
+      "name": "De Minaur A.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 3
+    },
+    {
+      "id": 126128,
+      "name": "Safiullin R.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 1
+    },
+    {
+      "id": 207989,
+      "name": "Alcaraz C.",
+      "wins": 2,
+      "semifinals": 2,
+      "quarterfinals": 2
+    },
+    {
+      "id": 209950,
+      "name": "Fils A.",
+      "wins": 1,
+      "semifinals": 2,
+      "quarterfinals": 2
+    },
+    {
+      "id": 200624,
+      "name": "Korda S.",
+      "wins": 2,
+      "semifinals": 2,
+      "quarterfinals": 3
+    },
+    {
+      "id": 208659,
+      "name": "Mpetshi G.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 4
+    },
+    {
+      "id": 210097,
+      "name": "Shelton B.",
+      "wins": 1,
+      "semifinals": 2,
+      "quarterfinals": 2
+    },
+    {
+      "id": 200615,
+      "name": "Popyrin A.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 2
+    }
+  ]
+}
