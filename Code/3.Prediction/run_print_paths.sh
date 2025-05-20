@@ -1,12 +1,15 @@
-#!/bin/bash
+#!/bin/bash -l
+#SBATCH --job-name=debug-paths
+#SBATCH --output=logs/debug-paths-%j.out
+#SBATCH --error=logs/debug-paths-%j.err
 #SBATCH --time=00:05:00
 #SBATCH --mem=4G
+#SBATCH --cpus-per-task=1
 
-# Optional: load modules or activate your environment
-# module load python/3.9
+module load python      # (or whatever your Python module is)
+source $STORE/mypython/bin/activate  # if you need your venv
 
-source /path/to/venv/bin/activate
+which python
+srun python print_path.py
 
-module load python/3.9
-      # or whatever module you need
-python3 print_paths.py
+deactivate
