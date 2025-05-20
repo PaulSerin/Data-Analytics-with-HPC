@@ -77,10 +77,6 @@ wild‑cards:
 
 All values are expressed as percentages [0;100] averaged over the last **{K}** matches **before** to the current one.
 
-ON a un petit probleme, pas mal de variables ne sont pas pris en comte dans le modèle car elles ne commencent pas par PLAYER1\_.
-
-L'erreur provient dans la construction de mon dataset, toutes ces varaibale là tu vois
-
 | Pattern                  | What it measures                       |
 | ------------------------ | -------------------------------------- |
 | `{P}_P_ACE_LAST_{K}`     | Ace rate = 100 × (aces / serve points) |
