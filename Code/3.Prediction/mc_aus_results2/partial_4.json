@@ -1,0 +1,370 @@
+{
+  "job_index": 4,
+  "runs": 250,
+  "stats": [
+    {
+      "id": 207989,
+      "name": "Alcaraz C.",
+      "wins": 23,
+      "semifinals": 46,
+      "quarterfinals": 74
+    },
+    {
+      "id": 206173,
+      "name": "Sinner J.",
+      "wins": 43,
+      "semifinals": 84,
+      "quarterfinals": 133
+    },
+    {
+      "id": 210097,
+      "name": "Shelton B.",
+      "wins": 9,
+      "semifinals": 24,
+      "quarterfinals": 42
+    },
+    {
+      "id": 126207,
+      "name": "Tiafoe F.",
+      "wins": 4,
+      "semifinals": 25,
+      "quarterfinals": 34
+    },
+    {
+      "id": 122298,
+      "name": "Van De Zandschulp B.",
+      "wins": 1,
+      "semifinals": 4,
+      "quarterfinals": 12
+    },
+    {
+      "id": 126774,
+      "name": "Tsitsipas S.",
+      "wins": 7,
+      "semifinals": 18,
+      "quarterfinals": 26
+    },
+    {
+      "id": 126094,
+      "name": "Rublev A.",
+      "wins": 15,
+      "semifinals": 60,
+      "quarterfinals": 102
+    },
+    {
+      "id": 134868,
+      "name": "Griekspoor T.",
+      "wins": 3,
+      "semifinals": 13,
+      "quarterfinals": 19
+    },
+    {
+      "id": 106421,
+      "name": "Medvedev D.",
+      "wins": 13,
+      "semifinals": 31,
+      "quarterfinals": 47
+    },
+    {
+      "id": 200615,
+      "name": "Popyrin A.",
+      "wins": 7,
+      "semifinals": 22,
+      "quarterfinals": 37
+    },
+    {
+      "id": 210150,
+      "name": "Mensik J.",
+      "wins": 6,
+      "semifinals": 19,
+      "quarterfinals": 41
+    },
+    {
+      "id": 126205,
+      "name": "Paul T.",
+      "wins": 6,
+      "semifinals": 22,
+      "quarterfinals": 41
+    },
+    {
+      "id": 133430,
+      "name": "Shapovalov D.",
+      "wins": 5,
+      "semifinals": 14,
+      "quarterfinals": 35
+    },
+    {
+      "id": 104925,
+      "name": "Djokovic N.",
+      "wins": 7,
+      "semifinals": 19,
+      "quarterfinals": 31
+    },
+    {
+      "id": 134770,
+      "name": "Ruud C.",
+      "wins": 4,
+      "semifinals": 19,
+      "quarterfinals": 44
+    },
+    {
+      "id": 208029,
+      "name": "Rune H.",
+      "wins": 7,
+      "semifinals": 25,
+      "quarterfinals": 44
+    },
+    {
+      "id": 209950,
+      "name": "Fils A.",
+      "wins": 6,
+      "semifinals": 21,
+      "quarterfinals": 36
+    },
+    {
+      "id": 132283,
+      "name": "Sonego L.",
+      "wins": 1,
+      "semifinals": 5,
+      "quarterfinals": 9
+    },
+    {
+      "id": 206909,
+      "name": "Nakashima B.",
+      "wins": 8,
+      "semifinals": 25,
+      "quarterfinals": 41
+    },
+    {
+      "id": 200005,
+      "name": "Humbert U.",
+      "wins": 2,
+      "semifinals": 22,
+      "quarterfinals": 37
+    },
+    {
+      "id": 200282,
+      "name": "De Minaur A.",
+      "wins": 16,
+      "semifinals": 45,
+      "quarterfinals": 73
+    },
+    {
+      "id": 200624,
+      "name": "Korda S.",
+      "wins": 8,
+      "semifinals": 27,
+      "quarterfinals": 45
+    },
+    {
+      "id": 211663,
+      "name": "Fonseca J.",
+      "wins": 1,
+      "semifinals": 11,
+      "quarterfinals": 43
+    },
+    {
+      "id": 126239,
+      "name": "Rinderknech A.",
+      "wins": 1,
+      "semifinals": 3,
+      "quarterfinals": 4
+    },
+    {
+      "id": 105676,
+      "name": "Goffin D.",
+      "wins": 1,
+      "semifinals": 3,
+      "quarterfinals": 7
+    },
+    {
+      "id": 207925,
+      "name": "Cobolli F.",
+      "wins": 1,
+      "semifinals": 13,
+      "quarterfinals": 24
+    },
+    {
+      "id": 208659,
+      "name": "Mpetshi G.",
+      "wins": 8,
+      "semifinals": 23,
+      "quarterfinals": 37
+    },
+    {
+      "id": 111797,
+      "name": "Jarry N.",
+      "wins": 1,
+      "semifinals": 2,
+      "quarterfinals": 8
+    },
+    {
+      "id": 208103,
+      "name": "Lehecka J.",
+      "wins": 3,
+      "semifinals": 12,
+      "quarterfinals": 25
+    },
+    {
+      "id": 126610,
+      "name": "Berrettini M.",
+      "wins": 2,
+      "semifinals": 3,
+      "quarterfinals": 8
+    },
+    {
+      "id": 126128,
+      "name": "Safiullin R.",
+      "wins": 2,
+      "semifinals": 5,
+      "quarterfinals": 13
+    },
+    {
+      "id": 124186,
+      "name": "Muller A.",
+      "wins": 1,
+      "semifinals": 2,
+      "quarterfinals": 6
+    },
+    {
+      "id": 111190,
+      "name": "Zhang Zh.",
+      "wins": 2,
+      "semifinals": 6,
+      "quarterfinals": 15
+    },
+    {
+      "id": 210530,
+      "name": "Tien L.",
+      "wins": 2,
+      "semifinals": 8,
+      "quarterfinals": 16
+    },
+    {
+      "id": 136440,
+      "name": "Koepfer D.",
+      "wins": 1,
+      "semifinals": 4,
+      "quarterfinals": 15
+    },
+    {
+      "id": 208134,
+      "name": "Nardi L.",
+      "wins": 1,
+      "semifinals": 1,
+      "quarterfinals": 4
+    },
+    {
+      "id": 111815,
+      "name": "Norrie C.",
+      "wins": 2,
+      "semifinals": 12,
+      "quarterfinals": 31
+    },
+    {
+      "id": 206681,
+      "name": "Marozsan F.",
+      "wins": 1,
+      "semifinals": 7,
+      "quarterfinals": 13
+    },
+    {
+      "id": 100644,
+      "name": "Zverev A.",
+      "wins": 2,
+      "semifinals": 23,
+      "quarterfinals": 38
+    },
+    {
+      "id": 105948,
+      "name": "Coria F.",
+      "wins": 1,
+      "semifinals": 2,
+      "quarterfinals": 4
+    },
+    {
+      "id": 124187,
+      "name": "Opelka R.",
+      "wins": 2,
+      "semifinals": 15,
+      "quarterfinals": 35
+    },
+    {
+      "id": 111460,
+      "name": "Halys Q.",
+      "wins": 2,
+      "semifinals": 5,
+      "quarterfinals": 11
+    },
+    {
+      "id": 210506,
+      "name": "Michelsen A.",
+      "wins": 1,
+      "semifinals": 12,
+      "quarterfinals": 20
+    },
+    {
+      "id": 208014,
+      "name": "Hijikata R.",
+      "wins": 1,
+      "semifinals": 6,
+      "quarterfinals": 17
+    },
+    {
+      "id": 209070,
+      "name": "Cazaux A.",
+      "wins": 1,
+      "semifinals": 7,
+      "quarterfinals": 16
+    },
+    {
+      "id": 207518,
+      "name": "Musetti L.",
+      "wins": 2,
+      "semifinals": 17,
+      "quarterfinals": 30
+    },
+    {
+      "id": 207686,
+      "name": "Shevchenko A.",
+      "wins": 2,
+      "semifinals": 3,
+      "quarterfinals": 12
+    },
+    {
+      "id": 207830,
+      "name": "Machac T.",
+      "wins": 1,
+      "semifinals": 16,
+      "quarterfinals": 36
+    },
+    {
+      "id": 122330,
+      "name": "Bublik A.",
+      "wins": 1,
+      "semifinals": 9,
+      "quarterfinals": 19
+    },
+    {
+      "id": 208286,
+      "name": "Arnaldi M.",
+      "wins": 1,
+      "semifinals": 10,
+      "quarterfinals": 18
+    },
+    {
+      "id": 144719,
+      "name": "Munar J.",
+      "wins": 1,
+      "semifinals": 6,
+      "quarterfinals": 9
+    },
+    {
+      "id": 104792,
+      "name": "Monfils G.",
+      "wins": 1,
+      "semifinals": 3,
+      "quarterfinals": 5
+    }
+  ]
+}
