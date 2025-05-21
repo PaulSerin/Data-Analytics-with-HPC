@@ -4,7 +4,7 @@
 #SBATCH --error=error_t4.log
 #SBATCH --qos=viz
 #SBATCH -p viz
-#SBATCH --time=00:05:00
+#SBATCH --time=02:00:00
 #SBATCH --gres=gpu:t4:1
 #SBATCH --ntasks=1
 #SBATCH -c 32
