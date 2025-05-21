@@ -1,0 +1,3 @@
+slurmstepd: info: Setting TMPDIR to /scratch/12846906. Previous errors about TMPDIR can be discarded
+✅ GPU disponible : Tesla T4 (ID: 0)
+🧠 Mémoire totale : 14.56 Go
