@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
 """
 Distributed hyperparameter tuning for XGBoost using Dask, Dask-ML and a SLURM cluster.
-Added debug prints to trace progress.
+Entraîne sur <=2023, teste sur 2024, et stocke tous les résultats de grille + score test.
 """
 import argparse
 import json
 from pathlib import Path
 
+import pandas as pd
+import numpy as np
 import dask.dataframe as dd
 from dask_jobqueue import SLURMCluster
 from dask.distributed import Client, performance_report
 from dask_ml.model_selection import RandomizedSearchCV
+from sklearn.metrics import log_loss
+from sklearn.model_selection import StratifiedKFold
 import xgboost as xgb
 
-# load_module utility to import your utils.py
 from importlib.machinery import SourceFileLoader
 def load_utils(utils_path):
     print(f"[DEBUG] Loading utils from {utils_path}", flush=True)
@@ -22,55 +25,50 @@ def load_utils(utils_path):
     return module
 
 def main():
-    # 0) Parse args
+    # 0) Arguments
     parser = argparse.ArgumentParser(
-        description="Distributed hyperparam tuning for XGBoost with Dask (debug mode)"
+        description="Distributed XGB tuning: train<=2023, test=2024, store all CV results + test score"
     )
-    parser.add_argument("--utils-path",  type=Path, required=True,
-                        help="Path to your utils.py")
-    parser.add_argument("--parquet",     type=Path, required=True,
-                        help="Input Parquet file with features")
-    parser.add_argument("--cutoff",      type=str, default="2025-01-01",
-                        help="Cutoff date for filtering data (YYYY-MM-DD)")
-    parser.add_argument("--output",      type=Path, required=True,
-                        help="Where to write best_params.json")
-    parser.add_argument("--n-iter",      type=int, default=50,
+    parser.add_argument("--utils-path", type=Path, required=True,
+                        help="Path to utils.py")
+    parser.add_argument("--parquet",    type=Path, required=True,
+                        help="Parquet with all data")
+    parser.add_argument("--cutoff",     type=str, default="2025-01-01",
+                        help="Exclude data >= this date")
+    parser.add_argument("--output",     type=Path, required=True,
+                        help="Directory where to write outputs")
+    parser.add_argument("--n-iter",     type=int, default=50,
                         help="Number of RandomizedSearchCV iterations")
-    parser.add_argument("--n-splits",    type=int, default=4,
+    parser.add_argument("--n-splits",   type=int, default=4,
                         help="Number of CV splits")
-    parser.add_argument("--jobs",        type=int, default=4,
+    parser.add_argument("--jobs",       type=int, default=4,
                         help="Number of Dask workers to launch")
     args = parser.parse_args()
     print(f"[DEBUG] Arguments: {args}", flush=True)
 
-    # 1) Load utils module
+    # 1) Utils
     utils = load_utils(args.utils_path)
 
-    # 2) Read the dataset as a Dask DataFrame (lazy, parallel)
-    print(f"[DEBUG] Reading parquet from {args.parquet}", flush=True)
+    # 2) Lecture & filtrage Dask-DataFrame
+    print(f"[DEBUG] Reading parquet {args.parquet}", flush=True)
     ddf = dd.read_parquet(str(args.parquet))
-    print(f"[DEBUG] Initial Dask DataFrame partitions: {ddf.npartitions}", flush=True)
-
-    # parse date and filter out future data
     ddf["DATE"] = dd.to_datetime(ddf["TOURNEY_DATE"].astype(str))
     ddf = ddf[ddf["DATE"] < args.cutoff]
-    print(f"[DEBUG] Data filtered with cutoff {args.cutoff}", flush=True)
+    print(f"[DEBUG] After cutoff, partitions={ddf.npartitions}", flush=True)
 
-    # extract numeric features & target
-    X = ddf.drop(columns=utils.COLS_TO_EXCLUDE, errors="ignore") \
-           .select_dtypes(include=["number"])
-    y = ddf["TARGET"]
-    print(f"[DEBUG] Feature columns count: {len(X.columns)}", flush=True)
-
-    # time‐based train split (up to 2023)
+    # 3) Split train / test by year
     train = ddf[ddf["DATE"].dt.year <= 2023]
-    X_train = train.drop(columns=["TARGET", "TOURNEY_DATE", "DATE"], errors="ignore") \
-                   .select_dtypes(include=["number"])
-    y_train = train["TARGET"]
-    print(f"[DEBUG] Training set partitions: {train.npartitions}", flush=True)
+    test  = ddf[ddf["DATE"].dt.year == 2024]
+    print(f"[DEBUG] train parts={train.npartitions}, test parts={test.npartitions}", flush=True)
 
-    # 3) Spin up SLURMCluster + Dask client
-    print("[DEBUG] Starting SLURMCluster", flush=True)
+    X_train = train.drop(columns=utils.COLS_TO_EXCLUDE + ["TOURNEY_DATE", "DATE"],
+                         errors="ignore").select_dtypes(include=["number"])
+    y_train = train["TARGET"]
+    X_test  = test .drop(columns=utils.COLS_TO_EXCLUDE + ["TOURNEY_DATE", "DATE"],
+                         errors="ignore").select_dtypes(include=["number"])
+    y_test  = test["TARGET"]
+
+    # 4) Cluster SLURM + Client
     cluster = SLURMCluster(
         queue="short",
         account="ulc",
@@ -79,46 +77,37 @@ def main():
         memory="40GB",
         walltime="02:00:00",
         job_extra_directives=["--gres=gpu:a100:1"],
-        scheduler_options={"idle_timeout": "120s"}
+        scheduler_options={"idle_timeout":"120s"}
     )
-
     cluster.scale(jobs=args.jobs)
-    print(f"[DEBUG] Launched {args.jobs} workers → dashboard: {cluster.dashboard_link}", flush=True)
+    print(f"[DEBUG] Launched {args.jobs} workers @ {cluster.dashboard_link}", flush=True)
     client = Client(cluster)
-    print("[DEBUG] Dask client connected", flush=True)
+    print("[DEBUG] Client connected", flush=True)
 
-    # persist into cluster memory to avoid repeated I/O
-    print("[DEBUG] Persisting training data to cluster memory", flush=True)
-    X_train, y_train = client.persist([X_train, y_train])
+    # 5) Persist train & test (force tâches Dask)
+    print("[DEBUG] Persisting train+test", flush=True)
+    X_train, y_train, X_test, y_test = client.persist([X_train, y_train, X_test, y_test])
     client.wait_for_workers(n_workers=args.jobs)
-    print("[DEBUG] Data persisted; workers ready", flush=True)
 
-    # 4) Define XGBoost classifier & parameter grid
-    print("[DEBUG] Defining XGBClassifier and parameter grid", flush=True)
+    # 6) CV + grille
+    print("[DEBUG] Setting up CV + param grid", flush=True)
     base = xgb.XGBClassifier(
         objective="binary:logistic",
         eval_metric="logloss",
-        tree_method="hist",      # CPU‐side histogram
-        device="cuda",           # envoie le calcul sur GPU
+        tree_method="hist",
+        device="cuda",
         random_state=42
     )
     param_dist = {
-        "n_estimators":     [100, 200, 300, 500],
-        "learning_rate":    [0.01, 0.05, 0.1],
-        "max_depth":        [4, 6, 8],
-        "subsample":        [0.7, 0.8, 0.9],
-        "colsample_bytree": [0.6, 0.8, 1.0],
-        "reg_alpha":        [0, 0.1, 0.5, 1.0],    # L1 regularization term
-        "reg_lambda":       [1, 5, 10, 20]         # L2 regularization term
+        "n_estimators":  [100,200,300,500],
+        "learning_rate": [0.01,0.05,0.1],
+        "max_depth":     [4,6,8],
+        "subsample":     [0.7,0.8,0.9],
+        "colsample_bytree":[0.6,0.8,1.0],
+        "reg_alpha":     [0,0.1,0.5,1.0],
+        "reg_lambda":    [1,5,10,20]
     }
-
-    print(f"[DEBUG] Parameter distribution: {param_dist}", flush=True)
-
-    # 5) Set up Dask-ML RandomizedSearchCV
-    from sklearn.model_selection import StratifiedKFold
     cv = StratifiedKFold(n_splits=args.n_splits, shuffle=True, random_state=42)
-    print(f"[DEBUG] Using StratifiedKFold with {args.n_splits} splits", flush=True)
-
     search = RandomizedSearchCV(
         estimator=base,
         param_distributions=param_dist,
@@ -128,29 +117,44 @@ def main():
         random_state=42,
         n_jobs=-1,
     )
-    print("[DEBUG] RandomizedSearchCV initialized", flush=True)
 
-    # 6) Run the search under a performance report
-    print("[DEBUG] Starting search.fit()", flush=True)
-    with performance_report(filename="dask-report.html"), client.as_current():
+    # 7) Lancement & rapport
+    report_html = args.output / "dask-report.html"
+    print("[DEBUG] Running search.fit()", flush=True)
+    with performance_report(filename=str(report_html)), client.as_current():
         search.fit(X_train, y_train)
-    print("[DEBUG] search.fit() completed", flush=True)
+    print("[DEBUG] search.fit() done", flush=True)
 
-    # 7) Write out the best parameters
-    print(f"[DEBUG] Saving best parameters to {args.output}", flush=True)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    with open(args.output, "w") as f:
-        json.dump({
-            "best_params": search.best_params_,
-            "best_score": -search.best_score_
-        }, f, indent=2)
-    print("[DEBUG] Best parameters saved", flush=True)
+    # 8) Récupérer et stocker tous les CV résultats
+    cv_df = pd.DataFrame(search.cv_results_)
+    out_cv = args.output / "cv_results_all.csv"
+    cv_df.to_csv(out_cv, index=False)
+    print(f"[DEBUG] All CV results saved to {out_cv}", flush=True)
 
-    # 8) Clean up
+    # 9) Évaluer sur 2024
+    # passer en pandas pour log_loss
+    X_test_pd = X_test.compute()
+    y_test_pd = y_test.compute()
+    y_proba   = search.best_estimator_.predict_proba(X_test_pd)[:,1]
+    test_ll   = log_loss(y_test_pd, y_proba)
+    print(f"[DEBUG] Test log-loss (2024): {test_ll:.5f}", flush=True)
+
+    # 10) Sauvegarde finale JSON
+    args.output.mkdir(parents=True, exist_ok=True)
+    result = {
+        "best_params":    search.best_params_,
+        "best_score_cv": -search.best_score_,
+        "test_log_loss":  test_ll
+    }
+    out_json = args.output / "summary.json"
+    with open(out_json, "w") as f:
+        json.dump(result, f, indent=2)
+    print(f"[DEBUG] Summary saved to {out_json}", flush=True)
+
+    # 11) Cleanup
     client.close()
     cluster.close()
-    print("[DEBUG] Dask client and cluster closed", flush=True)
-
+    print("[DEBUG] Done", flush=True)
 
 if __name__ == "__main__":
     main()
