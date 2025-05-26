@@ -1,0 +1,17 @@
+slurmstepd: info: Setting TMPDIR to /scratch/12961386. Previous errors about TMPDIR can be discarded
+[DEBUG] Arguments: Namespace(utils_path=PosixPath('../0.Utils/utils.py'), parquet=PosixPath('../../Datasets/final_tennis_dataset_symmetric.parquet'), cutoff='2025-01-01', output=PosixPath('logs/dask/best_xgb_params.json'), n_iter=50, n_splits=4, jobs=4)
+[DEBUG] Loading utils from ../0.Utils/utils.py
+[DEBUG] Utils loaded successfully
+[DEBUG] Reading parquet ../../Datasets/final_tennis_dataset_symmetric.parquet
+[DEBUG] After cutoff, partitions=1
+[DEBUG] train parts=1, test parts=1
+[DEBUG] Launched 4 workers @ http://10.120.207.12:8787/status
+[DEBUG] Client connected
+[DEBUG] Persisting train+test
+[DEBUG] Setting up CV + param grid
+[DEBUG] Running search.fit()
+[DEBUG] search.fit() done
+[DEBUG] All CV results saved to logs/dask/best_xgb_params.json/cv_results_all.csv
+[DEBUG] Test log-loss (2024): 0.60223
+[DEBUG] Summary saved to logs/dask/best_xgb_params.json/summary.json
+[DEBUG] Done

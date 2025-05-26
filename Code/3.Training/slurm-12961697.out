@@ -1,0 +1,28 @@
+slurmstepd: info: Setting TMPDIR to /scratch/12961697. Previous errors about TMPDIR can be discarded
+2025-05-26 19:00:05,837 - distributed.nanny - INFO -         Start Nanny at: 'tcp://10.120.208.2:38833'
+2025-05-26 19:00:19,021 - distributed.worker - INFO -       Start worker at:   tcp://10.120.208.2:44791
+2025-05-26 19:00:19,021 - distributed.worker - INFO -          Listening to:   tcp://10.120.208.2:44791
+2025-05-26 19:00:19,021 - distributed.worker - INFO -           Worker name:             SLURMCluster-2
+2025-05-26 19:00:19,021 - distributed.worker - INFO -          dashboard at:         10.120.208.2:41563
+2025-05-26 19:00:19,021 - distributed.worker - INFO - Waiting to connect to:  tcp://10.120.207.12:32817
+2025-05-26 19:00:19,021 - distributed.worker - INFO - -------------------------------------------------
+2025-05-26 19:00:19,021 - distributed.worker - INFO -               Threads:                         32
+2025-05-26 19:00:19,021 - distributed.worker - INFO -                Memory:                  37.25 GiB
+2025-05-26 19:00:19,021 - distributed.worker - INFO -       Local Directory: /scratch/12961697/dask-scratch-space/worker-5bvi0xka
+2025-05-26 19:00:19,021 - distributed.worker - INFO - -------------------------------------------------
+2025-05-26 19:00:20,593 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-05-26 19:00:20,593 - distributed.worker - INFO -         Registered to:  tcp://10.120.207.12:32817
+2025-05-26 19:00:20,593 - distributed.worker - INFO - -------------------------------------------------
+2025-05-26 19:00:20,593 - distributed.core - INFO - Starting established connection to tcp://10.120.207.12:32817
+2025-05-26 19:00:36,056 - distributed.core - INFO - Event loop was unresponsive in Worker for 15.36s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2025-05-26 19:00:44,097 - distributed.core - INFO - Event loop was unresponsive in Worker for 8.02s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[19:01:10] WARNING: /workspace/src/common/error_msg.cc:58: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+2025-05-26 19:01:47,510 - distributed.sizeof - WARNING - ("Sizeof calculation for object of type 'dict' failed. Defaulting to -1 B",)
+2025-05-26 19:01:51,375 - distributed.worker - INFO - Stopping worker at tcp://10.120.208.2:44791. Reason: scheduler-close
+slurmstepd: error: *** JOB 12961697 ON a100-18 CANCELLED AT 2025-05-26T19:01:51 ***
