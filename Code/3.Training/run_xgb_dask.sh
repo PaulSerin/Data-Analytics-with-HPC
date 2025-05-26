@@ -9,7 +9,7 @@
 #SBATCH --gres=gpu:a100:1
 #SBATCH --mem=40G
 #SBATCH --time=04:00:00
-#SBATCH --chdir=/chemin/vers/Code/3.Prediction
+#SBATCH --chdir=/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Training
 
 module load python
 source $STORE/mypython/bin/activate
