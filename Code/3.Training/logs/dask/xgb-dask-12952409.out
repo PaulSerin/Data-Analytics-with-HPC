@@ -1,0 +1,13 @@
+slurmstepd: info: Setting TMPDIR to /scratch/12952409. Previous errors about TMPDIR can be discarded
+[DEBUG] Arguments: Namespace(utils_path=PosixPath('../0.Utils/utils.py'), parquet=PosixPath('../../Datasets/final_tennis_dataset_symmetric.parquet'), cutoff='2025-01-01', output=PosixPath('logs/dask/best_xgb_params.json'), n_iter=50, n_splits=4, jobs=4)
+[DEBUG] Loading utils from ../0.Utils/utils.py
+[DEBUG] Utils loaded successfully
+[DEBUG] Reading parquet from ../../Datasets/final_tennis_dataset_symmetric.parquet
+[DEBUG] Initial Dask DataFrame partitions: 1
+[DEBUG] Data filtered with cutoff 2025-01-01
+[DEBUG] Feature columns count: 151
+[DEBUG] Training set partitions: 1
+[DEBUG] Starting SLURMCluster
+[DEBUG] Launched 4 workers → dashboard: http://10.120.207.2:8787/status
+[DEBUG] Dask client connected
+[DEBUG] Persisting training data to cluster memory

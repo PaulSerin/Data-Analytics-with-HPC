@@ -1,24 +1,25 @@
 #!/usr/bin/env python3
 """
 Quick sanity-check of XGBoost hyperparameter tuning using a small local Dask cluster,
-with instrumentation to check distribution, timings and resource usage.
+with basic instrumentation and a Matplotlib plot of task durations.
 """
 import argparse
 import json
 import pandas as pd
 import numpy as np
 import time
+import matplotlib.pyplot as plt
 
 import dask.dataframe as dd
-from dask.distributed import Client, LocalCluster, performance_report
-from dask.diagnostics import Profiler, ResourceProfiler, visualize
+from dask.distributed import Client, LocalCluster
+from dask.diagnostics import Profiler
 from dask_ml.model_selection import RandomizedSearchCV
 import xgboost as xgb
 
 def main():
     # 0) arguments
     parser = argparse.ArgumentParser(
-        description="Local Dask cluster XGB tuning with instrumentation"
+        description="Local Dask cluster XGB tuning with Matplotlib profiling"
     )
     parser.add_argument("--parquet", type=str, required=True,
                         help="Path to your Parquet file")
@@ -30,6 +31,8 @@ def main():
                         help="Threads per Dask worker")
     parser.add_argument("--output", type=str, default="best_params_dask_local.json",
                         help="Output JSON for best params & score")
+    parser.add_argument("--plot-file", type=str, default="dask_task_durations.png",
+                        help="Filename for the Matplotlib bar chart")
     args = parser.parse_args()
 
     # 1) Start local cluster
@@ -43,9 +46,8 @@ def main():
     client = Client(cluster)
     print(f"[DEBUG] Dashboard URL: {cluster.dashboard_link}", flush=True)
 
-    # 2) Print cluster & scheduler info
+    # 2) Scheduler & worker introspection
     info = client.scheduler_info()
-    print(f"[DEBUG] Scheduler info keys: {list(info.keys())}", flush=True)
     workers = info["workers"]
     for addr, winfo in workers.items():
         mem_gb = winfo.get("memory_limit", 0) / 1e9
@@ -89,35 +91,50 @@ def main():
         n_jobs=-1
     )
 
-    # 6) Run with profiling + performance report
-    report_file = "dask_local_report.html"
-    print("[DEBUG] Starting search.fit() with performance_report and Profiler", flush=True)
+    # 6) Run and profile
+    prof = Profiler()
+    print("[DEBUG] Starting search.fit() with Profiler", flush=True)
     t0 = time.time()
-    with performance_report(filename=report_file):
-        with Profiler() as prof, ResourceProfiler(aggregate=True) as rprof:
-            search.fit(X, y)
+    with prof:
+        search.fit(X, y)
     t1 = time.time()
     print(f"[DEBUG] Total fit time: {t1-t0:.2f} s", flush=True)
 
-    # 7) Visualize the profiling results (saves PNG)
-    visualize([prof, rprof], show=False, filename="dask_local_profile.png")
-    print("[DEBUG] Profiling visualization saved to dask_local_profile.png", flush=True)
-    print(f"[DEBUG] Performance report saved to {report_file}", flush=True)
+    # 7) Extract profiling results and build DataFrame
+    records = []
+    for key, events in prof.results.items():
+        for evt in events:
+            records.append({
+                "task": key,
+                "duration": evt.finish - evt.start
+            })
+    df_prof = pd.DataFrame(records)
+    agg = df_prof.groupby("task")["duration"].sum().sort_values()
 
-    # 8) Save best params & score
-    best = {
+    # 8) Plot with Matplotlib
+    plt.figure(figsize=(8, max(2, len(agg)*0.4)))
+    agg.plot.barh()
+    plt.xlabel("Total duration (s)")
+    plt.title("Dask task durations")
+    plt.tight_layout()
+    plt.savefig(args.plot_file)
+    print(f"[DEBUG] Saved task-duration plot to {args.plot_file}", flush=True)
+
+    # 9) Save best params & timing
+    result = {
         "best_params": search.best_params_,
         "best_log_loss": -search.best_score_,
         "fit_time_s": t1-t0
     }
     with open(args.output, "w") as f:
-        json.dump(best, f, indent=2)
+        json.dump(result, f, indent=2)
     print(f"[INFO] Results saved to {args.output}", flush=True)
 
-    # 9) Close cluster
+    # 10) Cleanup
     client.close()
     cluster.close()
     print("[DEBUG] Dask cluster closed", flush=True)
+
 
 if __name__ == "__main__":
     main()

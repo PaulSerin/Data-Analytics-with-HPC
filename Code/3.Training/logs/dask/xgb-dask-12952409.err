@@ -1,0 +1,139 @@
+python/3.10.8 loaded
+/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py:266: FutureWarning: job_extra has been renamed to job_extra_directives. You are still using it (even if only set to []; please also check config files). If you did not set job_extra_directives yet, job_extra will be respected for now, but it will be removed in a future release. If you already set job_extra_directives, job_extra is ignored and you can remove it.
+  warnings.warn(warn, FutureWarning)
+/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/slurm.py:55: FutureWarning: project has been renamed to account as this kwarg was used wit -A option. You are still using it (please also check config files). If you did not set account yet, project will be respected for now, but it will be removed in a future release. If you already set account, project is ignored and you can remove it.
+  warnings.warn(warn, FutureWarning)
+/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py:266: FutureWarning: job_extra has been renamed to job_extra_directives. You are still using it (even if only set to []; please also check config files). If you did not set job_extra_directives yet, job_extra will be respected for now, but it will be removed in a future release. If you already set job_extra_directives, job_extra is ignored and you can remove it.
+  warnings.warn(warn, FutureWarning)
+/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/slurm.py:55: FutureWarning: project has been renamed to account as this kwarg was used wit -A option. You are still using it (please also check config files). If you did not set account yet, project will be respected for now, but it will be removed in a future release. If you already set account, project is ignored and you can remove it.
+  warnings.warn(warn, FutureWarning)
+2025-05-26 15:00:37,613 - tornado.application - ERROR - Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOMainLoop object at 0x14a6f139b700>>, <Task finished name='Task-14' coro=<SpecCluster._correct_state_internal() done, defined at /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py:352> exception=RuntimeError('Command exited with non-zero exit code.\nExit code: 1\nCommand:\nsbatch /scratch/12952409/tmpcuugo4ix.sh\nstdout:\n\nstderr:\nsbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1\nsbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short\nsbatch: error: Batch job submission failed: Invalid account or account/partition combination specified\n\n')>)
+Traceback (most recent call last):
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/tornado/ioloop.py", line 774, in _discard_future_result
+    future.result()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 396, in _correct_state_internal
+    await asyncio.gather(*worker_futs)
+  File "/opt/cesga/2020/software/Core/python/3.10.8/lib/python3.10/asyncio/tasks.py", line 650, in _wrap_awaitable
+    return (yield from awaitable.__await__())
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 74, in _
+    await self.start()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 426, in start
+    out = await self._submit_job(fn)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 409, in _submit_job
+    return await self._call(shlex.split(self.submit_command) + [script_filename])
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 514, in _call
+    raise RuntimeError(
+RuntimeError: Command exited with non-zero exit code.
+Exit code: 1
+Command:
+sbatch /scratch/12952409/tmpcuugo4ix.sh
+stdout:
+
+stderr:
+sbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1
+sbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short
+sbatch: error: Batch job submission failed: Invalid account or account/partition combination specified
+
+
+Task exception was never retrieved
+future: <Task finished name='Task-41' coro=<_wrap_awaitable() done, defined at /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py:124> exception=RuntimeError('Command exited with non-zero exit code.\nExit code: 1\nCommand:\nsbatch /scratch/12952409/tmp2dmjlry_.sh\nstdout:\n\nstderr:\nsbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1\nsbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short\nsbatch: error: Batch job submission failed: Invalid account or account/partition combination specified\n\n')>
+Traceback (most recent call last):
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 125, in _wrap_awaitable
+    return await aw
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 74, in _
+    await self.start()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 426, in start
+    out = await self._submit_job(fn)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 409, in _submit_job
+    return await self._call(shlex.split(self.submit_command) + [script_filename])
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 514, in _call
+    raise RuntimeError(
+RuntimeError: Command exited with non-zero exit code.
+Exit code: 1
+Command:
+sbatch /scratch/12952409/tmp2dmjlry_.sh
+stdout:
+
+stderr:
+sbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1
+sbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short
+sbatch: error: Batch job submission failed: Invalid account or account/partition combination specified
+
+
+Task exception was never retrieved
+future: <Task finished name='Task-42' coro=<_wrap_awaitable() done, defined at /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py:124> exception=RuntimeError('Command exited with non-zero exit code.\nExit code: 1\nCommand:\nsbatch /scratch/12952409/tmpobk2zvw4.sh\nstdout:\n\nstderr:\nsbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1\nsbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short\nsbatch: error: Batch job submission failed: Invalid account or account/partition combination specified\n\n')>
+Traceback (most recent call last):
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 125, in _wrap_awaitable
+    return await aw
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 74, in _
+    await self.start()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 426, in start
+    out = await self._submit_job(fn)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 409, in _submit_job
+    return await self._call(shlex.split(self.submit_command) + [script_filename])
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 514, in _call
+    raise RuntimeError(
+RuntimeError: Command exited with non-zero exit code.
+Exit code: 1
+Command:
+sbatch /scratch/12952409/tmpobk2zvw4.sh
+stdout:
+
+stderr:
+sbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1
+sbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short
+sbatch: error: Batch job submission failed: Invalid account or account/partition combination specified
+
+
+Task exception was never retrieved
+future: <Task finished name='Task-39' coro=<_wrap_awaitable() done, defined at /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py:124> exception=RuntimeError('Command exited with non-zero exit code.\nExit code: 1\nCommand:\nsbatch /scratch/12952409/tmpx0arpq00.sh\nstdout:\n\nstderr:\nsbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1\nsbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short\nsbatch: error: Batch job submission failed: Invalid account or account/partition combination specified\n\n')>
+Traceback (most recent call last):
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 125, in _wrap_awaitable
+    return await aw
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 74, in _
+    await self.start()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 426, in start
+    out = await self._submit_job(fn)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 409, in _submit_job
+    return await self._call(shlex.split(self.submit_command) + [script_filename])
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 514, in _call
+    raise RuntimeError(
+RuntimeError: Command exited with non-zero exit code.
+Exit code: 1
+Command:
+sbatch /scratch/12952409/tmpx0arpq00.sh
+stdout:
+
+stderr:
+sbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1
+sbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short
+sbatch: error: Batch job submission failed: Invalid account or account/partition combination specified
+
+
+Task exception was never retrieved
+future: <Task finished name='Task-40' coro=<_wrap_awaitable() done, defined at /mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py:124> exception=RuntimeError('Command exited with non-zero exit code.\nExit code: 1\nCommand:\nsbatch /scratch/12952409/tmp2mu54zdj.sh\nstdout:\n\nstderr:\nsbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1\nsbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short\nsbatch: error: Batch job submission failed: Invalid account or account/partition combination specified\n\n')>
+Traceback (most recent call last):
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 125, in _wrap_awaitable
+    return await aw
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/distributed/deploy/spec.py", line 74, in _
+    await self.start()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 426, in start
+    out = await self._submit_job(fn)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 409, in _submit_job
+    return await self._call(shlex.split(self.submit_command) + [script_filename])
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/dask_jobqueue/core.py", line 514, in _call
+    raise RuntimeError(
+RuntimeError: Command exited with non-zero exit code.
+Exit code: 1
+Command:
+sbatch /scratch/12952409/tmp2mu54zdj.sh
+stdout:
+
+stderr:
+sbatch: error: slurm_job_submit: Job assigned to GPU nodes: gres:gpu:a100:1
+sbatch: error: slurm_job_submit: setting QoS to Partition QoS value: short
+sbatch: error: Batch job submission failed: Invalid account or account/partition combination specified
+
+
