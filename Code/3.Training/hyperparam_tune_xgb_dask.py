@@ -84,6 +84,7 @@ def main():
     cluster.scale(jobs=args.jobs)
     print(f"[DEBUG] Launched {args.jobs} workers -> dashboard {cluster.dashboard_link}", flush=True)
     client = Client(cluster)
+    client.wait_for_workers(n_workers=args.jobs, timeout=300)
     print("[DEBUG] Client connected", flush=True)
 
     # 5) Persist data to cluster
