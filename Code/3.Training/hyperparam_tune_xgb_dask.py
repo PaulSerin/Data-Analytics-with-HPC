@@ -73,12 +73,12 @@ def main():
     print("[DEBUG] Starting SLURMCluster", flush=True)
     cluster = SLURMCluster(
         queue="short",
-        project="curso363",
+        account="ulc",
         cores=32,
         processes=1,
         memory="40GB",
         walltime="02:00:00",
-        job_extra=["--gres=gpu:a100:1"]
+        job_extra_directives=["--gres=gpu:a100:1"]
     )
     cluster.scale(jobs=args.jobs)
     print(f"[DEBUG] Launched {args.jobs} workers → dashboard: {cluster.dashboard_link}", flush=True)
