@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH --job-name=xgb-dask
-#SBATCH --output=logs/xgb-dask-%j.out
-#SBATCH --error=logs/xgb-dask-%j.err
+#SBATCH --output=logs/dask/xgb-dask-%j.out
+#SBATCH --error=logs/dask/xgb-dask-%j.err
 
 #SBATCH --nodes=4
 #SBATCH --ntasks=4
@@ -17,7 +17,7 @@ source $STORE/mypython/bin/activate
 python hyperparam_tune_xgb_dask.py \
   --utils-path ../0.Utils/utils.py \
   --parquet   ../../Datasets/final_tennis_dataset_symmetric.parquet \
-  --output    ./best_xgb_params.json \
+  --output    ./logs/dask/best_xgb_params.json \
   --n-iter    50 \
   --n-splits  4 \
   --jobs      4
