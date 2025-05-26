@@ -125,7 +125,6 @@ def main():
         cv=cv,
         random_state=42,
         n_jobs=-1,
-        verbose=1
     )
     print("[DEBUG] RandomizedSearchCV initialized", flush=True)
 

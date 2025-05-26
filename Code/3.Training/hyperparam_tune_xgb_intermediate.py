@@ -11,9 +11,7 @@ import time
 
 import dask.dataframe as dd
 from dask.distributed import Client, LocalCluster, performance_report
-from dask.distributed import get_worker
-from dask.diagnostics import Profiler, ResourceProfiler
-from dask.diagnostics import visualize
+from dask.diagnostics import Profiler, ResourceProfiler, visualize
 from dask_ml.model_selection import RandomizedSearchCV
 import xgboost as xgb
 
@@ -46,22 +44,15 @@ def main():
     print(f"[DEBUG] Dashboard URL: {cluster.dashboard_link}", flush=True)
 
     # 2) Print cluster & scheduler info
-    print(f"[DEBUG] Cluster object: {cluster}", flush=True)
-    print(f"[DEBUG] Scheduler info keys: {list(client.scheduler_info().keys())}", flush=True)
-    print(f"[DEBUG] Number of cores per worker: {client.ncores()}", flush=True)
+    info = client.scheduler_info()
+    print(f"[DEBUG] Scheduler info keys: {list(info.keys())}", flush=True)
+    workers = info["workers"]
+    for addr, winfo in workers.items():
+        mem_gb = winfo.get("memory_limit", 0) / 1e9
+        print(f"[DEBUG] Worker {addr}: {winfo['nthreads']} threads, "
+              f"{mem_gb:.2f} GB memory limit", flush=True)
 
-    # 3) Inspect each worker
-    def _worker_info():
-        w = get_worker()
-        return {
-            "address": w.address,
-            "nthreads": w.nthreads,
-            "memory_limit": w.memory_limit
-        }
-    infos = client.run(_worker_info)
-    print(f"[DEBUG] Worker info: {infos}", flush=True)
-
-    # 4) Load & sample data
+    # 3) Load & sample data
     print(f"[INFO] Loading parquet {args.parquet}", flush=True)
     df = pd.read_parquet(args.parquet)
     print(f"[INFO] Original shape: {df.shape}", flush=True)
@@ -69,19 +60,19 @@ def main():
     df = df.sample(n=n, random_state=42)
     print(f"[INFO] Sampled {n} rows → {df.shape}", flush=True)
 
-    # 5) To Dask-DataFrame
+    # 4) Convert to Dask DataFrame
     ddf = dd.from_pandas(df, npartitions=args.n_workers)
     X = ddf.select_dtypes(include=[np.number]).drop(columns=["TARGET"], errors="ignore")
     y = ddf["TARGET"]
     print(f"[DEBUG] Dask partitions: {ddf.npartitions}", flush=True)
 
-    # 6) Define model & grid
+    # 5) Define model & hyperparameter distribution
     param_dist = {
         "n_estimators":  [50, 100],
         "max_depth":     [3, 5],
         "learning_rate": [0.1, 0.2]
     }
-    print(f"[DEBUG] Param dist: {param_dist}", flush=True)
+    print(f"[DEBUG] Param distribution: {param_dist}", flush=True)
     model = xgb.XGBClassifier(
         objective="binary:logistic",
         eval_metric="logloss",
@@ -95,11 +86,10 @@ def main():
         scoring="neg_log_loss",
         cv=2,
         random_state=42,
-        n_jobs=-1,
-        verbose=1
+        n_jobs=-1
     )
 
-    # 7) Run with profiling + performance report
+    # 6) Run with profiling + performance report
     report_file = "dask_local_report.html"
     print("[DEBUG] Starting search.fit() with performance_report and Profiler", flush=True)
     t0 = time.time()
@@ -109,12 +99,12 @@ def main():
     t1 = time.time()
     print(f"[DEBUG] Total fit time: {t1-t0:.2f} s", flush=True)
 
-    # 8) Visualize the profiling results (saves PNGs)
+    # 7) Visualize the profiling results (saves PNG)
     visualize([prof, rprof], show=False, filename="dask_local_profile.png")
     print("[DEBUG] Profiling visualization saved to dask_local_profile.png", flush=True)
     print(f"[DEBUG] Performance report saved to {report_file}", flush=True)
 
-    # 9) Save best params
+    # 8) Save best params & score
     best = {
         "best_params": search.best_params_,
         "best_log_loss": -search.best_score_,
@@ -124,11 +114,10 @@ def main():
         json.dump(best, f, indent=2)
     print(f"[INFO] Results saved to {args.output}", flush=True)
 
-    # 10) Close cluster
+    # 9) Close cluster
     client.close()
     cluster.close()
     print("[DEBUG] Dask cluster closed", flush=True)
-
 
 if __name__ == "__main__":
     main()
