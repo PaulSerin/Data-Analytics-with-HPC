@@ -1,0 +1,23 @@
+#!/bin/bash -l
+#SBATCH --job-name=xgb-dask
+#SBATCH --output=logs/xgb-dask-%j.out
+#SBATCH --error=logs/xgb-dask-%j.err
+
+#SBATCH --nodes=4
+#SBATCH --ntasks=4
+#SBATCH --cpus-per-task=32
+#SBATCH --gres=gpu:a100:1
+#SBATCH --mem=40G
+#SBATCH --time=04:00:00
+#SBATCH --chdir=/chemin/vers/Code/3.Prediction
+
+module load python
+source $STORE/mypython/bin/activate
+
+python hyperparam_tune_xgb_dask.py \
+  --utils-path ../0.Utils/utils.py \
+  --parquet   ../../Datasets/final_tennis_dataset_symmetric.parquet \
+  --output    ./best_xgb_params.json \
+  --n-iter    50 \
+  --n-splits  4 \
+  --jobs      4
