@@ -17,6 +17,7 @@ source $STORE/mypython/bin/activate
 python hyperparam_tune_xgb_dask.py \
   --utils-path ../0.Utils/utils.py \
   --parquet   ../../Datasets/final_tennis_dataset_symmetric.parquet \
+  --cutoff    2025-01-01 \
   --output    ./logs/dask/best_xgb_params.json \
   --n-iter    50 \
   --n-splits  4 \

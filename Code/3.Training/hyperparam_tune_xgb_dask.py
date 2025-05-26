@@ -78,8 +78,10 @@ def main():
         processes=1,
         memory="40GB",
         walltime="02:00:00",
-        job_extra_directives=["--gres=gpu:a100:1"]
+        job_extra_directives=["--gres=gpu:a100:1"],
+        scheduler_options={"idle_timeout": "120s"}
     )
+
     cluster.scale(jobs=args.jobs)
     print(f"[DEBUG] Launched {args.jobs} workers → dashboard: {cluster.dashboard_link}", flush=True)
     client = Client(cluster)
@@ -96,8 +98,8 @@ def main():
     base = xgb.XGBClassifier(
         objective="binary:logistic",
         eval_metric="logloss",
-        tree_method="gpu_hist",
-        predictor="gpu_predictor",
+        tree_method="hist",      # CPU‐side histogram
+        device="cuda",           # envoie le calcul sur GPU
         random_state=42
     )
     param_dist = {
@@ -130,7 +132,7 @@ def main():
 
     # 6) Run the search under a performance report
     print("[DEBUG] Starting search.fit()", flush=True)
-    with performance_report(filename="dask-report.html"), client:
+    with performance_report(filename="dask-report.html"), client.as_current():
         search.fit(X_train, y_train)
     print("[DEBUG] search.fit() completed", flush=True)
 
