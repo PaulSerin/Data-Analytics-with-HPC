@@ -1,0 +1,42 @@
+slurmstepd: info: Setting TMPDIR to /scratch/12951641. Previous errors about TMPDIR can be discarded
+[2025-05-26 14:10:17] JOB 12951641 START
+[INFO] Loading data from ../../Datasets/final_tennis_dataset_symmetric.parquet
+[INFO] Original DataFrame shape: (133346, 195)
+[INFO] Sampled 1000 rows
+[INFO] Features shape: (1000, 176)
+[INFO] Defining CV and parameter distribution
+[INFO] Parameter distribution: {'n_estimators': [50, 100], 'max_depth': [3, 5], 'learning_rate': [0.1, 0.2]}
+[INFO] Starting RandomizedSearchCV
+Fitting 2 folds for each of 4 candidates, totalling 8 fits
+[INFO] Search done
+[RESULT] Best params: {'n_estimators': 100, 'max_depth': 3, 'learning_rate': 0.1}
+[RESULT] Best log-loss: 0.29498
+[INFO] Saved results to ./logs/simple/best_params_simple.json
+[2025-05-26 14:12:43] JOB 12951641 END
+
+*****************************************************************************
+*                                                                           *
+*                    JOB EFFICIENCY REPORT (seff 12951641)                   *
+*                                                                           *
+*****************************************************************************
+
+Job ID: 12951641
+Cluster: finisterrae3
+User/Group: curso363/ulc
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:07:40
+CPU Efficiency: 77.70% of 00:09:52 core-walltime
+Job Wall-clock time: 00:02:28
+Memory Utilized: 924.89 MB
+Memory Efficiency: 5.65% of 16.00 GB
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++   Memory Efficiency is too small. Please review the requested memory. ++
+ ++ It seems that you do not need that much memory so we recommend        ++
+ ++ requesting less memory in other similar jobs.                         ++
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+*****************************************************************************
+

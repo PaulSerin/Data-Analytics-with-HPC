@@ -52,7 +52,7 @@ def main():
     model = xgb.XGBClassifier(
         objective="binary:logistic",
         eval_metric="logloss",
-        use_label_encoder=False,
+        #use_label_encoder=False,
         tree_method="hist",   # fast CPU
         random_state=42
     )
