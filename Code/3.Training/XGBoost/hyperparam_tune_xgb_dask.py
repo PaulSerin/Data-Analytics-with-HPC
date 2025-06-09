@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Distributed hyperparameter tuning for XGBoost using Dask, Dask-ML and a SLURM cluster.
-Entraîne sur <=2023, teste sur 2024, et stocke tous les résultats de grille + score test.
-Génère aussi un rapport Dask et des diagnostics Bokeh.
-"""
 import argparse
 import json
 from pathlib import Path
