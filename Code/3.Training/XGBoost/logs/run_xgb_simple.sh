@@ -25,4 +25,4 @@ python hyperparam_tune_xgb_simple.py \
   --sample-size 1000 \
   --output ./logs/simple/best_params_simple.json
 
-echo "[$(date +"%Y-%m-%d %H:%M:%S")] JOB $SLURM_JOB_ID END"  
+echo "[$(date +"%Y-%m-%d %H:%M:%S")] JOB $SLURM_JOB_ID END"
