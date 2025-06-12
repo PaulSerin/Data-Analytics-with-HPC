@@ -1,0 +1,692 @@
+{
+  "job_index": 3,
+  "runs": 1250,
+  "stats": [
+    {
+      "id": 104925,
+      "name": "DJOKOVIC Novak",
+      "wins": 79,
+      "semifinals": 199,
+      "quarterfinals": 369
+    },
+    {
+      "id": 126094,
+      "name": "RUBLEV Andrey",
+      "wins": 39,
+      "semifinals": 136,
+      "quarterfinals": 238
+    },
+    {
+      "id": 207989,
+      "name": "ALCARAZ Carlos",
+      "wins": 124,
+      "semifinals": 248,
+      "quarterfinals": 341
+    },
+    {
+      "id": 100644,
+      "name": "ZVEREV Alexander",
+      "wins": 86,
+      "semifinals": 228,
+      "quarterfinals": 329
+    },
+    {
+      "id": 209113,
+      "name": "DIALLO Gabriel",
+      "wins": 1,
+      "semifinals": 22,
+      "quarterfinals": 46
+    },
+    {
+      "id": 126774,
+      "name": "TSITSIPAS Stefanos",
+      "wins": 114,
+      "semifinals": 261,
+      "quarterfinals": 350
+    },
+    {
+      "id": 126203,
+      "name": "FRITZ Taylor",
+      "wins": 24,
+      "semifinals": 121,
+      "quarterfinals": 213
+    },
+    {
+      "id": 210097,
+      "name": "SHELTON Ben",
+      "wins": 19,
+      "semifinals": 52,
+      "quarterfinals": 93
+    },
+    {
+      "id": 133430,
+      "name": "SHAPOVALOV Denis",
+      "wins": 9,
+      "semifinals": 53,
+      "quarterfinals": 118
+    },
+    {
+      "id": 200221,
+      "name": "DAVIDOVICH FOKINA Alejandro",
+      "wins": 9,
+      "semifinals": 61,
+      "quarterfinals": 108
+    },
+    {
+      "id": 200000,
+      "name": "AUGER-ALIASSIME Felix",
+      "wins": 24,
+      "semifinals": 88,
+      "quarterfinals": 166
+    },
+    {
+      "id": 208029,
+      "name": "RUNE Holger",
+      "wins": 50,
+      "semifinals": 172,
+      "quarterfinals": 276
+    },
+    {
+      "id": 208134,
+      "name": "NARDI Luca",
+      "wins": 5,
+      "semifinals": 15,
+      "quarterfinals": 31
+    },
+    {
+      "id": 207518,
+      "name": "MUSETTI Lorenzo",
+      "wins": 33,
+      "semifinals": 116,
+      "quarterfinals": 194
+    },
+    {
+      "id": 209950,
+      "name": "FILS Arthur",
+      "wins": 13,
+      "semifinals": 44,
+      "quarterfinals": 67
+    },
+    {
+      "id": 211663,
+      "name": "FONSECA Joao",
+      "wins": 6,
+      "semifinals": 39,
+      "quarterfinals": 82
+    },
+    {
+      "id": 206173,
+      "name": "SINNER Jannik",
+      "wins": 82,
+      "semifinals": 236,
+      "quarterfinals": 339
+    },
+    {
+      "id": 200175,
+      "name": "KECMANOVIC Miomir",
+      "wins": 3,
+      "semifinals": 34,
+      "quarterfinals": 64
+    },
+    {
+      "id": 128034,
+      "name": "HURKACZ Hubert",
+      "wins": 23,
+      "semifinals": 97,
+      "quarterfinals": 202
+    },
+    {
+      "id": 106421,
+      "name": "MEDVEDEV Daniil",
+      "wins": 8,
+      "semifinals": 47,
+      "quarterfinals": 94
+    },
+    {
+      "id": 124187,
+      "name": "OPELKA Reilly",
+      "wins": 11,
+      "semifinals": 85,
+      "quarterfinals": 147
+    },
+    {
+      "id": 104527,
+      "name": "WAWRINKA Stan",
+      "wins": 10,
+      "semifinals": 42,
+      "quarterfinals": 73
+    },
+    {
+      "id": 200282,
+      "name": "DE MINAUR Alex",
+      "wins": 18,
+      "semifinals": 102,
+      "quarterfinals": 200
+    },
+    {
+      "id": 111794,
+      "name": "MAJCHRZAK Kamil",
+      "wins": 1,
+      "semifinals": 10,
+      "quarterfinals": 31
+    },
+    {
+      "id": 207352,
+      "name": "BU Yunchaokete",
+      "wins": 6,
+      "semifinals": 33,
+      "quarterfinals": 81
+    },
+    {
+      "id": 134770,
+      "name": "RUUD Casper",
+      "wins": 54,
+      "semifinals": 140,
+      "quarterfinals": 263
+    },
+    {
+      "id": 206909,
+      "name": "NAKASHIMA Brandon",
+      "wins": 11,
+      "semifinals": 50,
+      "quarterfinals": 92
+    },
+    {
+      "id": 111575,
+      "name": "KHACHANOV Karen",
+      "wins": 17,
+      "semifinals": 65,
+      "quarterfinals": 190
+    },
+    {
+      "id": 200240,
+      "name": "KOPRIVA Vit",
+      "wins": 1,
+      "semifinals": 4,
+      "quarterfinals": 14
+    },
+    {
+      "id": 124116,
+      "name": "OFNER Sebastian",
+      "wins": 4,
+      "semifinals": 22,
+      "quarterfinals": 59
+    },
+    {
+      "id": 210530,
+      "name": "TIEN Learner",
+      "wins": 6,
+      "semifinals": 25,
+      "quarterfinals": 48
+    },
+    {
+      "id": 207925,
+      "name": "COBOLLI Flavio",
+      "wins": 6,
+      "semifinals": 38,
+      "quarterfinals": 83
+    },
+    {
+      "id": 144719,
+      "name": "MUNAR Jaume",
+      "wins": 5,
+      "semifinals": 28,
+      "quarterfinals": 63
+    },
+    {
+      "id": 105902,
+      "name": "DUCKWORTH James",
+      "wins": 3,
+      "semifinals": 17,
+      "quarterfinals": 33
+    },
+    {
+      "id": 209260,
+      "name": "DARDERI Luciano",
+      "wins": 9,
+      "semifinals": 66,
+      "quarterfinals": 140
+    },
+    {
+      "id": 144869,
+      "name": "ETCHEVERRY Tomas Martin",
+      "wins": 12,
+      "semifinals": 44,
+      "quarterfinals": 87
+    },
+    {
+      "id": 202104,
+      "name": "BAEZ Sebastian",
+      "wins": 22,
+      "semifinals": 88,
+      "quarterfinals": 154
+    },
+    {
+      "id": 126207,
+      "name": "TIAFOE Frances",
+      "wins": 14,
+      "semifinals": 57,
+      "quarterfinals": 121
+    },
+    {
+      "id": 105526,
+      "name": "STRUFF Jan-Lennard",
+      "wins": 8,
+      "semifinals": 34,
+      "quarterfinals": 73
+    },
+    {
+      "id": 209098,
+      "name": "MEDJEDOVIC Hamad",
+      "wins": 7,
+      "semifinals": 66,
+      "quarterfinals": 138
+    },
+    {
+      "id": 111797,
+      "name": "JARRY Nicolas",
+      "wins": 20,
+      "semifinals": 78,
+      "quarterfinals": 132
+    },
+    {
+      "id": 208286,
+      "name": "ARNALDI Matteo",
+      "wins": 6,
+      "semifinals": 30,
+      "quarterfinals": 61
+    },
+    {
+      "id": 106329,
+      "name": "MONTEIRO Thiago",
+      "wins": 7,
+      "semifinals": 42,
+      "quarterfinals": 98
+    },
+    {
+      "id": 105138,
+      "name": "BAUTISTA AGUT Roberto",
+      "wins": 8,
+      "semifinals": 22,
+      "quarterfinals": 52
+    },
+    {
+      "id": 122298,
+      "name": "VAN DE ZANDSCHULP Botic",
+      "wins": 2,
+      "semifinals": 17,
+      "quarterfinals": 45
+    },
+    {
+      "id": 111815,
+      "name": "NORRIE Cameron",
+      "wins": 13,
+      "semifinals": 56,
+      "quarterfinals": 106
+    },
+    {
+      "id": 126128,
+      "name": "SAFIULLIN Roman",
+      "wins": 2,
+      "semifinals": 15,
+      "quarterfinals": 40
+    },
+    {
+      "id": 105916,
+      "name": "FUCSOVICS Marton",
+      "wins": 6,
+      "semifinals": 44,
+      "quarterfinals": 101
+    },
+    {
+      "id": 134868,
+      "name": "GRIEKSPOOR Tallon",
+      "wins": 3,
+      "semifinals": 16,
+      "quarterfinals": 54
+    },
+    {
+      "id": 126214,
+      "name": "TABILO Alejandro",
+      "wins": 6,
+      "semifinals": 28,
+      "quarterfinals": 90
+    },
+    {
+      "id": 206748,
+      "name": "ZEPPIERI Giulio",
+      "wins": 3,
+      "semifinals": 13,
+      "quarterfinals": 36
+    },
+    {
+      "id": 132686,
+      "name": "BORGES Nuno",
+      "wins": 5,
+      "semifinals": 34,
+      "quarterfinals": 94
+    },
+    {
+      "id": 200624,
+      "name": "KORDA Sebastian",
+      "wins": 14,
+      "semifinals": 58,
+      "quarterfinals": 118
+    },
+    {
+      "id": 207686,
+      "name": "SHEVCHENKO Alexander",
+      "wins": 5,
+      "semifinals": 27,
+      "quarterfinals": 61
+    },
+    {
+      "id": 200615,
+      "name": "POPYRIN Alexei",
+      "wins": 11,
+      "semifinals": 34,
+      "quarterfinals": 84
+    },
+    {
+      "id": 105870,
+      "name": "HANFMANN Yannick",
+      "wins": 2,
+      "semifinals": 21,
+      "quarterfinals": 51
+    },
+    {
+      "id": 111513,
+      "name": "DJERE Laslo",
+      "wins": 12,
+      "semifinals": 62,
+      "quarterfinals": 142
+    },
+    {
+      "id": 126205,
+      "name": "PAUL Tommy",
+      "wins": 11,
+      "semifinals": 47,
+      "quarterfinals": 133
+    },
+    {
+      "id": 208103,
+      "name": "LEHECKA Jiri",
+      "wins": 3,
+      "semifinals": 32,
+      "quarterfinals": 86
+    },
+    {
+      "id": 124186,
+      "name": "MULLER Alexandre",
+      "wins": 4,
+      "semifinals": 32,
+      "quarterfinals": 59
+    },
+    {
+      "id": 208233,
+      "name": "BELLUCCI Mattia",
+      "wins": 5,
+      "semifinals": 24,
+      "quarterfinals": 58
+    },
+    {
+      "id": 105732,
+      "name": "HERBERT Pierre-Hugues",
+      "wins": 4,
+      "semifinals": 16,
+      "quarterfinals": 47
+    },
+    {
+      "id": 106415,
+      "name": "NISHIOKA Yoshihito",
+      "wins": 1,
+      "semifinals": 19,
+      "quarterfinals": 61
+    },
+    {
+      "id": 210506,
+      "name": "MICHELSEN Alex",
+      "wins": 1,
+      "semifinals": 16,
+      "quarterfinals": 42
+    },
+    {
+      "id": 209279,
+      "name": "ATMANE Terence",
+      "wins": 5,
+      "semifinals": 33,
+      "quarterfinals": 56
+    },
+    {
+      "id": 202103,
+      "name": "CERUNDOLO Francisco",
+      "wins": 6,
+      "semifinals": 37,
+      "quarterfinals": 75
+    },
+    {
+      "id": 105777,
+      "name": "DIMITROV Grigor",
+      "wins": 27,
+      "semifinals": 101,
+      "quarterfinals": 166
+    },
+    {
+      "id": 210319,
+      "name": "QUINN Ethan",
+      "wins": 1,
+      "semifinals": 9,
+      "quarterfinals": 31
+    },
+    {
+      "id": 209262,
+      "name": "SCHOOLKATE Tristan",
+      "wins": 1,
+      "semifinals": 10,
+      "quarterfinals": 29
+    },
+    {
+      "id": 200005,
+      "name": "HUMBERT Ugo",
+      "wins": 2,
+      "semifinals": 32,
+      "quarterfinals": 84
+    },
+    {
+      "id": 104792,
+      "name": "MONFILS Gael",
+      "wins": 5,
+      "semifinals": 26,
+      "quarterfinals": 72
+    },
+    {
+      "id": 202058,
+      "name": "TIRANTE Thiago Agustin",
+      "wins": 2,
+      "semifinals": 12,
+      "quarterfinals": 42
+    },
+    {
+      "id": 207733,
+      "name": "DRAPER Jack",
+      "wins": 7,
+      "semifinals": 51,
+      "quarterfinals": 98
+    },
+    {
+      "id": 105807,
+      "name": "CARRENO BUSTA Pablo",
+      "wins": 13,
+      "semifinals": 61,
+      "quarterfinals": 149
+    },
+    {
+      "id": 122330,
+      "name": "BUBLIK Alexander",
+      "wins": 2,
+      "semifinals": 10,
+      "quarterfinals": 40
+    },
+    {
+      "id": 206499,
+      "name": "KOVACEVIC Aleksandar",
+      "wins": 2,
+      "semifinals": 35,
+      "quarterfinals": 101
+    },
+    {
+      "id": 202385,
+      "name": "BROOKSBY Jenson",
+      "wins": 3,
+      "semifinals": 14,
+      "quarterfinals": 45
+    },
+    {
+      "id": 132283,
+      "name": "SONEGO Lorenzo",
+      "wins": 6,
+      "semifinals": 28,
+      "quarterfinals": 60
+    },
+    {
+      "id": 200384,
+      "name": "GASTON Hugo",
+      "wins": 4,
+      "semifinals": 34,
+      "quarterfinals": 72
+    },
+    {
+      "id": 111442,
+      "name": "THOMPSON Jordan",
+      "wins": 3,
+      "semifinals": 8,
+      "quarterfinals": 19
+    },
+    {
+      "id": 127157,
+      "name": "ALTMAIER Daniel",
+      "wins": 4,
+      "semifinals": 24,
+      "quarterfinals": 52
+    },
+    {
+      "id": 106198,
+      "name": "DELLIEN Hugo",
+      "wins": 1,
+      "semifinals": 10,
+      "quarterfinals": 37
+    },
+    {
+      "id": 126239,
+      "name": "RINDERKNECH Arthur",
+      "wins": 2,
+      "semifinals": 9,
+      "quarterfinals": 27
+    },
+    {
+      "id": 124079,
+      "name": "MARTINEZ Pedro",
+      "wins": 1,
+      "semifinals": 18,
+      "quarterfinals": 47
+    },
+    {
+      "id": 208363,
+      "name": "NAVONE Mariano",
+      "wins": 5,
+      "semifinals": 30,
+      "quarterfinals": 57
+    },
+    {
+      "id": 123755,
+      "name": "GALAN Daniel Elahi",
+      "wins": 2,
+      "semifinals": 14,
+      "quarterfinals": 43
+    },
+    {
+      "id": 126127,
+      "name": "BONZI Benjamin",
+      "wins": 1,
+      "semifinals": 11,
+      "quarterfinals": 35
+    },
+    {
+      "id": 105583,
+      "name": "LAJOVIC Dusan",
+      "wins": 1,
+      "semifinals": 20,
+      "quarterfinals": 46
+    },
+    {
+      "id": 106218,
+      "name": "GIRON Marcos",
+      "wins": 3,
+      "semifinals": 19,
+      "quarterfinals": 38
+    },
+    {
+      "id": 209209,
+      "name": "MISOLIC Filip",
+      "wins": 1,
+      "semifinals": 12,
+      "quarterfinals": 31
+    },
+    {
+      "id": 105077,
+      "name": "RAMOS-VINOLAS Albert",
+      "wins": 1,
+      "semifinals": 10,
+      "quarterfinals": 28
+    },
+    {
+      "id": 208859,
+      "name": "PASSARO Francesco",
+      "wins": 1,
+      "semifinals": 6,
+      "quarterfinals": 26
+    },
+    {
+      "id": 105932,
+      "name": "BASILASHVILI Nikoloz",
+      "wins": 2,
+      "semifinals": 21,
+      "quarterfinals": 67
+    },
+    {
+      "id": 210150,
+      "name": "MENSIK Jakub",
+      "wins": 1,
+      "semifinals": 15,
+      "quarterfinals": 50
+    },
+    {
+      "id": 200443,
+      "name": "WALTON Adam",
+      "wins": 1,
+      "semifinals": 11,
+      "quarterfinals": 27
+    },
+    {
+      "id": 144895,
+      "name": "MOUTET Corentin",
+      "wins": 2,
+      "semifinals": 31,
+      "quarterfinals": 80
+    },
+    {
+      "id": 207830,
+      "name": "MACHAC Tomas",
+      "wins": 1,
+      "semifinals": 28,
+      "quarterfinals": 54
+    },
+    {
+      "id": 206681,
+      "name": "MAROZSAN Fabian",
+      "wins": 1,
+      "semifinals": 12,
+      "quarterfinals": 49
+    }
+  ]
+}
