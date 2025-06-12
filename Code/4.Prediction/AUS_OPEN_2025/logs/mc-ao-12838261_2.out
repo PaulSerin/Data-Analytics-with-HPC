@@ -1,5 +1,0 @@
-slurmstepd: info: Setting TMPDIR to /scratch/12838775. Previous errors about TMPDIR can be discarded
-[Wed May 21 01:22:07 CEST 2025] Starting job 12838775 task 2
-Wrote partial results to mc_aus_results3/partial_2.json
-Elapsed time: 714.90 seconds
-[Wed May 21 01:34:02 CEST 2025] Finished job 12838775 task 2

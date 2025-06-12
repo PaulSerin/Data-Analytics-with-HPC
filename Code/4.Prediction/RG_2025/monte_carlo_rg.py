@@ -1,10 +1,10 @@
-#!/usr/bin/env python3
 import json
 import random
 import argparse
 import time
 from pathlib import Path
 from importlib.machinery import SourceFileLoader
+import os
 
 def load_utils(utils_path: Path):
     """Dynamically load your utils.py from the given path."""
@@ -100,6 +100,8 @@ def main():
                         help="Directory to write partial results")
     args = parser.parse_args()
 
+    start = time.perf_counter()
+
     # Load utils, draw, feature snapshots, and model
     utils = load_utils(args.utils_path)
     tournament = json.loads(args.json_draw.read_text(encoding='utf-8'))
@@ -126,15 +128,19 @@ def main():
         (m["player1"]["id"], m["player2"]["id"]) for m in first_round
     ]
 
+    # Safety check
+    if len(bracket_init) == 0:
+        raise ValueError("Bracket is empty — check the input JSON draw file.")
+
     # Prepare counters
-    start = args.job_index * args.runs_per_job
-    end = start + args.runs_per_job
+    start_idx = args.job_index * args.runs_per_job
+    end_idx = start_idx + args.runs_per_job
     champion_counts = {}
     qf_counts = {}
     sf_counts = {}
 
     # Run simulations
-    for i in range(start, end):
+    for i in range(start_idx, end_idx):
         random.seed(i)
         champ, (_, _), qfs, sfs = simulate_tournament(
             bracket_init, surface, model, global_df, surface_dfs, utils
@@ -145,6 +151,10 @@ def main():
             qf_counts[pid] = qf_counts.get(pid, 0) + 1
         for pid in sfs:
             sf_counts[pid] = sf_counts.get(pid, 0) + 1
+
+        # Print progress every 50 simulations
+        if (i - start_idx + 1) % 50 == 0:
+            print(f"[Job {args.job_index}] Simulations completed: {i - start_idx + 1}/{args.runs_per_job}")
 
     # Build stats with names
     stats = []
@@ -165,12 +175,19 @@ def main():
         "stats": stats
     }
     out_path = args.output_dir / f"partial_{args.job_index}.json"
-    with open(out_path, "w", encoding="utf-8") as f:
+    with open(out_path, "w", encoding='utf-8') as f:
         json.dump(out, f, indent=2)
 
-    elapsed = time.perf_counter() - t0
+    elapsed_total = time.perf_counter() - t0
+    duration = time.perf_counter() - start
+
     print(f"Wrote partial results to {out_path}")
-    print(f"Elapsed time: {elapsed:.2f} seconds")
+    print(f"Total elapsed time: {elapsed_total:.2f} seconds")
+    print(f"Simulations only: {duration:.2f} seconds")
+
+    # Log simulation duration for scaling analysis
+    with open(args.output_dir / "times.csv", "a") as f:
+        f.write(f"{args.job_index},{args.runs_per_job},{duration:.2f}\n")
 
 if __name__ == "__main__":
     main()

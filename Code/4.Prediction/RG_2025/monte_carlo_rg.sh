@@ -28,4 +28,6 @@ python -u $SCRIPT \
     --job-index     $SLURM_ARRAY_TASK_ID \
     --output-dir    ./mc_rg_results
 
+
+#SBATCH --chdir=/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/4.Prediction/RG_2025
 echo "[$(date)] Finished job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"
