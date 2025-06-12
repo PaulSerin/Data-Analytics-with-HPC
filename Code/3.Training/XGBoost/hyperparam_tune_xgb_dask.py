@@ -73,7 +73,7 @@ def main():
         memory="40GB",
         walltime="02:00:00",
         job_extra_directives=["--gres=gpu:a100:1"],
-        scheduler_options={"idle_timeout":"300"}
+        scheduler_options={"idle_timeout":"600"}
     )
     cluster.scale(jobs=args.jobs)
     print(f"[DEBUG] Launched {args.jobs} workers -> dashboard {cluster.dashboard_link}", flush=True)
