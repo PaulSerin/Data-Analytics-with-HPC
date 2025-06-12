@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH --job-name=mc-rg-16gpu
-#SBATCH --output=logs/mc-rg-16gpu-%A_%a.out
-#SBATCH --error=logs/mc-rg-16gpu-%A_%a.err
+#SBATCH --output=logs/16gpu/mc-rg-16gpu-%A_%a.out
+#SBATCH --error=logs/16gpu/mc-rg-16gpu-%A_%a.err
 #SBATCH --array=0-15
 #SBATCH --nodes=1
 #SBATCH --ntasks=1

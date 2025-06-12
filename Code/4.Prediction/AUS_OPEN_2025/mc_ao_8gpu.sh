@@ -1,14 +1,14 @@
 #!/bin/bash -l
 #SBATCH --job-name=mc-ao-8gpu
-#SBATCH --output=logs/mc-ao-8gpu-%A_%a.out
-#SBATCH --error=logs/mc-ao-8gpu-%A_%a.err
+#SBATCH --output=logs/8gpu/mc-ao-8gpu-%A_%a.out
+#SBATCH --error=logs/8gpu/mc-ao-8gpu-%A_%a.err
 #SBATCH --array=0-7
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
 #SBATCH --gres=gpu:a100:1
 #SBATCH --mem=40G
-#SBATCH --time=02:00:00
+#SBATCH --time=04:00:00
 #SBATCH --chdir=/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction
 
 module load python
