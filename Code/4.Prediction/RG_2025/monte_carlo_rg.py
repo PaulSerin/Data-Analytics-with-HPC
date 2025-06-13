@@ -7,7 +7,7 @@ from importlib.machinery import SourceFileLoader
 import os
 
 def load_utils(utils_path: Path):
-    """Dynamically load your utils.py from the given path."""
+    """Dynamically load utils.py from the given path."""
     return SourceFileLoader("utils", str(utils_path)).load_module()
 
 def simulate_tournament(bracket_init, surface, model, global_df, surface_dfs, utils):
