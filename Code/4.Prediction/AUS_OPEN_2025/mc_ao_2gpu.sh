@@ -19,10 +19,10 @@ SCRIPT=monte_carlo_ao.py
 
 echo "[$(date)] Starting job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"
 python -u $SCRIPT \
-    --utils-path    ../0.Utils/utils.py \
-    --json-draw     ../../Datasets/aus_open_2025_matches_all_ids.json \
-    --parquet       ../../Datasets/final_tennis_dataset_symmetric.parquet \
-    --model         ../../Models/xgb_model.json \
+    --utils-path    ../../0.Utils/utils.py \
+    --json-draw     ../../../Datasets/aus_open_2025_matches_all_ids.json \
+    --parquet       ../../../Datasets/final_tennis_dataset_symmetric.parquet \
+    --model         ../../../Models/xgb_model.json \
     --cutoff        2025-01-01 \
     --runs-per-job  $RUNS_PER_JOB \
     --job-index     $SLURM_ARRAY_TASK_ID \
