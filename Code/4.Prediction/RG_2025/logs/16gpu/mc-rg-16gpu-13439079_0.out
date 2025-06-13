@@ -1,0 +1,11 @@
+slurmstepd: info: Setting TMPDIR to /scratch/13439451. Previous errors about TMPDIR can be discarded
+[Job 0] Simulations completed: 50/312
+[Job 0] Simulations completed: 100/312
+[Job 0] Simulations completed: 150/312
+[Job 0] Simulations completed: 200/312
+[Job 0] Simulations completed: 250/312
+[Job 0] Simulations completed: 300/312
+Wrote partial results to mc_rg_results_16gpu/partial_0.json
+Total elapsed time: 558.93 seconds
+Simulations only: 558.92 seconds
+[Thu Jun 12 23:07:31 CEST 2025] Finished job 13439451 task 0

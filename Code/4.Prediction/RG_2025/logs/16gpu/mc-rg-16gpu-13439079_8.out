@@ -1,0 +1,11 @@
+slurmstepd: info: Setting TMPDIR to /scratch/13439562. Previous errors about TMPDIR can be discarded
+[Job 8] Simulations completed: 50/312
+[Job 8] Simulations completed: 100/312
+[Job 8] Simulations completed: 150/312
+[Job 8] Simulations completed: 200/312
+[Job 8] Simulations completed: 250/312
+[Job 8] Simulations completed: 300/312
+Wrote partial results to mc_rg_results_16gpu/partial_8.json
+Total elapsed time: 506.23 seconds
+Simulations only: 506.22 seconds
+[Thu Jun 12 23:16:36 CEST 2025] Finished job 13439562 task 8

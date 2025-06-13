@@ -8,13 +8,13 @@
 #SBATCH --cpus-per-task=32
 #SBATCH --gres=gpu:a100:1
 #SBATCH --mem=40G
-#SBATCH --time=04:00:00
+#SBATCH --time=01:00:00
 #SBATCH --chdir=/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/TFM/Data-Analytics-with-HPC/Code/3.Prediction
 
 module load python
 source $STORE/mypython/bin/activate
 
-RUNS_PER_JOB=5000
+RUNS_PER_JOB=500
 SCRIPT=monte_carlo_ao.py
 
 echo "[$(date)] Starting job $SLURM_JOB_ID task $SLURM_ARRAY_TASK_ID"
