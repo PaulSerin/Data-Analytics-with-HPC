@@ -1,0 +1,25 @@
+python/3.10.8 loaded
+Unable to connect to VS Code server: Error in request.
+Error: connect ENOENT /run/user/40363/vscode-ipc-3e19e84d-33a8-45b4-b386-dc7bb17b2c53.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'connect',
+  address: '/run/user/40363/vscode-ipc-3e19e84d-33a8-45b4-b386-dc7bb17b2c53.sock'
+}
+Unable to connect to VS Code server: Error in request.
+Error: connect ENOENT /run/user/40363/vscode-ipc-3e19e84d-33a8-45b4-b386-dc7bb17b2c53.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'connect',
+  address: '/run/user/40363/vscode-ipc-3e19e84d-33a8-45b4-b386-dc7bb17b2c53.sock'
+}
+/mnt/netapp2/Store_uni/home/ulc/cursos/curso363/mypython/lib/python3.10/site-packages/xgboost/core.py:729: UserWarning: [23:24:30] WARNING: /workspace/src/common/error_msg.cc:58: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
