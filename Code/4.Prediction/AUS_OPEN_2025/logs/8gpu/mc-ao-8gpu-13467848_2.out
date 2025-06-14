@@ -1,0 +1,19 @@
+slurmstepd: info: Setting TMPDIR to /scratch/13474651. Previous errors about TMPDIR can be discarded
+[Sat Jun 14 04:12:37 CEST 2025] Starting job 13474651 task 2
+[Job 2] Simulations completed: 50/625
+[Job 2] Simulations completed: 100/625
+[Job 2] Simulations completed: 150/625
+[Job 2] Simulations completed: 200/625
+[Job 2] Simulations completed: 250/625
+[Job 2] Simulations completed: 300/625
+[Job 2] Simulations completed: 350/625
+[Job 2] Simulations completed: 400/625
+[Job 2] Simulations completed: 450/625
+[Job 2] Simulations completed: 500/625
+[Job 2] Simulations completed: 550/625
+[Job 2] Simulations completed: 600/625
+
+[Job 2] Partial results saved to: mc_ao_results_8gpu/partial_2.json
+Total elapsed time:     1102.63 seconds
+Simulation only time:   1102.63 seconds
+[Sat Jun 14 04:31:00 CEST 2025] Finished job 13474651 task 2
