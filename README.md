@@ -342,9 +342,9 @@ This chapter applies the trained XGBoost model to simulate real-world tennis out
 Simulations were performed between **Carlos Alcaraz** and **Jannik Sinner** across clay, hard, and grass to test surface awareness.
 
 <p align="center">
-  <img src="https://github.com/PaulSerin/TFM/raw/main/Images/players/alcaraz.jpeg" alt="Alcaraz" width="200"/>
+  <img src="https://github.com/PaulSerin/TFM/raw/main/Images/players/alcaraz.jpeg" alt="Alcaraz" width="400"/>
   <strong style="margin: 0 20px;">VS</strong>
-  <img src="https://github.com/PaulSerin/TFM/raw/main/Images/players/sinner.jpg" alt="Sinner" width="200"/>
+  <img src="https://github.com/PaulSerin/TFM/raw/main/Images/players/sinner.jpg" alt="Sinner" width="400"/>
 </p>
 
 | Surface | Alcaraz Win % | Sinner Win % |
