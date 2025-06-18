@@ -1,7 +1,0 @@
-RAF : 
-
-greffer les données de 2025 (concaténer avec les même colonnes etc..)
-
-créer le grille de départ pour le prochain rolland garros, réfléchir de la maniere dont on va procéder pour simuler les matchs, compter les erreur etc...
-
-grid search pour avoir le meilleur modèle sur Finisterrae (Jouer sur la formule de l'ELO (le k), les années sur lesquelles on fait l'entrainement)
