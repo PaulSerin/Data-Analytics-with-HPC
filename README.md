@@ -388,33 +388,33 @@ Simulated 5000 tournament draws for each Grand Slam using a randomized bracket g
 
 #### Australian Open – Top 10 Players
 
-| Player    | Champion % |
-| --------- | ---------- |
-| Sinner    | 16.88%     |
-| Alcaraz   | 10.70%     |
-| Rublev    | 5.68%      |
-| De Minaur | 5.52%      |
-| Korda     | 4.34%      |
-| Medvedev  | 4.32%      |
-| Shelton   | 3.18%      |
-| Djokovic  | 3.02%      |
-| Mensik    | 2.68%      |
-| Zverev    | 2.54%      |
+| Player    | Wins | Runs | Champion % | SF  | SF %   | QF   | QF %   |
+|-----------|------|------|-------------|-----|--------|------|--------|
+| Sinner    | 844  | 5000 | 16.88%      | 1480 | 29.60% | 2218 | 44.36% |
+| Alcaraz   | 535  | 5000 | 10.70%      | 920  | 18.40% | 1438 | 28.76% |
+| Rublev    | 284  | 5000 | 5.68%       | 1067 | 21.34% | 1718 | 34.36% |
+| De Minaur | 276  | 5000 | 5.52%       | 973  | 19.46% | 1591 | 31.82% |
+| Korda     | 217  | 5000 | 4.34%       | 527  | 10.54% | 1037 | 20.74% |
+| Medvedev  | 216  | 5000 | 4.32%       | 782  | 15.64% | 1184 | 23.68% |
+| Shelton   | 159  | 5000 | 3.18%       | 499  | 9.98%  | 834  | 16.68% |
+| Djokovic  | 151  | 5000 | 3.02%       | 397  | 7.94%  | 637  | 12.74% |
+| Mensik    | 134  | 5000 | 2.68%       | 512  | 10.24% | 849  | 16.98% |
+| Zverev    | 127  | 5000 | 2.54%       | 488  | 9.76%  | 758  | 15.16% |
 
 #### Roland-Garros – Top 10 Players
 
-| Player    | Champion % |
-| --------- | ---------- |
-| Alcaraz   | 9.68%      |
-| Tsitsipas | 9.06%      |
-| Sinner    | 8.26%      |
-| Djokovic  | 6.52%      |
-| Zverev    | 5.72%      |
-| Ruud      | 3.94%      |
-| Rune      | 3.94%      |
-| Rublev    | 3.36%      |
-| Musetti   | 2.26%      |
-| Fritz     | 2.14%      |
+| Player    | Wins | Runs | Champion % | SF  | SF %   | QF   | QF %   |
+|-----------|------|------|-------------|-----|--------|------|--------|
+| Alcaraz   | 484  | 5000 | 9.68%       | 1009 | 20.18% | 1411 | 28.22% |
+| Tsitsipas | 453  | 5000 | 9.06%       | 987  | 19.74% | 1342 | 26.84% |
+| Sinner    | 413  | 5000 | 8.26%       | 1060 | 21.20% | 1476 | 29.52% |
+| Djokovic  | 326  | 5000 | 6.52%       | 880  | 17.60% | 1478 | 29.56% |
+| Zverev    | 286  | 5000 | 5.72%       | 813  | 16.26% | 1254 | 25.08% |
+| Ruud      | 197  | 5000 | 3.94%       | 555  | 11.10% | 1054 | 21.08% |
+| Rune      | 197  | 5000 | 3.94%       | 680  | 13.60% | 1088 | 21.76% |
+| Rublev    | 168  | 5000 | 3.36%       | 550  | 11.00% | 854  | 17.08% |
+| Musetti   | 113  | 5000 | 2.26%       | 470  | 9.40%  | 783  | 15.66% |
+| Fritz     | 107  | 5000 | 2.14%       | 479  | 9.58%  | 854  | 17.08% |
 
 These simulations align closely with real results: Sinner won the AO, and Alcaraz triumphed at Roland-Garros.
 
